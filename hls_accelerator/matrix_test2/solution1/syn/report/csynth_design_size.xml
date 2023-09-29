@@ -1,0 +1,35 @@
+<design_size title="Design Size Report">
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="6" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Performance/Pipeline" col5="Optimizations"/>
+            <rows>
+                <row id="0" col0="network_top" col1="matrix_test.cc:130" col2="12479" col3="61742" col4="44004" col5="44136">
+                    <row id="1" col0="LSTM&lt;20, 20, 10&gt;" col1="matrix_test.cc:88" col2="12102" col3="61108" col4="36865" col5="36900">
+                        <row id="3" col0="matrix_top&lt;40, 80, 20, 20, 10&gt;" col1="matrix_test.cc:54" col2="1843" col3="59950" col4="24734" col5="24765">
+                            <row id="5" col0="dot_product&lt;20, 20&gt;" col1="matrix_test.cc:37" col2="1768" col3="59800" col3_disp="59,800 (10 calls)" col4="24420" col4_disp="24,420 (10 calls)" col5="24420" col5_disp="24,420 (10 calls)"/>
+                        </row>
+                        <row id="2" col0="sigm" col1="matrix_test.cc:4" col2="5871" col2_disp=" 5,871 (3 calls)" col3="684" col3_disp="   684 (3 calls)" col4="11222" col4_disp="11,222 (62 calls)" col5="11222" col5_disp="11,222 (62 calls)"/>
+                        <row id="4" col0="hyper_tan" col1="matrix_test.cc:21" col2="2498" col2_disp=" 2,498 (2 calls)" col3="116" col3_disp="   116 (2 calls)" col4="" col5=""/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Description of Compilation Phases">
+        <table>
+            <keys size="2">Compilation Phase, Description</keys>
+            <column name="Compile/Link">All functions are compiled and linked into a single design</column>
+            <column name="Unroll/Inline">After user unroll and inline pragmas are applied</column>
+            <column name="Performance/Pipeline">After performance and pipeline pragmas are applied</column>
+            <column name="Optimizations">After high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+
