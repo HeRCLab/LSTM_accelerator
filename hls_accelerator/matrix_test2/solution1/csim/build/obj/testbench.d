@@ -58,4 +58,4 @@ obj/testbench.o: ../../../testbench.cc ../../../matrix_include.hpp \
  /share/reconfig/xilinx_2023/Vitis_HLS/2023.1/include/etc/hls_hypot_apfixed.h \
  /share/reconfig/xilinx_2023/Vitis_HLS/2023.1/include/etc/hls_ldexp_apfixed.h \
  /share/reconfig/xilinx_2023/Vitis_HLS/2023.1/include/hls_vector.h \
- ../../../matrix_data.h
+ ../../../matrix_data.h ../../../testbench_routines.h

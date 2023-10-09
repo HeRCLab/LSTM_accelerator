@@ -736,73 +736,145 @@ In file included from matrix_test2/matrix_include.hpp:11:
 /share/reconfig/xilinx_2023/Vitis_HLS/2023.1/common/technology/autopilot/hls_vector.h:258:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator>_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-matrix_test2/matrix_test.cc:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dot_product_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=A_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dot_product_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=A_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=A
+        ^
+matrix_test2/matrix_test.cc:39:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dot_product_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=A_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION dim=1 type=complete variable=A
         ^
-matrix_test2/matrix_test.cc:42:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dot_product_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:44:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dot_product_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-matrix_test2/matrix_test.cc:55:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matrix_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:57:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matrix_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS DATAFLOW
         ^
-matrix_test2/matrix_test.cc:56:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matrix_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=A_t_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:58:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matrix_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=A_t_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION dim=1 type=complete variable=A_t
         ^
-matrix_test2/matrix_test.cc:57:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matrix_top_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=A_t_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:59:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matrix_top_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=A_t_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION dim=2 type=complete variable=A_t
         ^
-matrix_test2/matrix_test.cc:58:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matrix_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=C_t_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:60:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matrix_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=C_t_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION dim=1 type=complete variable=C_t
         ^
-matrix_test2/matrix_test.cc:62:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matrix_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:64:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=matrix_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-matrix_test2/matrix_test.cc:94:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=LSTM_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS DATAFLOW
-        ^
-/share/ss121/matrix_test2/solution1/csynth.tcl:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=name=network_top_XLX_SEP_ [-Wdump-hls-pragmas]
+/share/ss121/matrix_test2/solution1/csynth.tcl:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=name=network_top_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=network_top
         ^
 /share/ss121/matrix_test2/solution1/directives.tcl:7:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=name=network_top_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=network_top
         ^
-matrix_test2/matrix_test.cc:137:58: warning: unexpected pragma parameter 'storage_impl' [-Winvalid-hls-pragmas]
-#pragma HLS INTERFACE mode=bram port=params storage_impl=bram storage_type=rom_1p
-                                                         ^
-matrix_test2/matrix_test.cc:137:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=mode=bram port=params storage_impl=bram storage_type=rom_1p_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE mode=bram port=params storage_impl=bram storage_type=rom_1p
+matrix_test2/matrix_test.cc:126:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=mode=m_axi port=myparams offset=slave_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=m_axi port=myparams offset=slave
         ^
-matrix_test2/matrix_test.cc:138:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=mode=bram port=out_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:127:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=mode=s_axilite port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite port=return
+        ^
+matrix_test2/matrix_test.cc:134:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=mode=bram port=out_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE mode=bram port=out
         ^
-matrix_test2/matrix_test.cc:139:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=mode=bram port=inp_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:135:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=mode=bram port=inp_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE mode=bram port=inp
         ^
-matrix_test2/matrix_test.cc:143:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=weights_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=weights
+matrix_test2/matrix_test.cc:139:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=weights1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=weights1
         ^
-matrix_test2/matrix_test.cc:144:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=weights_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=weights
+matrix_test2/matrix_test.cc:140:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=weights1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=weights1
         ^
-matrix_test2/matrix_test.cc:147:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=biases_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=biases
+matrix_test2/matrix_test.cc:142:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=weights2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=weights2
         ^
-matrix_test2/matrix_test.cc:148:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=biases_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=biases
+matrix_test2/matrix_test.cc:143:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=weights2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=weights2
         ^
-matrix_test2/matrix_test.cc:151:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=hidden_state_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=hidden_state
+matrix_test2/matrix_test.cc:145:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=weights3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=weights3
         ^
-matrix_test2/matrix_test.cc:154:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=inp_internal_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:146:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=weights3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=weights3
+        ^
+matrix_test2/matrix_test.cc:149:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=biases1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=biases1
+        ^
+matrix_test2/matrix_test.cc:150:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=biases1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=biases1
+        ^
+matrix_test2/matrix_test.cc:152:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=biases2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=biases2
+        ^
+matrix_test2/matrix_test.cc:153:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=biases2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=biases2
+        ^
+matrix_test2/matrix_test.cc:155:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=2 type=complete variable=biases3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=biases3
+        ^
+matrix_test2/matrix_test.cc:156:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=biases3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=biases3
+        ^
+matrix_test2/matrix_test.cc:159:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=hidden_state1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=hidden_state1
+        ^
+matrix_test2/matrix_test.cc:161:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=hidden_state2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=hidden_state2
+        ^
+matrix_test2/matrix_test.cc:163:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=hidden_state3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=hidden_state3
+        ^
+matrix_test2/matrix_test.cc:165:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=cell_state1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=cell_state1
+        ^
+matrix_test2/matrix_test.cc:167:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=cell_state2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=cell_state2
+        ^
+matrix_test2/matrix_test.cc:169:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=cell_state3_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=cell_state3
+        ^
+matrix_test2/matrix_test.cc:172:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=inp_internal_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION dim=1 type=complete variable=inp_internal
         ^
-matrix_test2/matrix_test.cc:176:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:176:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=output1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=output1
+        ^
+matrix_test2/matrix_test.cc:178:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=dim=1 type=complete variable=output2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=output2
+        ^
+matrix_test2/matrix_test.cc:187:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+matrix_test2/matrix_test.cc:192:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-matrix_test2/matrix_test.cc:182:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:198:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-matrix_test2/matrix_test.cc:193:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+matrix_test2/matrix_test.cc:204:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-250 warnings generated.
+matrix_test2/matrix_test.cc:213:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+matrix_test2/matrix_test.cc:217:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+matrix_test2/matrix_test.cc:221:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+matrix_test2/matrix_test.cc:227:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+matrix_test2/matrix_test.cc:236:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+matrix_test2/matrix_test.cc:240:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=network_top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+matrix_test2/matrix_test.cc:187:9: warning: Only 'for' loop or function body support the dataflow pragma [-Wignored-hls-attributes]
+#pragma HLS DATAFLOW
+        ^~~~~~~~~~~~
+matrix_test2/matrix_test.cc:240:9: warning: Only 'for' loop or function body support the dataflow pragma [-Wignored-hls-attributes]
+#pragma HLS DATAFLOW
+        ^~~~~~~~~~~~
+274 warnings generated.

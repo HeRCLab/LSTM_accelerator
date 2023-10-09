@@ -15,22 +15,22 @@ set DLRegItemOffset 0
 set C_modelName {sigm}
 set C_modelType { int 22 }
 set C_modelArgList {
-	{ x_read int 22 regular  }
+	{ x_val int 22 regular  }
 }
 set hasAXIMCache 0
 set C_modelArgMapList {[ 
-	{ "Name" : "x_read", "interface" : "wire", "bitwidth" : 22, "direction" : "READONLY"} , 
+	{ "Name" : "x_val", "interface" : "wire", "bitwidth" : 22, "direction" : "READONLY"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 22} ]}
 # RTL Port declarations: 
 set portNum 3
 set portList { 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ x_read sc_in sc_lv 22 signal 0 } 
+	{ x_val sc_in sc_lv 22 signal 0 } 
 	{ ap_return sc_out sc_lv 22 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "x_read", "direction": "in", "datatype": "sc_lv", "bitwidth":22, "type": "signal", "bundle":{"name": "x_read", "role": "default" }} , 
+ 	{ "name": "x_val", "direction": "in", "datatype": "sc_lv", "bitwidth":22, "type": "signal", "bundle":{"name": "x_val", "role": "default" }} , 
  	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":22, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
@@ -49,15 +49,15 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "x_read", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dcmp_64ns_64ns_1_1_no_dsp_1_U23289", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dcmp_64ns_64ns_1_1_no_dsp_1_U23290", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dcmp_64ns_64ns_1_1_no_dsp_1_U23291", "Parent" : "0"}]}
+			{"Name" : "x_val", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dcmp_64ns_64ns_1_1_no_dsp_1_U22989", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dcmp_64ns_64ns_1_1_no_dsp_1_U22990", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dcmp_64ns_64ns_1_1_no_dsp_1_U22991", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	sigm {
-		x_read {Type I LastRead 0 FirstWrite -1}}}
+		x_val {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -70,5 +70,5 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	x_read { ap_none {  { x_read in_data 0 22 } } }
+	x_val { ap_none {  { x_val in_data 0 22 } } }
 }

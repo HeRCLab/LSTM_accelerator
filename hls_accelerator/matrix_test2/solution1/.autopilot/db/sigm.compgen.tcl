@@ -16,15 +16,15 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 23293 \
-    name x_read \
+    id 22993 \
+    name x_val \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_x_read \
+    corename dc_x_val \
     op interface \
-    ports { x_read { I 22 vector } } \
+    ports { x_val { I 22 vector } } \
 } "
 }
 

@@ -56140,33 +56140,31 @@ public:
 
 }
 # 12 "matrix_test2/matrix_include.hpp" 2
-
-
-
-
-
-
-
+# 24 "matrix_test2/matrix_include.hpp"
 typedef ap_ufixed <22,5,AP_RND,AP_SAT> data;
 
-
-
-
-
-
-__attribute__((sdx_kernel("network_top", 0))) void network_top(data params[(20 +20)*4*20 +4*20],data inp[20],data out[4*20],ap_int<32> init_params ,ap_int<32> store_result);
+struct params_struct {
+ data weights1[20 +20][4*20];
+ data biases1[4*20];
+ data weights2[20 +(40 -20)][4*(40 -20)];
+ data biases2[4*(40 -20)];
+ data weights3[(40 -20)+(60 -40)][4*(60 -40)];
+ data biases3[4*(60 -40)];
+};
+# 44 "matrix_test2/matrix_include.hpp"
+__attribute__((sdx_kernel("network_top", 0))) void network_top(struct params_struct *myparams,data inp[20],data out[4*(60 -40)],ap_int<32> init_params ,ap_int<32> store_result);
 # 3 "matrix_test2/matrix_test.cc" 2
 
 data sigm(data &x){
 data y=0;
-
+data r=0.5;
   if(-0.5<x<0.5){
-  y=x;
+  y=x+r;
   }
  if(x>0.5){
   y=1;
  }
- if (x<-0.5){
+ if (x<0.5){
   y=0;
 
   }
@@ -56191,10 +56189,12 @@ return a;
 
 template <size_t n_inputs, size_t n_units>
 data dot_product( data A[n_inputs+n_units][4*n_units],ap_uint<32> col,data B_1[n_inputs],data B_2[n_units]){
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=A
 #pragma HLS ARRAY_PARTITION dim=1 type=complete variable=A
 
+
 data sum=0;
-VITIS_LOOP_41_1: for(int j=0;j<(n_inputs+n_units);j++){
+VITIS_LOOP_43_1: for(int j=0;j<(n_inputs+n_units);j++){
 #pragma HLS UNROLL
  if (j<n_inputs)
        sum+=A[j][col]*B_1[j];
@@ -56241,113 +56241,170 @@ for (int i=0; i<n_pe;i++) {
 
 
 template <size_t n_inputs,size_t n_units,size_t n_pe>
- void LSTM(data input[n_inputs],data hidden_state[n_units],data weights[n_inputs+n_units][4* n_units],data bias[n_units][4], data output_vectors[4*n_units]){
+ void LSTM(data input[n_inputs],data hidden_state[n_units],data cell_state[n_units],data weights[n_inputs+n_units][4* n_units],data bias[n_units][4], data output_vectors[4*n_units]){
 
 
 
-static data c_t[n_units];
-static data h_t[n_units];
-#pragma HLS DATAFLOW
+
+
+
  matrix_top<n_inputs+n_units, 4*n_units, n_inputs, n_units, n_pe>(weights,input,hidden_state,output_vectors);
 
- VITIS_LOOP_97_1: for(int i=0;i<4*n_units;i++){
+ VITIS_LOOP_99_1: for(int i=0;i<4*n_units;i++){
   output_vectors[i]+=bias[i%n_units][i/n_units];
 
  }
- VITIS_LOOP_101_2: for(int k=0; k<n_units;k++)
+
+ VITIS_LOOP_104_2: for(int k=0; k<n_units;k++)
  {
   output_vectors[k]=sigm(output_vectors[k]);
   output_vectors[k+n_units]=sigm(output_vectors[k+n_units]);
   output_vectors[k+2*n_units]=hyper_tan(output_vectors[k+2*n_units]);
   output_vectors[k+3*n_units]=sigm(output_vectors[k+3*n_units]);
-  c_t[k]=output_vectors[k+n_units]*c_t[k]+output_vectors[k]*output_vectors[k+2*n_units];
-  h_t[k]=output_vectors[k+3*n_units]*hyper_tan(c_t[k]);
-  output_vectors[k+3*n_units]=h_t[k];
+  cell_state[k]=output_vectors[k+n_units]*cell_state[k]+output_vectors[k]*output_vectors[k+2*n_units];
+  hidden_state[k]=output_vectors[k+3*n_units]*hyper_tan(cell_state[k]);
+  output_vectors[k+3*n_units]=hidden_state[k];
 
  }
-# 124 "matrix_test2/matrix_test.cc"
+
+
+
+
  }
 
 
 
 
 
-__attribute__((sdx_kernel("network_top", 0))) void network_top(data params[(20 +20)*4*20 +4*20],data inp[20],data out[4*20],ap_int<32> init_params ,ap_int<32> store_result){
-#line 18 "/share/ss121/matrix_test2/solution1/csynth.tcl"
+__attribute__((sdx_kernel("network_top", 0))) void network_top(struct params_struct *myparams,data inp[20],data out[4*(60 -40)],ap_int<32> init_params ,ap_int<32> store_result){
+#line 20 "/share/ss121/matrix_test2/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=network_top
-# 130 "matrix_test2/matrix_test.cc"
+# 125 "matrix_test2/matrix_test.cc"
 
 #line 7 "/share/ss121/matrix_test2/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=network_top
-# 130 "matrix_test2/matrix_test.cc"
+# 125 "matrix_test2/matrix_test.cc"
+
+#pragma HLS INTERFACE mode=m_axi port=myparams offset=slave
+#pragma HLS INTERFACE mode=s_axilite port=return
 
 
 
 
 
 
-
-#pragma HLS INTERFACE mode=bram port=params storage_impl=bram storage_type=rom_1p
 #pragma HLS INTERFACE mode=bram port=out
 #pragma HLS INTERFACE mode=bram port=inp
 
 
-static data weights[(20 +20)][4*20] ;
-#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=weights
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=weights
+static data weights1[(20 +20)][4*20] ;
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=weights1
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=weights1
+static data weights2[(20 +(40 -20))][4*(40 -20)] ;
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=weights2
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=weights2
+static data weights3[((40 -20)+(60 -40))][4*(60 -40)] ;
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=weights3
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=weights3
 
-static data biases[20][4];
-#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=biases
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=biases
+static data biases1[20][4];
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=biases1
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=biases1
+static data biases2[(40 -20)][4];
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=biases2
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=biases2
+static data biases3[(60 -40)][4];
+#pragma HLS ARRAY_PARTITION dim=2 type=complete variable=biases3
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=biases3
 
-static data hidden_state[20];
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=hidden_state
+static data hidden_state1[20];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=hidden_state1
+static data hidden_state2[(40 -20)];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=hidden_state2
+static data hidden_state3[(60 -40)];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=hidden_state3
+static data cell_state1[20];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=cell_state1
+static data cell_state2[(40 -20)];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=cell_state2
+static data cell_state3[(60 -40)];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=cell_state3
 
 static data inp_internal[20];
 #pragma HLS ARRAY_PARTITION dim=1 type=complete variable=inp_internal
 
 
+static data output1[4*20];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=output1
+static data output2[4*(40 -20)];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=output2
+static data output3[4*(60 -40)];
 
 
 
-
-
-
-static data output[4*20];
+int units[4]={20,20,(40 -20),(60 -40)};
 
 
 if (init_params==1 && store_result==0) {
+#pragma HLS DATAFLOW
 
-   load_A_matrix_outer_loop:
-   for (int i=0;i<(20 +20);i++)
+ load_weight_matrix_outer_loop:
 
-                 VITIS_LOOP_171_1: for (int j=0;j<4*20;j++)
-                      weights[i][j]=params[i*(4*20)+ j];
-
-
-   VITIS_LOOP_175_2: for(int i=0;i<4*20;i++)
+        for (int r=0;r<(units[0]+units[1]);r++)
 #pragma HLS UNROLL
- biases[i%20][i/20]=params[((20 +20)*4*20) + i];
+load_weight1_matrix_inner_loop: for (int c=0;c<4*units[1];c++)
+
+                     weights1[r][c]=myparams->weights1[r*(4*units[1])+ c];
+
+        VITIS_LOOP_197_1: for (int r=0;r<(units[1]+units[2]);r++)
+#pragma HLS UNROLL
+load_weight2_matrix_inner_loop: for (int c=0;c<4*units[2];c++)
+
+              weights2[r][c]=myparams->weights2[r*(4*units[2])+ c];
+
+        VITIS_LOOP_203_2: for (int r=0;r<(units[2]+units[3]);r++)
+#pragma HLS UNROLL
+load_weight3_matrix_inner_loop: for (int c=0;c<4*units[3];c++)
+
+          weights3[r][c]=myparams->weights3[r*(4*units[3])+ c];
 
 
 
-   VITIS_LOOP_181_3: for (int i=0;i<20;i++)
+
+load_biases1_matrix: for(int i=0;i<4*20;i++)
+#pragma HLS UNROLL
+
+ biases1[i%20][i/20]=myparams->biases1[i];
+load_biases2_matrix: for(int i=0;i<4*(40 -20);i++)
+#pragma HLS UNROLL
+
+ biases2[i%(40 -20)][i/(40 -20)]=myparams->biases2[i];
+load_biases3_matrix: for(int i=0;i<4*(60 -40);i++)
+#pragma HLS UNROLL
+
+ biases3[i%(60 -40)][i/(60 -40)]=myparams->biases3[i];
+
+
+load_input_matrix: for (int i=0;i<20;i++)
 #pragma HLS UNROLL
  inp_internal[i]=inp[i];
 
 
 
 
-
-
 }
 if (init_params==0 && store_result==1)
-    VITIS_LOOP_192_4: for (int k=0;k<4*20;k++)
+    VITIS_LOOP_235_3: for (int k=0;k<4*(60 -40);k++)
 #pragma HLS UNROLL
- out[k]=output[k];
+ out[k]=output3[k];
 
 if (init_params==0 && store_result==0)
- LSTM <20,20,10>(inp_internal ,hidden_state,weights,biases,output);
+#pragma HLS DATAFLOW
+
+
+ LSTM <20,20,2>(inp_internal ,hidden_state1,cell_state1,weights1,biases1,output1);
+  LSTM <20,(40 -20),2>(output1 ,hidden_state2,cell_state2,weights2,biases2,output2);
+  LSTM <(40 -20),(60 -40),2>(output2,hidden_state3,cell_state3,weights3,biases3,output3);
 
 
 

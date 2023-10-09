@@ -1,82 +1,124 @@
 {
   "0": {
-    "basicblocks": 3292,
-    "calls": "4",
+    "basicblocks": 9965,
+    "calls": "1 6 6",
     "file": "matrix_test.cc",
-    "fileloc": 130,
-    "instructions": 7139,
+    "fileloc": 125,
+    "instructions": 21481,
     "loads": {
-      "G": 80,
-      "T": 101
+      "G": 240,
+      "T": 260
     },
     "name": "network_top",
     "stores": {
-      "G": 3300,
+      "G": 9860,
       "T": 80
     },
-    "total_instructions": 44004
+    "total_instructions": 87335
   },
   "1": {
-    "basicblocks": 111,
-    "calls": "3 3 3 3 3 3 3 3 3 3",
+    "basicblocks": 237,
+    "calls": "7 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5",
     "file": "matrix_test.cc",
-    "fileloc": 54,
-    "instructions": 314,
+    "fileloc": 90,
+    "instructions": 1034,
     "loads": {
-      "L": 10
+      "G": 260,
+      "L": 60
     },
-    "name": "matrix_top<40, 80, 20, 20, 10>",
+    "name": "LSTM<20, 20, 2>",
     "stores": {
-      "G": 80,
-      "L": 10
+      "G": 300
     },
-    "total_instructions": 24734
+    "total_instructions": 21832
   },
   "2": {
-    "basicblocks": 34,
-    "calls": "",
+    "basicblocks": 87,
+    "calls": "3 3",
     "file": "matrix_test.cc",
-    "fileloc": 4,
-    "instructions": 181,
+    "fileloc": 56,
+    "instructions": 194,
     "loads": {
-      "L": 1
+      "L": 2
     },
-    "name": "sigm",
+    "name": "matrix_top<40, 80, 20, 20, 2>",
     "stores": {
-      "L": 4
+      "L": 82
     },
-    "total_instructions": 181
+    "total_instructions": 9398
   },
   "3": {
-    "basicblocks": 101,
+    "basicblocks": 201,
     "calls": "",
     "file": "matrix_test.cc",
     "fileloc": 37,
-    "instructions": 2442,
+    "instructions": 4602,
     "loads": {
-      "G": 1620,
+      "L": 3241
+    },
+    "name": "dot_product<20, 20>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 4602
+  },
+  "4": {
+    "basicblocks": 201,
+    "calls": "",
+    "file": "matrix_test.cc",
+    "fileloc": 37,
+    "instructions": 4602,
+    "loads": {
+      "G": 3240,
       "L": 1
     },
     "name": "dot_product<20, 20>",
     "stores": {
       "L": 2
     },
-    "total_instructions": 2442
+    "total_instructions": 4602
   },
-  "4": {
-    "basicblocks": 223,
-    "calls": "1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2",
+  "5": {
+    "basicblocks": 34,
+    "calls": "",
     "file": "matrix_test.cc",
-    "fileloc": 88,
-    "instructions": 909,
-    "loads": {
-      "G": 184,
-      "L": 60
-    },
-    "name": "LSTM<20, 20, 10>",
+    "fileloc": 4,
+    "instructions": 190,
+    "name": "sigm",
     "stores": {
-      "G": 263
+      "L": 4
     },
-    "total_instructions": 36865
+    "total_instructions": 190
+  },
+  "6": {
+    "basicblocks": 236,
+    "calls": "2 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5",
+    "file": "matrix_test.cc",
+    "fileloc": 90,
+    "instructions": 1213,
+    "loads": {
+      "L": 160
+    },
+    "name": "LSTM<20, 20, 2>",
+    "stores": {
+      "L": 300
+    },
+    "total_instructions": 22011
+  },
+  "7": {
+    "basicblocks": 87,
+    "calls": "4 4",
+    "file": "matrix_test.cc",
+    "fileloc": 56,
+    "instructions": 194,
+    "loads": {
+      "L": 2
+    },
+    "name": "matrix_top<40, 80, 20, 20, 2>",
+    "stores": {
+      "G": 80,
+      "L": 2
+    },
+    "total_instructions": 9398
   }
 }

@@ -14,7 +14,7 @@ set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
 set HasDSPModule 0
-set ResetLevelFlag 1
+set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
@@ -45,12 +45,12 @@ set TargetInfo xczu7ev:-ffvc1156:-2-e
 set SourceFiles {sc {} c ../matrix_test.cc}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
-set TBFiles {verilog ../testbench.cc bc ../testbench.cc vhdl ../testbench.cc sc ../testbench.cc cas ../testbench.cc c {}}
+set TBFiles {verilog {../testbench.cc ../testbench_routines.cc} bc {../testbench.cc ../testbench_routines.cc} sc {../testbench.cc ../testbench_routines.cc} vhdl {../testbench.cc ../testbench_routines.cc} c {} cas {../testbench.cc ../testbench_routines.cc}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
-set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

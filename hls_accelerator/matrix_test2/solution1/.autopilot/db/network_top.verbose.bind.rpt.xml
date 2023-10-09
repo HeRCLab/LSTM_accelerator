@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'network_top'" level="0">
-<item name = "Date">Fri Sep 29 18:13:26 2023
+<item name = "Date">Fri Oct  6 13:57:03 2023
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">matrix_test2</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">0.35 us, 50.682 ns, 94.50 ns</column>
+<column name="ap_clk">0.35 us, 0.256 us, 94.50 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,135 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3, 3408, 1.050 us, 1.193 ms, 4, 3409, no</column>
+<column name="">663, 1030, 0.232 ms, 0.360 ms, 664, 1031, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_network_top_Pipeline_load_A_matrix_outer_loop_VITIS_LOOP_171_1_fu_5899">network_top_Pipeline_load_A_matrix_outer_loop_VITIS_LOOP_171_1, 3202, 3202, 1.121 ms, 1.121 ms, 3202, 3202, no</column>
-<column name="grp_LSTM_20ul_20ul_10ul_s_fu_9105">LSTM_20ul_20ul_10ul_s, 123, 123, 43.050 us, 43.050 us, 110, 110, dataflow</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop_fu_25602">network_top_Pipeline_load_weight1_matrix_inner_loop, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop1_fu_25766">network_top_Pipeline_load_weight1_matrix_inner_loop1, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop2_fu_25930">network_top_Pipeline_load_weight1_matrix_inner_loop2, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop3_fu_26094">network_top_Pipeline_load_weight1_matrix_inner_loop3, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop4_fu_26258">network_top_Pipeline_load_weight1_matrix_inner_loop4, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop5_fu_26422">network_top_Pipeline_load_weight1_matrix_inner_loop5, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop6_fu_26586">network_top_Pipeline_load_weight1_matrix_inner_loop6, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop7_fu_26750">network_top_Pipeline_load_weight1_matrix_inner_loop7, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop8_fu_26914">network_top_Pipeline_load_weight1_matrix_inner_loop8, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop9_fu_27078">network_top_Pipeline_load_weight1_matrix_inner_loop9, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop10_fu_27242">network_top_Pipeline_load_weight1_matrix_inner_loop10, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop11_fu_27406">network_top_Pipeline_load_weight1_matrix_inner_loop11, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop12_fu_27570">network_top_Pipeline_load_weight1_matrix_inner_loop12, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop13_fu_27734">network_top_Pipeline_load_weight1_matrix_inner_loop13, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop14_fu_27898">network_top_Pipeline_load_weight1_matrix_inner_loop14, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop15_fu_28062">network_top_Pipeline_load_weight1_matrix_inner_loop15, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop16_fu_28226">network_top_Pipeline_load_weight1_matrix_inner_loop16, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop17_fu_28390">network_top_Pipeline_load_weight1_matrix_inner_loop17, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop18_fu_28554">network_top_Pipeline_load_weight1_matrix_inner_loop18, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop19_fu_28718">network_top_Pipeline_load_weight1_matrix_inner_loop19, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop20_fu_28882">network_top_Pipeline_load_weight1_matrix_inner_loop20, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop21_fu_29046">network_top_Pipeline_load_weight1_matrix_inner_loop21, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop22_fu_29210">network_top_Pipeline_load_weight1_matrix_inner_loop22, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop23_fu_29374">network_top_Pipeline_load_weight1_matrix_inner_loop23, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop24_fu_29538">network_top_Pipeline_load_weight1_matrix_inner_loop24, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop25_fu_29702">network_top_Pipeline_load_weight1_matrix_inner_loop25, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop26_fu_29866">network_top_Pipeline_load_weight1_matrix_inner_loop26, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop27_fu_30030">network_top_Pipeline_load_weight1_matrix_inner_loop27, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop28_fu_30194">network_top_Pipeline_load_weight1_matrix_inner_loop28, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop29_fu_30358">network_top_Pipeline_load_weight1_matrix_inner_loop29, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop30_fu_30522">network_top_Pipeline_load_weight1_matrix_inner_loop30, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop31_fu_30686">network_top_Pipeline_load_weight1_matrix_inner_loop31, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop32_fu_30850">network_top_Pipeline_load_weight1_matrix_inner_loop32, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop33_fu_31014">network_top_Pipeline_load_weight1_matrix_inner_loop33, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop34_fu_31178">network_top_Pipeline_load_weight1_matrix_inner_loop34, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop35_fu_31342">network_top_Pipeline_load_weight1_matrix_inner_loop35, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop36_fu_31506">network_top_Pipeline_load_weight1_matrix_inner_loop36, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop37_fu_31670">network_top_Pipeline_load_weight1_matrix_inner_loop37, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop38_fu_31834">network_top_Pipeline_load_weight1_matrix_inner_loop38, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight1_matrix_inner_loop39_fu_31998">network_top_Pipeline_load_weight1_matrix_inner_loop39, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop_fu_32162">network_top_Pipeline_load_weight2_matrix_inner_loop, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop40_fu_32326">network_top_Pipeline_load_weight2_matrix_inner_loop40, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop41_fu_32490">network_top_Pipeline_load_weight2_matrix_inner_loop41, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop42_fu_32654">network_top_Pipeline_load_weight2_matrix_inner_loop42, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop43_fu_32818">network_top_Pipeline_load_weight2_matrix_inner_loop43, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop44_fu_32982">network_top_Pipeline_load_weight2_matrix_inner_loop44, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop45_fu_33146">network_top_Pipeline_load_weight2_matrix_inner_loop45, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop46_fu_33310">network_top_Pipeline_load_weight2_matrix_inner_loop46, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop47_fu_33474">network_top_Pipeline_load_weight2_matrix_inner_loop47, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop48_fu_33638">network_top_Pipeline_load_weight2_matrix_inner_loop48, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop49_fu_33802">network_top_Pipeline_load_weight2_matrix_inner_loop49, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop50_fu_33966">network_top_Pipeline_load_weight2_matrix_inner_loop50, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop51_fu_34130">network_top_Pipeline_load_weight2_matrix_inner_loop51, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop52_fu_34294">network_top_Pipeline_load_weight2_matrix_inner_loop52, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop53_fu_34458">network_top_Pipeline_load_weight2_matrix_inner_loop53, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop54_fu_34622">network_top_Pipeline_load_weight2_matrix_inner_loop54, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop55_fu_34786">network_top_Pipeline_load_weight2_matrix_inner_loop55, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop56_fu_34950">network_top_Pipeline_load_weight2_matrix_inner_loop56, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop57_fu_35114">network_top_Pipeline_load_weight2_matrix_inner_loop57, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop58_fu_35278">network_top_Pipeline_load_weight2_matrix_inner_loop58, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop59_fu_35442">network_top_Pipeline_load_weight2_matrix_inner_loop59, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop60_fu_35606">network_top_Pipeline_load_weight2_matrix_inner_loop60, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop61_fu_35770">network_top_Pipeline_load_weight2_matrix_inner_loop61, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop62_fu_35934">network_top_Pipeline_load_weight2_matrix_inner_loop62, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop63_fu_36098">network_top_Pipeline_load_weight2_matrix_inner_loop63, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop64_fu_36262">network_top_Pipeline_load_weight2_matrix_inner_loop64, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop65_fu_36426">network_top_Pipeline_load_weight2_matrix_inner_loop65, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop66_fu_36590">network_top_Pipeline_load_weight2_matrix_inner_loop66, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop67_fu_36754">network_top_Pipeline_load_weight2_matrix_inner_loop67, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop68_fu_36918">network_top_Pipeline_load_weight2_matrix_inner_loop68, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop69_fu_37082">network_top_Pipeline_load_weight2_matrix_inner_loop69, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop70_fu_37246">network_top_Pipeline_load_weight2_matrix_inner_loop70, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop71_fu_37410">network_top_Pipeline_load_weight2_matrix_inner_loop71, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop72_fu_37574">network_top_Pipeline_load_weight2_matrix_inner_loop72, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop73_fu_37738">network_top_Pipeline_load_weight2_matrix_inner_loop73, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop74_fu_37902">network_top_Pipeline_load_weight2_matrix_inner_loop74, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop75_fu_38066">network_top_Pipeline_load_weight2_matrix_inner_loop75, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop76_fu_38230">network_top_Pipeline_load_weight2_matrix_inner_loop76, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop77_fu_38394">network_top_Pipeline_load_weight2_matrix_inner_loop77, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight2_matrix_inner_loop78_fu_38558">network_top_Pipeline_load_weight2_matrix_inner_loop78, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop_fu_38722">network_top_Pipeline_load_weight3_matrix_inner_loop, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop79_fu_38886">network_top_Pipeline_load_weight3_matrix_inner_loop79, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop80_fu_39050">network_top_Pipeline_load_weight3_matrix_inner_loop80, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop81_fu_39214">network_top_Pipeline_load_weight3_matrix_inner_loop81, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop82_fu_39378">network_top_Pipeline_load_weight3_matrix_inner_loop82, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop83_fu_39542">network_top_Pipeline_load_weight3_matrix_inner_loop83, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop84_fu_39706">network_top_Pipeline_load_weight3_matrix_inner_loop84, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop85_fu_39870">network_top_Pipeline_load_weight3_matrix_inner_loop85, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop86_fu_40034">network_top_Pipeline_load_weight3_matrix_inner_loop86, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop87_fu_40198">network_top_Pipeline_load_weight3_matrix_inner_loop87, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop88_fu_40362">network_top_Pipeline_load_weight3_matrix_inner_loop88, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop89_fu_40526">network_top_Pipeline_load_weight3_matrix_inner_loop89, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop90_fu_40690">network_top_Pipeline_load_weight3_matrix_inner_loop90, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop91_fu_40854">network_top_Pipeline_load_weight3_matrix_inner_loop91, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop92_fu_41018">network_top_Pipeline_load_weight3_matrix_inner_loop92, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop93_fu_41182">network_top_Pipeline_load_weight3_matrix_inner_loop93, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop94_fu_41346">network_top_Pipeline_load_weight3_matrix_inner_loop94, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop95_fu_41510">network_top_Pipeline_load_weight3_matrix_inner_loop95, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop96_fu_41674">network_top_Pipeline_load_weight3_matrix_inner_loop96, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop97_fu_41838">network_top_Pipeline_load_weight3_matrix_inner_loop97, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop98_fu_42002">network_top_Pipeline_load_weight3_matrix_inner_loop98, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop99_fu_42166">network_top_Pipeline_load_weight3_matrix_inner_loop99, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop100_fu_42330">network_top_Pipeline_load_weight3_matrix_inner_loop100, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop101_fu_42494">network_top_Pipeline_load_weight3_matrix_inner_loop101, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop102_fu_42658">network_top_Pipeline_load_weight3_matrix_inner_loop102, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop103_fu_42822">network_top_Pipeline_load_weight3_matrix_inner_loop103, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop104_fu_42986">network_top_Pipeline_load_weight3_matrix_inner_loop104, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop105_fu_43150">network_top_Pipeline_load_weight3_matrix_inner_loop105, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop106_fu_43314">network_top_Pipeline_load_weight3_matrix_inner_loop106, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop107_fu_43478">network_top_Pipeline_load_weight3_matrix_inner_loop107, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop108_fu_43642">network_top_Pipeline_load_weight3_matrix_inner_loop108, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop109_fu_43806">network_top_Pipeline_load_weight3_matrix_inner_loop109, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop110_fu_43970">network_top_Pipeline_load_weight3_matrix_inner_loop110, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop111_fu_44134">network_top_Pipeline_load_weight3_matrix_inner_loop111, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop112_fu_44298">network_top_Pipeline_load_weight3_matrix_inner_loop112, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop113_fu_44462">network_top_Pipeline_load_weight3_matrix_inner_loop113, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop114_fu_44626">network_top_Pipeline_load_weight3_matrix_inner_loop114, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop115_fu_44790">network_top_Pipeline_load_weight3_matrix_inner_loop115, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop116_fu_44954">network_top_Pipeline_load_weight3_matrix_inner_loop116, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_network_top_Pipeline_load_weight3_matrix_inner_loop117_fu_45118">network_top_Pipeline_load_weight3_matrix_inner_loop117, 82, 82, 28.700 us, 28.700 us, 82, 82, no</column>
+<column name="grp_LSTM_20ul_20ul_2ul_s_fu_45282">LSTM_20ul_20ul_2ul_s, 151, 151, 52.850 us, 52.850 us, 151, 151, no</column>
+<column name="grp_LSTM_20ul_20ul_2ul_3_fu_52126">LSTM_20ul_20ul_2ul_3, 252, 252, 88.200 us, 88.200 us, 252, 252, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

@@ -19,7 +19,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../testbench.cc ../../../matrix_test.cc
+HLS_SOURCES = ../../../testbench.cc ../../../testbench_routines.cc ../../../matrix_test.cc
 
 override TARGET := csim.exe
 
@@ -79,6 +79,12 @@ $(ObjDir)/testbench.o: ../../../testbench.cc $(ObjDir)/.dir
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/testbench.d
+
+$(ObjDir)/testbench_routines.o: ../../../testbench_routines.cc $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../testbench_routines.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/testbench_routines.d
 
 $(ObjDir)/matrix_test.o: ../../../matrix_test.cc $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../matrix_test.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)

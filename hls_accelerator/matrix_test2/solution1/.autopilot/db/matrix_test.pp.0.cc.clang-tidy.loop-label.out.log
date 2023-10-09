@@ -851,38 +851,33 @@
                                                                                                                                    ^~~
                                                                                                                                    VITIS_LOOP_258_1: 
 /share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56121:132: note: FIX-IT applied suggested code changes
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56197:1: warning: Added loop label VITIS_LOOP_41_1:   [xilinx-label-all-loops]
+/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56197:1: warning: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
 for(int j=0;j<(n_inputs+n_units);j++){
 ^~~
-VITIS_LOOP_41_1: 
+VITIS_LOOP_43_1: 
 /share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56197:1: note: FIX-IT applied suggested code changes
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56253:2: warning: Added loop label VITIS_LOOP_97_1:   [xilinx-label-all-loops]
+/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56253:2: warning: Added loop label VITIS_LOOP_99_1:   [xilinx-label-all-loops]
  for(int i=0;i<4*n_units;i++){
  ^~~
- VITIS_LOOP_97_1: 
+ VITIS_LOOP_99_1: 
 /share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56253:2: note: FIX-IT applied suggested code changes
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56257:2: warning: Added loop label VITIS_LOOP_101_2:   [xilinx-label-all-loops]
+/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56258:2: warning: Added loop label VITIS_LOOP_104_2:   [xilinx-label-all-loops]
  for(int k=0; k<n_units;k++)
  ^~~
- VITIS_LOOP_101_2: 
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56257:2: note: FIX-IT applied suggested code changes
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56324:18: warning: Added loop label VITIS_LOOP_171_1:   [xilinx-label-all-loops]
-                 for (int j=0;j<4*20;j++)
-                 ^~~
-                 VITIS_LOOP_171_1: 
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56324:18: note: FIX-IT applied suggested code changes
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56328:4: warning: Added loop label VITIS_LOOP_175_2:   [xilinx-label-all-loops]
-   for(int i=0;i<4*20;i++)
-   ^~~
-   VITIS_LOOP_175_2: 
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56328:4: note: FIX-IT applied suggested code changes
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56334:4: warning: Added loop label VITIS_LOOP_181_3:   [xilinx-label-all-loops]
-   for (int i=0;i<20;i++)
-   ^~~
-   VITIS_LOOP_181_3: 
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56334:4: note: FIX-IT applied suggested code changes
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56345:5: warning: Added loop label VITIS_LOOP_192_4:   [xilinx-label-all-loops]
-    for (int k=0;k<4*20;k++)
+ VITIS_LOOP_104_2: 
+/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56258:2: note: FIX-IT applied suggested code changes
+/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56359:9: warning: Added loop label VITIS_LOOP_197_1:   [xilinx-label-all-loops]
+        for (int r=0;r<(units[1]+units[2]);r++)
+        ^~~
+        VITIS_LOOP_197_1: 
+/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56359:9: note: FIX-IT applied suggested code changes
+/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56365:9: warning: Added loop label VITIS_LOOP_203_2:   [xilinx-label-all-loops]
+        for (int r=0;r<(units[2]+units[3]);r++)
+        ^~~
+        VITIS_LOOP_203_2: 
+/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56365:9: note: FIX-IT applied suggested code changes
+/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56397:5: warning: Added loop label VITIS_LOOP_235_3:   [xilinx-label-all-loops]
+    for (int k=0;k<4*(60 -40);k++)
     ^~~
-    VITIS_LOOP_192_4: 
-/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56345:5: note: FIX-IT applied suggested code changes
+    VITIS_LOOP_235_3: 
+/share/ss121/matrix_test2/solution1/.autopilot/db/matrix_test.pp.0.cc:56397:5: note: FIX-IT applied suggested code changes

@@ -1,11 +1,11 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5558" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:137:58" msg_body="unexpected pragma parameter 'storage_impl'">
-        <args ClangWarningOption="invalid-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5564" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:187:9" msg_body="Only 'for' loop or function body support the dataflow pragma">
+        <args ClangWarningOption="ignored-hls-attributes"/>
     </msg>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:92:13" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:93:13" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:94:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:55:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5564" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:240:9" msg_body="Only 'for' loop or function body support the dataflow pragma">
+        <args ClangWarningOption="ignored-hls-attributes"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:57:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/share/reconfig/xilinx_2023/Vitis_HLS/2023.1/common/technology/autopilot/utils/x_hls_utils.h:250:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
@@ -688,103 +688,223 @@
         <args ARG_PragmaFunction="operator&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dot_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=2 type=complete variable=A" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:39:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="dot_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=A" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:42:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:44:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="dot_product" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:55:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:57:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="matrix_top" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:56:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:58:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="matrix_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=A_t" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:57:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:59:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="matrix_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=2 type=complete variable=A_t" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:58:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:60:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="matrix_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=C_t" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:62:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:64:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="matrix_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:94:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="LSTM" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/share/ss121/matrix_test2/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/share/ss121/matrix_test2/solution1/csynth.tcl:20:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=network_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/share/ss121/matrix_test2/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=network_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:137:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="0" ARG_PragmaOptions="mode=bram port=params storage_impl=bram storage_type=rom_1p" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=myparams offset=slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:138:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:127:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:134:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=bram port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:139:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:135:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=bram port=inp" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:139:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=2 type=complete variable=weights1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=weights1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:142:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=2 type=complete variable=weights2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:143:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=2 type=complete variable=weights" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=weights2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:144:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=weights" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:145:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=2 type=complete variable=weights3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:147:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=2 type=complete variable=biases" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:146:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=weights3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:148:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=biases" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=2 type=complete variable=biases1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:151:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=hidden_state" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:150:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=biases1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:154:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:152:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=2 type=complete variable=biases2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:153:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=biases2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:155:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=2 type=complete variable=biases3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:156:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=biases3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:159:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=hidden_state1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:161:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=hidden_state2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=hidden_state3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:165:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=cell_state1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:167:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=cell_state2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:169:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=cell_state3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:172:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=inp_internal" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:176:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=output1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:178:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=output2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:187:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:192:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:182:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:198:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:193:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:204:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:130:0" msg_body="Unrolling loop 'VITIS_LOOP_192_4' (matrix_test2/matrix_test.cc:192:23) in function 'network_top' completely with a factor of 80">
-        <args Factor="80" LoopLoc="matrix_test2/matrix_test.cc:192:23" LoopName="VITIS_LOOP_192_4"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:213:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:130:0" msg_body="Unrolling loop 'VITIS_LOOP_181_3' (matrix_test2/matrix_test.cc:181:22) in function 'network_top' completely with a factor of 20">
-        <args Factor="20" LoopLoc="matrix_test2/matrix_test.cc:181:22" LoopName="VITIS_LOOP_181_3"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:130:0" msg_body="Unrolling loop 'VITIS_LOOP_175_2' (matrix_test2/matrix_test.cc:175:22) in function 'network_top' completely with a factor of 80">
-        <args Factor="80" LoopLoc="matrix_test2/matrix_test.cc:175:22" LoopName="VITIS_LOOP_175_2"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:54:0" msg_body="Unrolling loop 'generate_loop' (matrix_test2/matrix_test.cc:61:1) in function 'matrix_top&lt;40ul, 80ul, 20ul, 20ul, 10ul&gt;' completely with a factor of 10">
-        <args Factor="10" LoopLoc="matrix_test2/matrix_test.cc:61:1" LoopName="generate_loop"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:37:0" msg_body="Unrolling loop 'VITIS_LOOP_41_1' (matrix_test2/matrix_test.cc:41:18) in function 'dot_product&lt;20ul, 20ul&gt;' completely with a factor of 40">
-        <args Factor="40" LoopLoc="matrix_test2/matrix_test.cc:41:18" LoopName="VITIS_LOOP_41_1"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:236:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:88:0" msg_body="Inlining function 'hyper_tan(ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;)' into 'void LSTM&lt;20ul, 20ul, 10ul&gt;(ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*, ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*, ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [(4) * (20ul)], ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [4], ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*)'">
-        <args Callee="hyper_tan(ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;)" Callee-DebugLoc="File matrix_test2/matrix_test.cc Line 21 Column 0" Caller="void LSTM&lt;20ul, 20ul, 10ul&gt;(ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*, ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*, ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [(4) * (20ul)], ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [4], ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*)" Caller-DebugLoc="File matrix_test2/matrix_test.cc Line 88 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:240:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="network_top" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:163:0" msg_body="Applying array_partition to '_ZZ11network_topP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES3_S3_6ap_intILi32EES5_E6output': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES3_S3_6ap_intILi32EES5_E6output"/>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-386" msg_severity="WARNING" msg_loc="matrix_test2/matrix_test.cc:125:0" msg_body="A depth specification is required for MAXI interface port 'myparams' for cosimulation.">
+        <args Name="myparams"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:142:0" msg_body="Applying array_partition to '_ZZ11network_topP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES3_S3_6ap_intILi32EES5_E7weights': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
-        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ11network_topP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES3_S3_6ap_intILi32EES5_E7weights"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:125:0" msg_body="Unrolling loop 'VITIS_LOOP_235_3' (matrix_test2/matrix_test.cc:235:23) in function 'network_top' completely with a factor of 80">
+        <args Factor="80" LoopLoc="matrix_test2/matrix_test.cc:235:23" LoopName="VITIS_LOOP_235_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:153:0" msg_body="Applying array_partition to '_ZZ11network_topP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES3_S3_6ap_intILi32EES5_E12inp_internal': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES3_S3_6ap_intILi32EES5_E12inp_internal"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:125:0" msg_body="Unrolling loop 'load_input_matrix' (matrix_test2/matrix_test.cc:226:20) in function 'network_top' completely with a factor of 20">
+        <args Factor="20" LoopLoc="matrix_test2/matrix_test.cc:226:20" LoopName="load_input_matrix"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:150:0" msg_body="Applying array_partition to '_ZZ11network_topP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES3_S3_6ap_intILi32EES5_E12hidden_state': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES3_S3_6ap_intILi32EES5_E12hidden_state"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:125:0" msg_body="Unrolling loop 'load_biases3_matrix' (matrix_test2/matrix_test.cc:220:22) in function 'network_top' completely with a factor of 80">
+        <args Factor="80" LoopLoc="matrix_test2/matrix_test.cc:220:22" LoopName="load_biases3_matrix"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:146:0" msg_body="Applying array_partition to '_ZZ11network_topP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES3_S3_6ap_intILi32EES5_E6biases': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
-        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ11network_topP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES3_S3_6ap_intILi32EES5_E6biases"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:125:0" msg_body="Unrolling loop 'load_biases2_matrix' (matrix_test2/matrix_test.cc:216:22) in function 'network_top' completely with a factor of 80">
+        <args Factor="80" LoopLoc="matrix_test2/matrix_test.cc:216:22" LoopName="load_biases2_matrix"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:125:0" msg_body="Unrolling loop 'load_biases1_matrix' (matrix_test2/matrix_test.cc:212:22) in function 'network_top' completely with a factor of 80">
+        <args Factor="80" LoopLoc="matrix_test2/matrix_test.cc:212:22" LoopName="load_biases1_matrix"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:125:0" msg_body="Unrolling loop 'VITIS_LOOP_203_2' (matrix_test2/matrix_test.cc:203:27) in function 'network_top' completely with a factor of 40">
+        <args Factor="40" LoopLoc="matrix_test2/matrix_test.cc:203:27" LoopName="VITIS_LOOP_203_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:125:0" msg_body="Unrolling loop 'VITIS_LOOP_197_1' (matrix_test2/matrix_test.cc:197:27) in function 'network_top' completely with a factor of 40">
+        <args Factor="40" LoopLoc="matrix_test2/matrix_test.cc:197:27" LoopName="VITIS_LOOP_197_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:125:0" msg_body="Unrolling loop 'load_weight_matrix_outer_loop' (matrix_test2/matrix_test.cc:191:9) in function 'network_top' completely with a factor of 40">
+        <args Factor="40" LoopLoc="matrix_test2/matrix_test.cc:191:9" LoopName="load_weight_matrix_outer_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:56:0" msg_body="Unrolling loop 'generate_loop' (matrix_test2/matrix_test.cc:63:1) in function 'matrix_top&lt;40ul, 80ul, 20ul, 20ul, 2ul&gt;' completely with a factor of 2">
+        <args Factor="2" LoopLoc="matrix_test2/matrix_test.cc:63:1" LoopName="generate_loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:37:0" msg_body="Unrolling loop 'VITIS_LOOP_43_1' (matrix_test2/matrix_test.cc:43:18) in function 'dot_product&lt;20ul, 20ul&gt;' completely with a factor of 40">
+        <args Factor="40" LoopLoc="matrix_test2/matrix_test.cc:43:18" LoopName="VITIS_LOOP_43_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:90:0" msg_body="Inlining function 'hyper_tan(ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;) (.21)' into 'void LSTM&lt;20ul, 20ul, 2ul&gt;(ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*, ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*, ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*, ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [(4) * (20ul)], ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [4], ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*)'">
+        <args Callee="hyper_tan(ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;) (.21)" Callee-DebugLoc="File matrix_test2/matrix_test.cc Line 21 Column 0" Caller="void LSTM&lt;20ul, 20ul, 2ul&gt;(ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*, ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*, ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*, ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [(4) * (20ul)], ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [4], ap_ufixed&lt;22, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;*)" Caller-DebugLoc="File matrix_test2/matrix_test.cc Line 90 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:179:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7output3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7output3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:144:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E8weights3': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E8weights3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:177:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7output2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7output2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:141:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E8weights2': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E8weights2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:175:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7output1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7output1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:138:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E8weights1': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E8weights1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:171:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E12inp_internal': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E12inp_internal"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:168:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E11cell_state3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E11cell_state3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:166:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E11cell_state2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E11cell_state2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:164:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E11cell_state1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E11cell_state1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:162:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E13hidden_state3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E13hidden_state3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:160:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E13hidden_state2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E13hidden_state2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:158:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E13hidden_state1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E13hidden_state1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:154:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7biases3': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7biases3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:151:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7biases2': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7biases2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrix_test2/matrix_test.cc:148:0" msg_body="Applying array_partition to '_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7biases1': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ11network_topP13params_structP9ap_ufixedILi22ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7biases1"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

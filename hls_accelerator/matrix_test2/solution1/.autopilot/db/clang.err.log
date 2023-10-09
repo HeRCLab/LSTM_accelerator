@@ -1,4 +1,7 @@
-matrix_test2/matrix_test.cc:137:58: warning: unexpected pragma parameter 'storage_impl' [-Winvalid-hls-pragmas]
-#pragma HLS INTERFACE mode=bram port=params storage_impl=bram storage_type=rom_1p
-                                                         ^
-1 warning generated.
+matrix_test2/matrix_test.cc:187:9: warning: Only 'for' loop or function body support the dataflow pragma [-Wignored-hls-attributes]
+#pragma HLS DATAFLOW
+        ^~~~~~~~~~~~
+matrix_test2/matrix_test.cc:240:9: warning: Only 'for' loop or function body support the dataflow pragma [-Wignored-hls-attributes]
+#pragma HLS DATAFLOW
+        ^~~~~~~~~~~~
+2 warnings generated.
