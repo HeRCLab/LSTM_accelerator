@@ -1,0 +1,3388 @@
+--- !Failure
+Pass:            generate-ir-wrapper
+Name:            MAXIDepthUnspecified
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'A depth specification is required for MAXI interface port '''
+  - Name:            myparams
+  - String:          ''' for cosimulation.'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_257_3
+  - String:          ''' ('
+  - LoopLoc:         'matrix_test2/matrix_test.cc:257:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          network_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '80'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        load_input_matrix
+  - String:          ''' ('
+  - LoopLoc:         'matrix_test2/matrix_test.cc:248:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          network_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '20'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        load_biases3_matrix
+  - String:          ''' ('
+  - LoopLoc:         'matrix_test2/matrix_test.cc:242:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          network_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '80'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        load_biases2_matrix
+  - String:          ''' ('
+  - LoopLoc:         'matrix_test2/matrix_test.cc:238:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          network_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '80'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        load_biases1_matrix
+  - String:          ''' ('
+  - LoopLoc:         'matrix_test2/matrix_test.cc:230:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          network_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '80'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_221_2
+  - String:          ''' ('
+  - LoopLoc:         'matrix_test2/matrix_test.cc:221:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          network_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '40'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_215_1
+  - String:          ''' ('
+  - LoopLoc:         'matrix_test2/matrix_test.cc:215:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          network_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '40'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        load_weight_matrix_outer_loop
+  - String:          ''' ('
+  - LoopLoc:         'matrix_test2/matrix_test.cc:209:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          network_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '40'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 60, Column: 0 }
+Function:        _Z10matrix_topILm40ELm80ELm20ELm20ELm2EEvPAT0__8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS3_S6_S6_.27.34.56.76
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        generate_loop
+  - String:          ''' ('
+  - LoopLoc:         'matrix_test2/matrix_test.cc:67:1'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'matrix_top<40ul, 80ul, 20ul, 20ul, 2ul>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 41, Column: 0 }
+Function:        _Z11dot_productILm20ELm20EE8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EEPAmlLi4ET0__S3_7ap_uintILi32EEPS3_S8_.37.59.79
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_1
+  - String:          ''' ('
+  - LoopLoc:         'matrix_test2/matrix_test.cc:47:18'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'dot_product<20ul, 20ul>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '40'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 96, Column: 0 }
+Function:        _Z4LSTMILm20ELm20ELm2EEvP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_S4_PAmlLi4ET0__S3_PA4_S3_S4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hyper_tan(ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 23, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void LSTM<20ul, 20ul, 2ul>(ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [(4) * (20ul)], ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [4], ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 96, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 197, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7output3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 162, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E8weights3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 195, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7output2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 159, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E8weights2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 193, Column: 0 }
+Function:        _Z4LSTMILm20ELm20ELm2EEvP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_S4_PAmlLi4ET0__S3_PA4_S3_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7output1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 156, Column: 0 }
+Function:        _Z4LSTMILm20ELm20ELm2EEvP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_S4_PAmlLi4ET0__S3_PA4_S3_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E8weights1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 189, Column: 0 }
+Function:        _Z4LSTMILm20ELm20ELm2EEvP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_S4_PAmlLi4ET0__S3_PA4_S3_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E12inp_internal
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 186, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E11cell_state3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 184, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E11cell_state2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 182, Column: 0 }
+Function:        _Z4LSTMILm20ELm20ELm2EEvP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_S4_PAmlLi4ET0__S3_PA4_S3_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E11cell_state1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 180, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E13hidden_state3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 178, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E13hidden_state2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 176, Column: 0 }
+Function:        _Z4LSTMILm20ELm20ELm2EEvP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_S4_PAmlLi4ET0__S3_PA4_S3_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E13hidden_state1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 172, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7biases3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 169, Column: 0 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7biases2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 166, Column: 0 }
+Function:        _Z4LSTMILm20ELm20ELm2EEvP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_S4_PAmlLi4ET0__S3_PA4_S3_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_E7biases1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.11
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.1.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.2.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.3.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.4.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.5.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.6.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.7.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.8.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.9.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.10.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.11.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.12.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.13.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.14.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.15.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.16.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.17.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.18.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.19.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.20.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.21.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.22.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.23.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.24.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.25.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.26.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.27.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.28.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.29.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.30.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.31.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.32.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.33.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.34.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.35.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.36.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.37.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.38.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 213, Column: 37 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.39.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight1_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:211:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.load.11
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.1.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.2.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.3.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.4.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.5.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.6.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.7.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.8.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.9.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.10.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.11.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.12.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.13.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.14.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.15.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.16.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.17.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.18.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.19.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.20.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.21.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.22.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.23.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.24.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.25.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.26.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.27.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.28.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.29.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.30.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.31.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.32.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.33.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.34.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.35.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.36.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.37.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.38.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 219, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc238.39.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight2_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:217:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.load.11
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.1.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.2.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.3.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.4.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.5.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.6.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.7.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.8.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.9.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.10.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.11.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.12.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.13.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.14.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.15.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.16.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.17.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.18.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.19.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.20.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.21.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.22.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.23.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.24.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.25.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.26.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.27.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.28.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.29.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.30.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.31.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.32.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.33.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.34.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.35.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.36.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.37.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.38.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+Function:        _Z11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0ELi0EES5_6ap_intILi32EES7_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 225, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc279.39.load.12
+  - ArrayName:       myparams
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_weight3_matrix_inner_loop
+  - String:          ' '
+  - LoopLoc:         'matrix_test2/matrix_test.cc:223:33'
+  - String:          ' '
+  - Function:        'network_top(params_struct*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_fixed<22, 17, (ap_q_mode)0, (ap_o_mode)0, 0>*, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: matrix_test2/matrix_test.cc, Line: 143, Column: 0 }
+  - String:          ' '
+...

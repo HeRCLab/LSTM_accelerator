@@ -1,0 +1,35 @@
+<design_size title="Design Size Report">
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="6" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Performance/Pipeline" col5="Optimizations"/>
+            <rows>
+                <row id="0" col0="network_top" col1="matrix_test.cc:143" col2="36471" col3="58110" col4="60519" col5="62526">
+                    <row id="2" col0="LSTM&lt;20, 20, 2&gt;" col1="matrix_test.cc:96" col2="35643" col2_disp="35,643 (3 calls)" col3="54858" col3_disp="54,858 (3 calls)" col4="37841" col4_disp="37,841 (3 calls)" col5="38037" col5_disp="38,037 (3 calls)">
+                        <row id="1" col0="matrix_top&lt;40, 80, 20, 20, 2&gt;" col1="matrix_test.cc:60" col2="5463" col2_disp=" 5,463 (3 calls)" col3="50640" col3_disp="50,640 (3 calls)" col4="32754" col4_disp="32,754 (3 calls)" col5="32775" col5_disp="32,775 (3 calls)">
+                            <row id="4" col0="dot_product&lt;20, 20&gt;" col1="matrix_test.cc:41" col2="5301" col2_disp=" 5,301 (3 calls)" col3="50526" col3_disp="50,526 (6 calls)" col4="32172" col4_disp="32,172 (6 calls)" col5="32172" col5_disp="32,172 (6 calls)"/>
+                        </row>
+                        <row id="3" col0="sigm" col1="matrix_test.cc:5" col2="17856" col2_disp="17,856 (9 calls)" col3="2484" col3_disp=" 2,484 (9 calls)" col4="351" col4_disp="   351 (9 calls)" col5="351" col5_disp="   351 (9 calls)"/>
+                        <row id="5" col0="hyper_tan" col1="matrix_test.cc:23" col2="6768" col2_disp=" 6,768 (6 calls)" col3="534" col3_disp="   534 (6 calls)" col4="" col5=""/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Description of Compilation Phases">
+        <table>
+            <keys size="2">Compilation Phase, Description</keys>
+            <column name="Compile/Link">All functions are compiled and linked into a single design</column>
+            <column name="Unroll/Inline">After user unroll and inline pragmas are applied</column>
+            <column name="Performance/Pipeline">After performance and pipeline pragmas are applied</column>
+            <column name="Optimizations">After high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+
