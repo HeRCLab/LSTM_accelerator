@@ -1,0 +1,270 @@
+
+
+================================================================
+== Vitis HLS Report for 'network_top_Pipeline_load_weight3_matrix_inner_loop38'
+================================================================
+* Date:           Sat Oct 28 11:46:01 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        hardware_accelerator
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  20.00 ns|  14.600 ns|     5.40 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       42|       42|  0.840 us|  0.840 us|   42|   42|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name            |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- load_weight3_matrix_inner_loop  |       40|       40|        10|          1|          1|    32|       yes|
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     111|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      54|    -|
+|Register         |        -|     -|     158|      32|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     158|     197|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln256_fu_232_p2        |         +|   0|  0|  13|           6|           1|
+    |add_ln258_8_fu_284_p2      |         +|   0|  0|  71|          64|          64|
+    |icmp_ln256_fu_226_p2       |      icmp|   0|  0|  14|           6|           7|
+    |ap_block_pp0_stage0_11001  |        or|   0|  0|   2|           1|           1|
+    |or_ln258_fu_266_p2         |        or|   0|  0|   9|           9|           7|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0| 111|          87|          82|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_c_8     |   9|          2|    6|         12|
+    |c_fu_196                 |   9|          2|    6|         12|
+    |gmem_blk_n_AR            |   9|          2|    1|          2|
+    |gmem_blk_n_R             |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|   16|         32|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter7_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter8_reg  |   1|   0|    1|          0|
+    |c_fu_196                          |   6|   0|    6|          0|
+    |gmem_addr_reg_526                 |  64|   0|   64|          0|
+    |trunc_ln256_reg_522               |   5|   0|    5|          0|
+    |trunc_ln256_reg_522               |  64|  32|    5|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 158|  32|   99|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------------------------------------------------------------------+-----+-----+------------+--------------------------------------------------------------------------------------+--------------+
+|                                          RTL Ports                                          | Dir | Bits|  Protocol  |                                     Source Object                                    |    C Type    |
++---------------------------------------------------------------------------------------------+-----+-----+------------+--------------------------------------------------------------------------------------+--------------+
+|ap_clk                                                                                       |   in|    1|  ap_ctrl_hs|                                 network_top_Pipeline_load_weight3_matrix_inner_loop38|  return value|
+|ap_rst                                                                                       |   in|    1|  ap_ctrl_hs|                                 network_top_Pipeline_load_weight3_matrix_inner_loop38|  return value|
+|ap_start                                                                                     |   in|    1|  ap_ctrl_hs|                                 network_top_Pipeline_load_weight3_matrix_inner_loop38|  return value|
+|ap_done                                                                                      |  out|    1|  ap_ctrl_hs|                                 network_top_Pipeline_load_weight3_matrix_inner_loop38|  return value|
+|ap_idle                                                                                      |  out|    1|  ap_ctrl_hs|                                 network_top_Pipeline_load_weight3_matrix_inner_loop38|  return value|
+|ap_ready                                                                                     |  out|    1|  ap_ctrl_hs|                                 network_top_Pipeline_load_weight3_matrix_inner_loop38|  return value|
+|m_axi_gmem_AWVALID                                                                           |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWREADY                                                                           |   in|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWADDR                                                                            |  out|   64|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWID                                                                              |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWLEN                                                                             |  out|   32|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWSIZE                                                                            |  out|    3|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWBURST                                                                           |  out|    2|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWLOCK                                                                            |  out|    2|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWCACHE                                                                           |  out|    4|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWPROT                                                                            |  out|    3|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWQOS                                                                             |  out|    4|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWREGION                                                                          |  out|    4|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_AWUSER                                                                            |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_WVALID                                                                            |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_WREADY                                                                            |   in|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_WDATA                                                                             |  out|   16|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_WSTRB                                                                             |  out|    2|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_WLAST                                                                             |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_WID                                                                               |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_WUSER                                                                             |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARVALID                                                                           |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARREADY                                                                           |   in|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARADDR                                                                            |  out|   64|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARID                                                                              |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARLEN                                                                             |  out|   32|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARSIZE                                                                            |  out|    3|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARBURST                                                                           |  out|    2|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARLOCK                                                                            |  out|    2|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARCACHE                                                                           |  out|    4|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARPROT                                                                            |  out|    3|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARQOS                                                                             |  out|    4|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARREGION                                                                          |  out|    4|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_ARUSER                                                                            |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_RVALID                                                                            |   in|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_RREADY                                                                            |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_RDATA                                                                             |   in|   16|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_RLAST                                                                             |   in|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_RID                                                                               |   in|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_RFIFONUM                                                                          |   in|   10|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_RUSER                                                                             |   in|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_RRESP                                                                             |   in|    2|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_BVALID                                                                            |   in|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_BREADY                                                                            |  out|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_BRESP                                                                             |   in|    2|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_BID                                                                               |   in|    1|       m_axi|                                                                                  gmem|       pointer|
+|m_axi_gmem_BUSER                                                                             |   in|    1|       m_axi|                                                                                  gmem|       pointer|
+|add_ln258                                                                                    |   in|   64|     ap_none|                                                                             add_ln258|        scalar|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_63         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_63|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_63_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_63|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_62         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_62|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_62_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_62|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_51         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_51|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_51_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_51|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_40         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_40|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_40_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_40|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_37         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_37|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_37_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_37|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_36         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_36|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_36_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_36|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_35         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_35|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_35_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_35|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_34         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_34|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_34_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_34|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_33         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_33|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_33_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_33|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_32         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_32|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_32_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_32|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_61         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_61|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_61_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_61|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_60         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_60|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_60_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_60|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_59         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_59|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_59_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_59|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_58         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_58|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_58_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_58|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_57         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_57|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_57_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_57|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_56         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_56|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_56_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_56|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_55         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_55|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_55_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_55|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_54         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_54|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_54_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_54|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_53         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_53|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_53_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_53|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_52         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_52|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_52_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_52|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_50         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_50|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_50_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_50|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_49         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_49|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_49_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_49|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_48         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_48|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_48_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_48|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_47         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_47|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_47_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_47|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_46         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_46|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_46_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_46|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_45         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_45|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_45_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_45|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_44         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_44|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_44_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_44|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_43         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_43|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_43_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_43|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_42         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_42|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_42_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_42|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_41         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_41|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_41_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_41|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_39         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_39|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_39_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_39|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_38         |  out|   12|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_38|       pointer|
+|p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_38_ap_vld  |  out|    1|      ap_vld|  p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_38|       pointer|
++---------------------------------------------------------------------------------------------+-----+-----+------------+--------------------------------------------------------------------------------------+--------------+
+

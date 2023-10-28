@@ -1187,8 +1187,8 @@ void apatb_network_top_hw(void* __xlx_apatb_param_myparams, void* __xlx_apatb_pa
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 16,
+    .asize = 2,
     .hbm = false,
     .name = { "gmem" },
 #ifdef POST_CHECK
@@ -1202,7 +1202,7 @@ void apatb_network_top_hw(void* __xlx_apatb_param_myparams, void* __xlx_apatb_pa
 #endif
   };
   port3.param = { __xlx_apatb_param_myparams };
-  port3.nbytes = { 0 };
+  port3.nbytes = { 835584 };
   port3.offset = {  };
   port3.hasWrite = { false };
 
@@ -1211,8 +1211,8 @@ void apatb_network_top_hw(void* __xlx_apatb_param_myparams, void* __xlx_apatb_pa
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port4 {
 #endif
-    .width = 22,
-    .asize = 4,
+    .width = 12,
+    .asize = 2,
     .hbm = false,
     .name = { "inp" },
 #ifdef POST_CHECK
@@ -1226,7 +1226,7 @@ void apatb_network_top_hw(void* __xlx_apatb_param_myparams, void* __xlx_apatb_pa
 #endif
   };
   port4.param = { __xlx_apatb_param_inp };
-  port4.nbytes = { 80 };
+  port4.nbytes = { 16 };
   port4.offset = {  };
   port4.hasWrite = { false };
 
@@ -1235,8 +1235,8 @@ void apatb_network_top_hw(void* __xlx_apatb_param_myparams, void* __xlx_apatb_pa
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port5 {
 #endif
-    .width = 22,
-    .asize = 4,
+    .width = 12,
+    .asize = 2,
     .hbm = false,
     .name = { "out_r" },
 #ifdef POST_CHECK
@@ -1259,7 +1259,7 @@ void apatb_network_top_hw(void* __xlx_apatb_param_myparams, void* __xlx_apatb_pa
 #endif
   };
   port5.param = { __xlx_apatb_param_out_r };
-  port5.nbytes = { 320 };
+  port5.nbytes = { 64 };
   port5.offset = {  };
   port5.hasWrite = { true };
 

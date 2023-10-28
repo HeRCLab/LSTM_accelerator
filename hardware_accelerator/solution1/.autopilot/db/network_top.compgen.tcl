@@ -22,6 +22,22 @@ myparams {
 	offset 16
 	offset_end 27
 }
+init_params { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 28
+	offset_end 35
+}
+store_result { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 36
+	offset_end 43
+}
 ap_start { }
 ap_done { }
 ap_ready { }
@@ -36,7 +52,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 43927 \
+			id 12547 \
 			corename network_top_control_axilite \
 			name network_top_control_s_axi \
 			ports {$port_control} \
@@ -54,36 +70,6 @@ if {${::AESL::PGuard_simmodel_gen}} {
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler network_top_control_s_axi BINDTYPE interface TYPE interface_s_axilite
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 43929 \
-    name init_params \
-    type other \
-    dir I \
-    reset_level 0 \
-    sync_rst true \
-    corename dc_init_params \
-    op interface \
-    ports { init_params { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 43930 \
-    name store_result \
-    type other \
-    dir I \
-    reset_level 0 \
-    sync_rst true \
-    corename dc_store_result \
-    op interface \
-    ports { store_result { I 32 vector } } \
-} "
 }
 
 

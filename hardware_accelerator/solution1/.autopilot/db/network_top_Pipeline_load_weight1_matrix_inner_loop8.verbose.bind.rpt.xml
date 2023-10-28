@@ -1,10 +1,10 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'network_top_Pipeline_load_weight1_matrix_inner_loop8'" level="0">
-<item name = "Date">Wed Oct 18 18:15:44 2023
+<item name = "Date">Sat Oct 28 11:44:41 2023
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
-<item name = "Project">matrix_test2</item>
+<item name = "Project">hardware_accelerator</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
 <item name = "Target device">xczu7ev-ffvc1156-2-e</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">0.35 us, 0.256 us, 94.50 ns</column>
+<column name="ap_clk">20.00 ns, 14.600 ns, 5.40 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">90, 90, 31.500 us, 31.500 us, 90, 90, no</column>
+<column name="">42, 42, 0.840 us, 0.840 us, 42, 42, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- load_weight1_matrix_inner_loop">88, 88, 10, 1, 1, 80, yes</column>
+<column name="- load_weight1_matrix_inner_loop">40, 40, 10, 1, 1, 32, yes</column>
 </table>
 </item>
 </section>

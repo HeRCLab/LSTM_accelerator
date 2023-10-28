@@ -1,0 +1,228 @@
+
+
+================================================================
+== Vitis HLS Report for 'network_top_Pipeline_load_biases3_matrix'
+================================================================
+* Date:           Sat Oct 28 11:44:59 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        hardware_accelerator
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  20.00 ns|  14.600 ns|     5.40 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       34|       34|  0.680 us|  0.680 us|   34|   34|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                       |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name       |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- load_biases3_matrix  |       32|       32|         2|          1|          1|    32|       yes|
+        +-----------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.20>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln277_read = read i63 @_ssdm_op_Read.ap_auto.i63, i63 %sext_ln277"   --->   Operation 6 'read' 'sext_ln277_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln277_cast = sext i63 %sext_ln277_read"   --->   Operation 7 'sext' 'sext_ln277_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem, void @empty_6, i32 0, i32 0, void @empty_12, i32 0, i32 256, void @empty_0, void @empty_2, void @empty_12, i32 16, i32 16, i32 16, i32 16, void @empty_12, void @empty_12, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.42ns)   --->   "%store_ln0 = store i6 0, i6 %i"   --->   Operation 9 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc329"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i_1 = load i6 %i"   --->   Operation 11 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %gmem"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i16 %gmem, i64 %sext_ln277_cast" [hardware_accelerator/src/LSTM_accelerator.cc:277]   --->   Operation 13 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 14 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.78ns)   --->   "%icmp_ln277 = icmp_eq  i6 %i_1, i6 32" [hardware_accelerator/src/LSTM_accelerator.cc:277]   --->   Operation 15 'icmp' 'icmp_ln277' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.78ns)   --->   "%add_ln277 = add i6 %i_1, i6 1" [hardware_accelerator/src/LSTM_accelerator.cc:277]   --->   Operation 16 'add' 'add_ln277' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln277 = br i1 %icmp_ln277, void %for.inc329.split, void %for.inc341.exitStub" [hardware_accelerator/src/LSTM_accelerator.cc:277]   --->   Operation 17 'br' 'br_ln277' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%empty = trunc i6 %i_1"   --->   Operation 18 'trunc' 'empty' <Predicate = (!icmp_ln277)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln9 = partselect i2 @_ssdm_op_PartSelect.i2.i6.i32.i32, i6 %i_1, i32 3, i32 4" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 19 'partselect' 'trunc_ln9' <Predicate = (!icmp_ln277)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.73ns)   --->   "%switch_ln280 = switch i3 %empty, void %arrayidx3282.case.7, i3 0, void %arrayidx3282.case.0, i3 1, void %arrayidx3282.case.1, i3 2, void %arrayidx3282.case.2, i3 3, void %arrayidx3282.case.3, i3 4, void %arrayidx3282.case.4, i3 5, void %arrayidx3282.case.5, i3 6, void %arrayidx3282.case.6" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 20 'switch' 'switch_ln280' <Predicate = (!icmp_ln277)> <Delay = 0.73>
+ST_1 : Operation 21 [1/1] (0.73ns)   --->   "%switch_ln280 = switch i2 %trunc_ln9, void %arrayidx3282.case.389, i2 0, void %arrayidx3282.case.086, i2 1, void %arrayidx3282.case.187, i2 2, void %arrayidx3282.case.288" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 21 'switch' 'switch_ln280' <Predicate = (!icmp_ln277 & empty == 6)> <Delay = 0.73>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 22 'br' 'br_ln280' <Predicate = (!icmp_ln277 & empty == 6)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.73ns)   --->   "%switch_ln280 = switch i2 %trunc_ln9, void %arrayidx3282.case.383, i2 0, void %arrayidx3282.case.080, i2 1, void %arrayidx3282.case.181, i2 2, void %arrayidx3282.case.282" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 23 'switch' 'switch_ln280' <Predicate = (!icmp_ln277 & empty == 5)> <Delay = 0.73>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 24 'br' 'br_ln280' <Predicate = (!icmp_ln277 & empty == 5)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.73ns)   --->   "%switch_ln280 = switch i2 %trunc_ln9, void %arrayidx3282.case.377, i2 0, void %arrayidx3282.case.074, i2 1, void %arrayidx3282.case.175, i2 2, void %arrayidx3282.case.276" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 25 'switch' 'switch_ln280' <Predicate = (!icmp_ln277 & empty == 4)> <Delay = 0.73>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 26 'br' 'br_ln280' <Predicate = (!icmp_ln277 & empty == 4)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.73ns)   --->   "%switch_ln280 = switch i2 %trunc_ln9, void %arrayidx3282.case.371, i2 0, void %arrayidx3282.case.068, i2 1, void %arrayidx3282.case.169, i2 2, void %arrayidx3282.case.270" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 27 'switch' 'switch_ln280' <Predicate = (!icmp_ln277 & empty == 3)> <Delay = 0.73>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 28 'br' 'br_ln280' <Predicate = (!icmp_ln277 & empty == 3)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.73ns)   --->   "%switch_ln280 = switch i2 %trunc_ln9, void %arrayidx3282.case.365, i2 0, void %arrayidx3282.case.062, i2 1, void %arrayidx3282.case.163, i2 2, void %arrayidx3282.case.264" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 29 'switch' 'switch_ln280' <Predicate = (!icmp_ln277 & empty == 2)> <Delay = 0.73>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 30 'br' 'br_ln280' <Predicate = (!icmp_ln277 & empty == 2)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.73ns)   --->   "%switch_ln280 = switch i2 %trunc_ln9, void %arrayidx3282.case.359, i2 0, void %arrayidx3282.case.056, i2 1, void %arrayidx3282.case.157, i2 2, void %arrayidx3282.case.258" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 31 'switch' 'switch_ln280' <Predicate = (!icmp_ln277 & empty == 1)> <Delay = 0.73>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 32 'br' 'br_ln280' <Predicate = (!icmp_ln277 & empty == 1)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.73ns)   --->   "%switch_ln280 = switch i2 %trunc_ln9, void %arrayidx3282.case.353, i2 0, void %arrayidx3282.case.050, i2 1, void %arrayidx3282.case.151, i2 2, void %arrayidx3282.case.252" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 33 'switch' 'switch_ln280' <Predicate = (!icmp_ln277 & empty == 0)> <Delay = 0.73>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 34 'br' 'br_ln280' <Predicate = (!icmp_ln277 & empty == 0)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.73ns)   --->   "%switch_ln280 = switch i2 %trunc_ln9, void %arrayidx3282.case.395, i2 0, void %arrayidx3282.case.092, i2 1, void %arrayidx3282.case.193, i2 2, void %arrayidx3282.case.294" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 35 'switch' 'switch_ln280' <Predicate = (!icmp_ln277 & empty == 7)> <Delay = 0.73>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 36 'br' 'br_ln280' <Predicate = (!icmp_ln277 & empty == 7)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.42ns)   --->   "%store_ln277 = store i6 %add_ln277, i6 %i" [hardware_accelerator/src/LSTM_accelerator.cc:277]   --->   Operation 37 'store' 'store_ln277' <Predicate = (!icmp_ln277)> <Delay = 0.42>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln277 = br void %for.inc329" [hardware_accelerator/src/LSTM_accelerator.cc:277]   --->   Operation 38 'br' 'br_ln277' <Predicate = (!icmp_ln277)> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 107 'ret' 'ret_ln0' <Predicate = (icmp_ln277)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 14.6>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%speclooptripcount_ln277 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32" [hardware_accelerator/src/LSTM_accelerator.cc:277]   --->   Operation 39 'speclooptripcount' 'speclooptripcount_ln277' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%specloopname_ln277 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [hardware_accelerator/src/LSTM_accelerator.cc:277]   --->   Operation 40 'specloopname' 'specloopname_ln277' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (14.6ns)   --->   "%gmem_addr_read = read i16 @_ssdm_op_Read.m_axi.p1i16, i16 %gmem_addr" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 41 'read' 'gmem_addr_read' <Predicate = true> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%trunc_ln280 = trunc i16 %gmem_addr_read" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 42 'trunc' 'trunc_ln280' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2539" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 43 'store' 'store_ln280' <Predicate = (empty == 6 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit85" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 44 'br' 'br_ln280' <Predicate = (empty == 6 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2538" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 45 'store' 'store_ln280' <Predicate = (empty == 6 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit85" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 46 'br' 'br_ln280' <Predicate = (empty == 6 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2537" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 47 'store' 'store_ln280' <Predicate = (empty == 6 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit85" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 48 'br' 'br_ln280' <Predicate = (empty == 6 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2540" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 49 'store' 'store_ln280' <Predicate = (empty == 6 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit85" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 50 'br' 'br_ln280' <Predicate = (empty == 6 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2535" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 51 'store' 'store_ln280' <Predicate = (empty == 5 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit79" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 52 'br' 'br_ln280' <Predicate = (empty == 5 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2534" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 53 'store' 'store_ln280' <Predicate = (empty == 5 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit79" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 54 'br' 'br_ln280' <Predicate = (empty == 5 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2533" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 55 'store' 'store_ln280' <Predicate = (empty == 5 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit79" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 56 'br' 'br_ln280' <Predicate = (empty == 5 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2536" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 57 'store' 'store_ln280' <Predicate = (empty == 5 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit79" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 58 'br' 'br_ln280' <Predicate = (empty == 5 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2531" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 59 'store' 'store_ln280' <Predicate = (empty == 4 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit73" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 60 'br' 'br_ln280' <Predicate = (empty == 4 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2529" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 61 'store' 'store_ln280' <Predicate = (empty == 4 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit73" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 62 'br' 'br_ln280' <Predicate = (empty == 4 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2528" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 63 'store' 'store_ln280' <Predicate = (empty == 4 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit73" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 64 'br' 'br_ln280' <Predicate = (empty == 4 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2532" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 65 'store' 'store_ln280' <Predicate = (empty == 4 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit73" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 66 'br' 'br_ln280' <Predicate = (empty == 4 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2526" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 67 'store' 'store_ln280' <Predicate = (empty == 3 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit67" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 68 'br' 'br_ln280' <Predicate = (empty == 3 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2525" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 69 'store' 'store_ln280' <Predicate = (empty == 3 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit67" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 70 'br' 'br_ln280' <Predicate = (empty == 3 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2524" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 71 'store' 'store_ln280' <Predicate = (empty == 3 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit67" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 72 'br' 'br_ln280' <Predicate = (empty == 3 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2527" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 73 'store' 'store_ln280' <Predicate = (empty == 3 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit67" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 74 'br' 'br_ln280' <Predicate = (empty == 3 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2522" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 75 'store' 'store_ln280' <Predicate = (empty == 2 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit61" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 76 'br' 'br_ln280' <Predicate = (empty == 2 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2521" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 77 'store' 'store_ln280' <Predicate = (empty == 2 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit61" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 78 'br' 'br_ln280' <Predicate = (empty == 2 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2520" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 79 'store' 'store_ln280' <Predicate = (empty == 2 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit61" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 80 'br' 'br_ln280' <Predicate = (empty == 2 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2523" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 81 'store' 'store_ln280' <Predicate = (empty == 2 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit61" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 82 'br' 'br_ln280' <Predicate = (empty == 2 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2517" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 83 'store' 'store_ln280' <Predicate = (empty == 1 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit55" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 84 'br' 'br_ln280' <Predicate = (empty == 1 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2516" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 85 'store' 'store_ln280' <Predicate = (empty == 1 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit55" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 86 'br' 'br_ln280' <Predicate = (empty == 1 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2515" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 87 'store' 'store_ln280' <Predicate = (empty == 1 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit55" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 88 'br' 'br_ln280' <Predicate = (empty == 1 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2518" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 89 'store' 'store_ln280' <Predicate = (empty == 1 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit55" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 90 'br' 'br_ln280' <Predicate = (empty == 1 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2513" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 91 'store' 'store_ln280' <Predicate = (empty == 0 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit49" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 92 'br' 'br_ln280' <Predicate = (empty == 0 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 93 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2512" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 93 'store' 'store_ln280' <Predicate = (empty == 0 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 94 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit49" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 94 'br' 'br_ln280' <Predicate = (empty == 0 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2511" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 95 'store' 'store_ln280' <Predicate = (empty == 0 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit49" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 96 'br' 'br_ln280' <Predicate = (empty == 0 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 97 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2514" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 97 'store' 'store_ln280' <Predicate = (empty == 0 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit49" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 98 'br' 'br_ln280' <Predicate = (empty == 0 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 99 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2544" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 99 'store' 'store_ln280' <Predicate = (empty == 7 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 100 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit91" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 100 'br' 'br_ln280' <Predicate = (empty == 7 & trunc_ln9 == 2)> <Delay = 0.00>
+ST_2 : Operation 101 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2543" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 101 'store' 'store_ln280' <Predicate = (empty == 7 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 102 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit91" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 102 'br' 'br_ln280' <Predicate = (empty == 7 & trunc_ln9 == 1)> <Delay = 0.00>
+ST_2 : Operation 103 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2542" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 103 'store' 'store_ln280' <Predicate = (empty == 7 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 104 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit91" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 104 'br' 'br_ln280' <Predicate = (empty == 7 & trunc_ln9 == 0)> <Delay = 0.00>
+ST_2 : Operation 105 [1/1] (0.00ns)   --->   "%store_ln280 = store i12 %trunc_ln280, i12 %p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2545" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 105 'store' 'store_ln280' <Predicate = (empty == 7 & trunc_ln9 == 3)> <Delay = 0.00>
+ST_2 : Operation 106 [1/1] (0.00ns)   --->   "%br_ln280 = br void %arrayidx3282.exit91" [hardware_accelerator/src/LSTM_accelerator.cc:280]   --->   Operation 106 'br' 'br_ln280' <Predicate = (empty == 7 & trunc_ln9 == 3)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 20.000ns, clock uncertainty: 5.400ns.
+
+ <State 1>: 1.208ns
+The critical path consists of the following:
+	'alloca' operation ('i') [35]  (0.000 ns)
+	'load' operation ('i') on local variable 'i' [42]  (0.000 ns)
+	'add' operation ('add_ln277', hardware_accelerator/src/LSTM_accelerator.cc:277) [47]  (0.781 ns)
+	'store' operation ('store_ln277', hardware_accelerator/src/LSTM_accelerator.cc:277) of variable 'add_ln277', hardware_accelerator/src/LSTM_accelerator.cc:277 on local variable 'i' [186]  (0.427 ns)
+
+ <State 2>: 14.600ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read', hardware_accelerator/src/LSTM_accelerator.cc:280) on port 'gmem' (hardware_accelerator/src/LSTM_accelerator.cc:280) [54]  (14.600 ns)
+	'store' operation ('store_ln280', hardware_accelerator/src/LSTM_accelerator.cc:280) of variable 'trunc_ln280', hardware_accelerator/src/LSTM_accelerator.cc:280 on static variable 'p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2540' [69]  (0.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

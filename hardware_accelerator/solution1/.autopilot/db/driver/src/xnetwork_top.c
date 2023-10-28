@@ -95,6 +95,40 @@ u64 XNetwork_top_Get_myparams(XNetwork_top *InstancePtr) {
     return Data;
 }
 
+void XNetwork_top_Set_init_params(XNetwork_top *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XNetwork_top_WriteReg(InstancePtr->Control_BaseAddress, XNETWORK_TOP_CONTROL_ADDR_INIT_PARAMS_DATA, Data);
+}
+
+u32 XNetwork_top_Get_init_params(XNetwork_top *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XNetwork_top_ReadReg(InstancePtr->Control_BaseAddress, XNETWORK_TOP_CONTROL_ADDR_INIT_PARAMS_DATA);
+    return Data;
+}
+
+void XNetwork_top_Set_store_result(XNetwork_top *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XNetwork_top_WriteReg(InstancePtr->Control_BaseAddress, XNETWORK_TOP_CONTROL_ADDR_STORE_RESULT_DATA, Data);
+}
+
+u32 XNetwork_top_Get_store_result(XNetwork_top *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XNetwork_top_ReadReg(InstancePtr->Control_BaseAddress, XNETWORK_TOP_CONTROL_ADDR_STORE_RESULT_DATA);
+    return Data;
+}
+
 void XNetwork_top_InterruptGlobalEnable(XNetwork_top *InstancePtr) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

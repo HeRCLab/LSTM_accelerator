@@ -60,146 +60,26 @@ module network_top_network_top_Pipeline_load_weight1_matrix_inner_loop13 (
         m_axi_gmem_BID,
         m_axi_gmem_BUSER,
         myparams,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10348,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10348_ap_vld,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10349,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10349_ap_vld,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10350,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10350_ap_vld,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10351,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10351_ap_vld,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10352,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10352_ap_vld,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10353,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10353_ap_vld,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10354,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10354_ap_vld,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10355,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10355_ap_vld,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10356,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10356_ap_vld,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10357,
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10357_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_1,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_1_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_1,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_1_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_1,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_1_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_1,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_1_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_1,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_1_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_1,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_1_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_1,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_1_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_1,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_1_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_1,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_1_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_1,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_1_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_83,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_83_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_82,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_82_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_81,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_81_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_80,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_80_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_79,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_79_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_78,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_78_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_77,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_77_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_75,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_75_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_74,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_74_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_73,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_73_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_72,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_72_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_71,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_71_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_70,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_70_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_69,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_69_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_68,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_68_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_67,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_67_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_66,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_66_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_64,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_64_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_63,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_63_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_62,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_62_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_61,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_61_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_60,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_60_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_59,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_59_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_58,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_58_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_57,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_57_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_56,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_56_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_55,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_55_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_53,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_53_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_52,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_52_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_51,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_51_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_50,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_50_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_49,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_49_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_48,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_48_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_47,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_47_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_46,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_46_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_45,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_45_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_44,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_44_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_42,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_42_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_41,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_41_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_40,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_40_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_39,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_39_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_38,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_38_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_37,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_37_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_36,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_36_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_35,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_35_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_34,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_34_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_33,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_33_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_31,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_31_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_30,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_30_ap_vld,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_29,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_29_ap_vld,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2748,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2748_ap_vld,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2749,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2749_ap_vld,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2751,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2751_ap_vld,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2752,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2752_ap_vld,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2753,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2753_ap_vld,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2754,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2754_ap_vld,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2755,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2755_ap_vld,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2756,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2756_ap_vld,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2757,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2757_ap_vld,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2758,
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2758_ap_vld,
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_28,
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_28_ap_vld,
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_27,
@@ -214,12 +94,36 @@ module network_top_network_top_Pipeline_load_weight1_matrix_inner_loop13 (
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_23_ap_vld,
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22,
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_ap_vld,
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20,
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_ap_vld,
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19,
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_ap_vld,
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18,
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_ap_vld
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_12,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_12_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_11,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_11_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_9,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_9_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_8,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_8_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_7,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_7_ap_vld,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_6,
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_6_ap_vld
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -245,8 +149,8 @@ output  [3:0] m_axi_gmem_AWREGION;
 output  [0:0] m_axi_gmem_AWUSER;
 output   m_axi_gmem_WVALID;
 input   m_axi_gmem_WREADY;
-output  [31:0] m_axi_gmem_WDATA;
-output  [3:0] m_axi_gmem_WSTRB;
+output  [15:0] m_axi_gmem_WDATA;
+output  [1:0] m_axi_gmem_WSTRB;
 output   m_axi_gmem_WLAST;
 output  [0:0] m_axi_gmem_WID;
 output  [0:0] m_axi_gmem_WUSER;
@@ -265,10 +169,10 @@ output  [3:0] m_axi_gmem_ARREGION;
 output  [0:0] m_axi_gmem_ARUSER;
 input   m_axi_gmem_RVALID;
 output   m_axi_gmem_RREADY;
-input  [31:0] m_axi_gmem_RDATA;
+input  [15:0] m_axi_gmem_RDATA;
 input   m_axi_gmem_RLAST;
 input  [0:0] m_axi_gmem_RID;
-input  [8:0] m_axi_gmem_RFIFONUM;
+input  [9:0] m_axi_gmem_RFIFONUM;
 input  [0:0] m_axi_gmem_RUSER;
 input  [1:0] m_axi_gmem_RRESP;
 input   m_axi_gmem_BVALID;
@@ -277,240 +181,84 @@ input  [1:0] m_axi_gmem_BRESP;
 input  [0:0] m_axi_gmem_BID;
 input  [0:0] m_axi_gmem_BUSER;
 input  [63:0] myparams;
-output  [21:0] p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10348;
-output   p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10348_ap_vld;
-output  [21:0] p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10349;
-output   p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10349_ap_vld;
-output  [21:0] p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10350;
-output   p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10350_ap_vld;
-output  [21:0] p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10351;
-output   p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10351_ap_vld;
-output  [21:0] p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10352;
-output   p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10352_ap_vld;
-output  [21:0] p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10353;
-output   p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10353_ap_vld;
-output  [21:0] p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10354;
-output   p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10354_ap_vld;
-output  [21:0] p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10355;
-output   p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10355_ap_vld;
-output  [21:0] p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10356;
-output   p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10356_ap_vld;
-output  [21:0] p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10357;
-output   p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10357_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_1;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_1_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_1;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_1_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_1;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_1_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_1;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_1_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_1;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_1_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_1;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_1_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_1;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_1_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_1;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_1_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_1;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_1_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_1;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_1_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_83;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_83_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_82;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_82_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_81;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_81_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_80;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_80_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_79;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_79_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_78;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_78_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_77;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_77_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_75;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_75_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_74;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_74_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_73;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_73_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_72;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_72_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_71;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_71_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_70;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_70_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_69;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_69_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_68;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_68_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_67;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_67_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_66;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_66_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_64;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_64_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_63;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_63_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_62;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_62_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_61;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_61_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_60;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_60_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_59;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_59_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_58;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_58_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_57;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_57_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_56;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_56_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_55;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_55_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_53;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_53_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_52;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_52_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_51;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_51_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_50;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_50_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_49;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_49_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_48;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_48_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_47;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_47_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_46;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_46_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_45;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_45_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_44;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_44_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_42;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_42_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_41;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_41_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_40;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_40_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_39;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_39_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_38;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_38_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_37;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_37_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_36;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_36_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_35;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_35_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_34;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_34_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_33;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_33_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_31;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_31_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_30;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_30_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_29;
-output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_29_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_28;
+output  [11:0] p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2748;
+output   p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2748_ap_vld;
+output  [11:0] p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2749;
+output   p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2749_ap_vld;
+output  [11:0] p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2751;
+output   p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2751_ap_vld;
+output  [11:0] p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2752;
+output   p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2752_ap_vld;
+output  [11:0] p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2753;
+output   p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2753_ap_vld;
+output  [11:0] p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2754;
+output   p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2754_ap_vld;
+output  [11:0] p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2755;
+output   p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2755_ap_vld;
+output  [11:0] p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2756;
+output   p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2756_ap_vld;
+output  [11:0] p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2757;
+output   p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2757_ap_vld;
+output  [11:0] p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2758;
+output   p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2758_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_28;
 output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_28_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_27;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_27;
 output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_27_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_26;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_26;
 output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_26_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_25;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_25;
 output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_25_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_24;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_24;
 output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_24_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_23;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_23;
 output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_23_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22;
 output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20;
 output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19;
 output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_ap_vld;
-output  [21:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18;
 output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_12;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_12_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_11;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_11_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_9;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_9_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_8;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_8_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_7;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_7_ap_vld;
+output  [11:0] network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_6;
+output   network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_6_ap_vld;
 
 reg ap_idle;
 reg m_axi_gmem_ARVALID;
 reg m_axi_gmem_RREADY;
-reg p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10348_ap_vld;
-reg p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10349_ap_vld;
-reg p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10350_ap_vld;
-reg p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10351_ap_vld;
-reg p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10352_ap_vld;
-reg p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10353_ap_vld;
-reg p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10354_ap_vld;
-reg p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10355_ap_vld;
-reg p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10356_ap_vld;
-reg p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10357_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_1_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_1_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_1_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_1_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_1_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_1_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_1_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_1_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_1_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_1_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_83_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_82_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_81_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_80_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_79_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_78_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_77_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_75_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_74_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_73_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_72_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_71_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_70_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_69_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_68_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_67_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_66_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_64_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_63_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_62_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_61_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_60_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_59_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_58_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_57_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_56_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_55_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_53_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_52_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_51_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_50_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_49_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_48_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_47_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_46_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_45_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_44_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_42_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_41_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_40_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_39_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_38_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_37_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_36_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_35_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_34_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_33_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_31_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_30_ap_vld;
-reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_29_ap_vld;
+reg p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2748_ap_vld;
+reg p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2749_ap_vld;
+reg p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2751_ap_vld;
+reg p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2752_ap_vld;
+reg p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2753_ap_vld;
+reg p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2754_ap_vld;
+reg p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2755_ap_vld;
+reg p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2756_ap_vld;
+reg p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2757_ap_vld;
+reg p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2758_ap_vld;
 reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_28_ap_vld;
 reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_27_ap_vld;
 reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_26_ap_vld;
@@ -518,9 +266,21 @@ reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_25_ap_
 reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_24_ap_vld;
 reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_23_ap_vld;
 reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_ap_vld;
 reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_ap_vld;
 reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_ap_vld;
 reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_12_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_11_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_9_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_8_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_7_ap_vld;
+reg network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_6_ap_vld;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_pp0_stage0;
@@ -546,53 +306,39 @@ wire    ap_block_state8_pp0_stage0_iter7;
 wire    ap_block_state9_pp0_stage0_iter8;
 reg    ap_block_state10_pp0_stage0_iter9;
 reg    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln211_13_fu_442_p2;
+wire   [0:0] icmp_ln242_fu_226_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 reg    gmem_blk_n_AR;
 wire    ap_block_pp0_stage0;
 reg    gmem_blk_n_R;
-reg   [6:0] c_reg_1106;
 reg    ap_block_pp0_stage0_11001;
-reg   [6:0] c_reg_1106_pp0_iter1_reg;
-reg   [6:0] c_reg_1106_pp0_iter2_reg;
-reg   [6:0] c_reg_1106_pp0_iter3_reg;
-reg   [6:0] c_reg_1106_pp0_iter4_reg;
-reg   [6:0] c_reg_1106_pp0_iter5_reg;
-reg   [6:0] c_reg_1106_pp0_iter6_reg;
-reg   [6:0] c_reg_1106_pp0_iter7_reg;
-reg   [6:0] c_reg_1106_pp0_iter8_reg;
-reg   [63:0] gmem_addr_reg_1114;
-wire  signed [63:0] sext_ln213_fu_552_p1;
-wire   [21:0] trunc_ln213_35_fu_600_p1;
-reg   [6:0] phi_urem301_fu_394;
-wire   [6:0] select_ln211_fu_577_p3;
+wire   [4:0] trunc_ln242_fu_238_p1;
+reg   [4:0] trunc_ln242_reg_522;
+reg   [4:0] trunc_ln242_reg_522_pp0_iter1_reg;
+reg   [4:0] trunc_ln242_reg_522_pp0_iter2_reg;
+reg   [4:0] trunc_ln242_reg_522_pp0_iter3_reg;
+reg   [4:0] trunc_ln242_reg_522_pp0_iter4_reg;
+reg   [4:0] trunc_ln242_reg_522_pp0_iter5_reg;
+reg   [4:0] trunc_ln242_reg_522_pp0_iter6_reg;
+reg   [4:0] trunc_ln242_reg_522_pp0_iter7_reg;
+reg   [4:0] trunc_ln242_reg_522_pp0_iter8_reg;
+reg   [63:0] gmem_addr_reg_526;
+wire  signed [63:0] sext_ln244_fu_300_p1;
+wire   [11:0] trunc_ln244_fu_315_p1;
+reg   [5:0] c_13_fu_196;
+wire   [5:0] add_ln242_fu_232_p2;
 wire    ap_loop_init;
-reg   [6:0] ap_sig_allocacmp_phi_urem301_load_1;
-reg   [6:0] ap_sig_allocacmp_phi_urem301_load;
-reg   [14:0] phi_mul299_fu_398;
-wire   [14:0] next_mul300_fu_460_p2;
-reg   [14:0] ap_sig_allocacmp_phi_mul299_load;
-reg   [6:0] c_13_fu_402;
-wire   [6:0] add_ln211_13_fu_448_p2;
-reg   [6:0] ap_sig_allocacmp_c;
-wire   [2:0] tmp_fu_466_p4;
-wire   [2:0] mul_ln213_fu_480_p0;
-wire   [10:0] mul_ln213_fu_480_p1;
-wire   [11:0] mul_ln213_fu_480_p2;
-wire   [6:0] trunc_ln213_fu_486_p1;
-wire   [4:0] tmp_s_fu_496_p4;
-wire   [6:0] or_ln213_fu_490_p2;
-wire   [11:0] or_ln213_s_fu_506_p3;
-wire   [12:0] zext_ln213_25_fu_514_p1;
-wire   [12:0] add_ln213_25_fu_518_p2;
-wire   [14:0] shl_ln213_s_fu_524_p3;
-wire   [63:0] zext_ln213_26_fu_532_p1;
-wire   [63:0] add_ln213_26_fu_536_p2;
-wire   [61:0] trunc_ln213_s_fu_542_p4;
-wire   [6:0] add_ln211_fu_565_p2;
-wire   [0:0] icmp_ln211_fu_571_p2;
+reg   [5:0] ap_sig_allocacmp_c;
+wire   [1:0] tmp_s_fu_246_p4;
+wire   [2:0] empty_fu_242_p1;
+wire   [8:0] tmp_fu_256_p4;
+wire   [8:0] or_ln244_fu_266_p2;
+wire   [9:0] shl_ln244_s_fu_272_p3;
+wire   [63:0] zext_ln244_fu_280_p1;
+wire   [63:0] add_ln244_fu_284_p2;
+wire   [62:0] trunc_ln244_s_fu_290_p4;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -607,7 +353,6 @@ reg    ap_loop_exit_ready_pp0_iter8_reg;
 reg   [0:0] ap_NS_fsm;
 wire    ap_enable_pp0;
 wire    ap_start_int;
-wire   [11:0] mul_ln213_fu_480_p00;
 wire    ap_ce_reg;
 
 // power-on initialization
@@ -624,18 +369,6 @@ initial begin
 #0 ap_enable_reg_pp0_iter9 = 1'b0;
 #0 ap_done_reg = 1'b0;
 end
-
-network_top_mul_3ns_11ns_12_1_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 1 ),
-    .din0_WIDTH( 3 ),
-    .din1_WIDTH( 11 ),
-    .dout_WIDTH( 12 ))
-mul_3ns_11ns_12_1_1_U1081(
-    .din0(mul_ln213_fu_480_p0),
-    .din1(mul_ln213_fu_480_p1),
-    .dout(mul_ln213_fu_480_p2)
-);
 
 network_top_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U(
     .ap_clk(ap_clk),
@@ -766,30 +499,10 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        if (((ap_enable_reg_pp0_iter0 == 1'b1) & (icmp_ln211_13_fu_442_p2 == 1'd0))) begin
-            c_13_fu_402 <= add_ln211_13_fu_448_p2;
+        if (((ap_enable_reg_pp0_iter0 == 1'b1) & (icmp_ln242_fu_226_p2 == 1'd0))) begin
+            c_13_fu_196 <= add_ln242_fu_232_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            c_13_fu_402 <= 7'd0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        if (((ap_enable_reg_pp0_iter0 == 1'b1) & (icmp_ln211_13_fu_442_p2 == 1'd0))) begin
-            phi_mul299_fu_398 <= next_mul300_fu_460_p2;
-        end else if ((ap_loop_init == 1'b1)) begin
-            phi_mul299_fu_398 <= 15'd0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        if (((ap_enable_reg_pp0_iter0 == 1'b1) & (icmp_ln211_13_fu_442_p2 == 1'd0))) begin
-            phi_urem301_fu_394 <= select_ln211_fu_577_p3;
-        end else if ((ap_loop_init == 1'b1)) begin
-            phi_urem301_fu_394 <= 7'd0;
+            c_13_fu_196 <= 6'd0;
         end
     end
 end
@@ -798,8 +511,7 @@ always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
         ap_loop_exit_ready_pp0_iter2_reg <= ap_loop_exit_ready_pp0_iter1_reg;
-        c_reg_1106 <= ap_sig_allocacmp_c;
-        c_reg_1106_pp0_iter1_reg <= c_reg_1106;
+        trunc_ln242_reg_522_pp0_iter1_reg <= trunc_ln242_reg_522;
     end
 end
 
@@ -811,24 +523,25 @@ always @ (posedge ap_clk) begin
         ap_loop_exit_ready_pp0_iter6_reg <= ap_loop_exit_ready_pp0_iter5_reg;
         ap_loop_exit_ready_pp0_iter7_reg <= ap_loop_exit_ready_pp0_iter6_reg;
         ap_loop_exit_ready_pp0_iter8_reg <= ap_loop_exit_ready_pp0_iter7_reg;
-        c_reg_1106_pp0_iter2_reg <= c_reg_1106_pp0_iter1_reg;
-        c_reg_1106_pp0_iter3_reg <= c_reg_1106_pp0_iter2_reg;
-        c_reg_1106_pp0_iter4_reg <= c_reg_1106_pp0_iter3_reg;
-        c_reg_1106_pp0_iter5_reg <= c_reg_1106_pp0_iter4_reg;
-        c_reg_1106_pp0_iter6_reg <= c_reg_1106_pp0_iter5_reg;
-        c_reg_1106_pp0_iter7_reg <= c_reg_1106_pp0_iter6_reg;
-        c_reg_1106_pp0_iter8_reg <= c_reg_1106_pp0_iter7_reg;
+        trunc_ln242_reg_522_pp0_iter2_reg <= trunc_ln242_reg_522_pp0_iter1_reg;
+        trunc_ln242_reg_522_pp0_iter3_reg <= trunc_ln242_reg_522_pp0_iter2_reg;
+        trunc_ln242_reg_522_pp0_iter4_reg <= trunc_ln242_reg_522_pp0_iter3_reg;
+        trunc_ln242_reg_522_pp0_iter5_reg <= trunc_ln242_reg_522_pp0_iter4_reg;
+        trunc_ln242_reg_522_pp0_iter6_reg <= trunc_ln242_reg_522_pp0_iter5_reg;
+        trunc_ln242_reg_522_pp0_iter7_reg <= trunc_ln242_reg_522_pp0_iter6_reg;
+        trunc_ln242_reg_522_pp0_iter8_reg <= trunc_ln242_reg_522_pp0_iter7_reg;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln211_13_fu_442_p2 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        gmem_addr_reg_1114 <= sext_ln213_fu_552_p1;
+    if (((1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln242_fu_226_p2 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        gmem_addr_reg_526 <= sext_ln244_fu_300_p1;
+        trunc_ln242_reg_522 <= trunc_ln242_fu_238_p1;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln211_13_fu_442_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
+    if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln242_fu_226_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -844,7 +557,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_start_int == 1'b0) & (ap_idle_pp0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((ap_idle_pp0 == 1'b1) & (ap_start_int == 1'b0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -869,33 +582,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        ap_sig_allocacmp_c = 7'd0;
+        ap_sig_allocacmp_c = 6'd0;
     end else begin
-        ap_sig_allocacmp_c = c_13_fu_402;
-    end
-end
-
-always @ (*) begin
-    if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        ap_sig_allocacmp_phi_mul299_load = 15'd0;
-    end else begin
-        ap_sig_allocacmp_phi_mul299_load = phi_mul299_fu_398;
-    end
-end
-
-always @ (*) begin
-    if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        ap_sig_allocacmp_phi_urem301_load = 7'd0;
-    end else begin
-        ap_sig_allocacmp_phi_urem301_load = phi_urem301_fu_394;
-    end
-end
-
-always @ (*) begin
-    if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        ap_sig_allocacmp_phi_urem301_load_1 = 7'd0;
-    end else begin
-        ap_sig_allocacmp_phi_urem301_load_1 = phi_urem301_fu_394;
+        ap_sig_allocacmp_c = c_13_fu_196;
     end
 end
 
@@ -932,56 +621,63 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd10) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_1_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd27) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_11_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_1_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_11_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd11) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_1_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd26) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_12_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_1_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_12_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd12) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_1_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd25) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_1_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd13) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_1_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd24) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_1_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd14) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_1_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd23) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_1_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd15) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_1_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd22) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_1_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001) & ((c_reg_1106_pp0_iter8_reg == 7'd79) | ((c_reg_1106_pp0_iter8_reg == 7'd80) | ((c_reg_1106_pp0_iter8_reg == 7'd81) | ((c_reg_1106_pp0_iter8_reg == 7'd82) | ((c_reg_1106_pp0_iter8_reg == 7'd83) | ((c_reg_1106_pp0_iter8_reg == 7'd84) | ((c_reg_1106_pp0_iter8_reg == 7'd85) | ((c_reg_1106_pp0_iter8_reg == 7'd86) | ((c_reg_1106_pp0_iter8_reg == 7'd87) | ((c_reg_1106_pp0_iter8_reg == 7'd88) | ((c_reg_1106_pp0_iter8_reg == 7'd89) | ((c_reg_1106_pp0_iter8_reg == 7'd90) | ((c_reg_1106_pp0_iter8_reg == 7'd91) | ((c_reg_1106_pp0_iter8_reg == 7'd92) | ((c_reg_1106_pp0_iter8_reg == 7'd93) | ((c_reg_1106_pp0_iter8_reg == 7'd94) | ((c_reg_1106_pp0_iter8_reg == 7'd95) | ((c_reg_1106_pp0_iter8_reg == 7'd96) | ((c_reg_1106_pp0_iter8_reg == 7'd97) | ((c_reg_1106_pp0_iter8_reg == 7'd98) | ((c_reg_1106_pp0_iter8_reg == 7'd99) | ((c_reg_1106_pp0_iter8_reg == 7'd100) | ((c_reg_1106_pp0_iter8_reg == 7'd101) | ((c_reg_1106_pp0_iter8_reg == 7'd102) | ((c_reg_1106_pp0_iter8_reg 
-    == 7'd103) | ((c_reg_1106_pp0_iter8_reg == 7'd104) | ((c_reg_1106_pp0_iter8_reg == 7'd105) | ((c_reg_1106_pp0_iter8_reg == 7'd106) | ((c_reg_1106_pp0_iter8_reg == 7'd107) | ((c_reg_1106_pp0_iter8_reg == 7'd108) | ((c_reg_1106_pp0_iter8_reg == 7'd109) | ((c_reg_1106_pp0_iter8_reg == 7'd110) | ((c_reg_1106_pp0_iter8_reg == 7'd111) | ((c_reg_1106_pp0_iter8_reg == 7'd112) | ((c_reg_1106_pp0_iter8_reg == 7'd113) | ((c_reg_1106_pp0_iter8_reg == 7'd114) | ((c_reg_1106_pp0_iter8_reg == 7'd115) | ((c_reg_1106_pp0_iter8_reg == 7'd116) | ((c_reg_1106_pp0_iter8_reg == 7'd117) | ((c_reg_1106_pp0_iter8_reg == 7'd118) | ((c_reg_1106_pp0_iter8_reg == 7'd119) | ((c_reg_1106_pp0_iter8_reg == 7'd120) | ((c_reg_1106_pp0_iter8_reg == 7'd121) | ((c_reg_1106_pp0_iter8_reg == 7'd122) | ((c_reg_1106_pp0_iter8_reg == 7'd123) | ((c_reg_1106_pp0_iter8_reg == 7'd124) | ((c_reg_1106_pp0_iter8_reg == 7'd125) | ((c_reg_1106_pp0_iter8_reg == 7'd126) | (c_reg_1106_pp0_iter8_reg == 7'd127))))))))))))))))))))))))))))))))))))))))))))))))))) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd21) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_ap_vld = 1'b1;
+    end else begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_ap_vld = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd20) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_ap_vld = 1'b1;
     end else begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_ap_vld = 1'b0;
@@ -989,15 +685,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd16) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_1_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_1_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd78) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd19) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_ap_vld = 1'b1;
     end else begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_ap_vld = 1'b0;
@@ -1005,15 +693,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd17) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_1_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_1_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd77) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd18) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_ap_vld = 1'b1;
     end else begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_ap_vld = 1'b0;
@@ -1021,23 +701,15 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd18) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_1_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd17) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_1_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd19) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_1_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_1_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd76) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd16) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_ap_vld = 1'b1;
     end else begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_ap_vld = 1'b0;
@@ -1045,7 +717,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd75) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd15) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_23_ap_vld = 1'b1;
     end else begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_23_ap_vld = 1'b0;
@@ -1053,7 +725,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd74) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd14) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_24_ap_vld = 1'b1;
     end else begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_24_ap_vld = 1'b0;
@@ -1061,7 +733,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd73) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd13) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_25_ap_vld = 1'b1;
     end else begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_25_ap_vld = 1'b0;
@@ -1069,7 +741,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd72) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd12) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_26_ap_vld = 1'b1;
     end else begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_26_ap_vld = 1'b0;
@@ -1077,7 +749,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd71) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd11) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_27_ap_vld = 1'b1;
     end else begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_27_ap_vld = 1'b0;
@@ -1085,7 +757,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd70) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd10) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_28_ap_vld = 1'b1;
     end else begin
         network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_28_ap_vld = 1'b0;
@@ -1093,482 +765,114 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd69) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_29_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd31) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_6_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_29_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_6_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd68) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_30_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd30) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_7_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_30_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_7_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd67) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_31_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd29) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_8_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_31_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_8_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd66) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_33_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd28) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_9_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_33_ap_vld = 1'b0;
+        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_9_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd65) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_34_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2748_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_34_ap_vld = 1'b0;
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2748_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd64) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_35_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd1) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2749_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_35_ap_vld = 1'b0;
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2749_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd63) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_36_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd2) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2751_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_36_ap_vld = 1'b0;
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2751_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd62) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_37_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd3) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2752_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_37_ap_vld = 1'b0;
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2752_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd61) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_38_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd4) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2753_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_38_ap_vld = 1'b0;
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2753_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd60) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_39_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd5) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2754_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_39_ap_vld = 1'b0;
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2754_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd59) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_40_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd6) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2755_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_40_ap_vld = 1'b0;
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2755_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd58) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_41_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd7) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2756_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_41_ap_vld = 1'b0;
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2756_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd57) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_42_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd8) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2757_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_42_ap_vld = 1'b0;
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2757_ap_vld = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd56) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_44_ap_vld = 1'b1;
+    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (trunc_ln242_reg_522_pp0_iter8_reg == 5'd9) & (1'b0 == ap_block_pp0_stage0_11001))) begin
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2758_ap_vld = 1'b1;
     end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_44_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd55) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_45_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_45_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd54) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_46_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_46_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd53) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_47_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_47_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd52) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_48_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_48_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd51) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_49_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_49_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd50) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_50_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_50_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd49) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_51_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_51_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd48) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_52_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_52_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd47) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_53_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_53_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd46) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_55_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_55_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd45) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_56_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_56_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd44) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_57_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_57_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd43) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_58_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_58_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd42) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_59_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_59_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd41) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_60_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_60_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd40) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_61_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_61_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd39) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_62_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_62_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd38) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_63_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_63_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd37) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_64_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_64_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd36) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_66_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_66_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd35) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_67_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_67_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd34) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_68_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_68_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd33) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_69_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_69_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd32) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_70_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_70_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd31) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_71_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_71_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd30) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_72_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_72_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd29) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_73_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_73_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd28) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_74_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_74_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd27) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_75_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_75_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd26) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_77_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_77_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd25) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_78_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_78_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd24) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_79_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_79_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd23) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_80_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_80_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd22) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_81_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_81_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd21) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_82_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_82_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd20) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_83_ap_vld = 1'b1;
-    end else begin
-        network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_83_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10348_ap_vld = 1'b1;
-    end else begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10348_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd1) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10349_ap_vld = 1'b1;
-    end else begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10349_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd2) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10350_ap_vld = 1'b1;
-    end else begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10350_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd3) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10351_ap_vld = 1'b1;
-    end else begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10351_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd4) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10352_ap_vld = 1'b1;
-    end else begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10352_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd5) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10353_ap_vld = 1'b1;
-    end else begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10353_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd6) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10354_ap_vld = 1'b1;
-    end else begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10354_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd7) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10355_ap_vld = 1'b1;
-    end else begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10355_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd8) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10356_ap_vld = 1'b1;
-    end else begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10356_ap_vld = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter9 == 1'b1) & (c_reg_1106_pp0_iter8_reg == 7'd9) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10357_ap_vld = 1'b1;
-    end else begin
-        p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10357_ap_vld = 1'b0;
+        p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2758_ap_vld = 1'b0;
     end
 end
 
@@ -1583,13 +887,9 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln211_13_fu_448_p2 = (ap_sig_allocacmp_c + 7'd1);
+assign add_ln242_fu_232_p2 = (ap_sig_allocacmp_c + 6'd1);
 
-assign add_ln211_fu_565_p2 = (ap_sig_allocacmp_phi_urem301_load + 7'd1);
-
-assign add_ln213_25_fu_518_p2 = (zext_ln213_25_fu_514_p1 + 13'd260);
-
-assign add_ln213_26_fu_536_p2 = (zext_ln213_26_fu_532_p1 + myparams);
+assign add_ln244_fu_284_p2 = (zext_ln244_fu_280_p1 + myparams);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -1631,11 +931,11 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign icmp_ln211_13_fu_442_p2 = ((ap_sig_allocacmp_c == 7'd80) ? 1'b1 : 1'b0);
+assign empty_fu_242_p1 = ap_sig_allocacmp_c[2:0];
 
-assign icmp_ln211_fu_571_p2 = ((add_ln211_fu_565_p2 < 7'd20) ? 1'b1 : 1'b0);
+assign icmp_ln242_fu_226_p2 = ((ap_sig_allocacmp_c == 6'd32) ? 1'b1 : 1'b0);
 
-assign m_axi_gmem_ARADDR = gmem_addr_reg_1114;
+assign m_axi_gmem_ARADDR = gmem_addr_reg_526;
 
 assign m_axi_gmem_ARBURST = 2'd0;
 
@@ -1683,208 +983,98 @@ assign m_axi_gmem_AWVALID = 1'b0;
 
 assign m_axi_gmem_BREADY = 1'b0;
 
-assign m_axi_gmem_WDATA = 32'd0;
+assign m_axi_gmem_WDATA = 16'd0;
 
 assign m_axi_gmem_WID = 1'd0;
 
 assign m_axi_gmem_WLAST = 1'b0;
 
-assign m_axi_gmem_WSTRB = 4'd0;
+assign m_axi_gmem_WSTRB = 2'd0;
 
 assign m_axi_gmem_WUSER = 1'd0;
 
 assign m_axi_gmem_WVALID = 1'b0;
 
-assign mul_ln213_fu_480_p0 = mul_ln213_fu_480_p00;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_11 = trunc_ln244_fu_315_p1;
 
-assign mul_ln213_fu_480_p00 = tmp_fu_466_p4;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_12 = trunc_ln244_fu_315_p1;
 
-assign mul_ln213_fu_480_p1 = 12'd800;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_13_1 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_14_1 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_15_1 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_16_1 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_17_1 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_18_1 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_19_1 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_23 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_20_1 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_24 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_21_1 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_25 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_26 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_22_1 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_27 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_23 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_28 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_24 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_6 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_25 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_7 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_26 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_8 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_27 = trunc_ln213_35_fu_600_p1;
+assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_9 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_28 = trunc_ln213_35_fu_600_p1;
+assign or_ln244_fu_266_p2 = (tmp_fu_256_p4 | 9'd104);
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_29 = trunc_ln213_35_fu_600_p1;
+assign p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2748 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_30 = trunc_ln213_35_fu_600_p1;
+assign p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2749 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_31 = trunc_ln213_35_fu_600_p1;
+assign p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2751 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_33 = trunc_ln213_35_fu_600_p1;
+assign p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2752 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_34 = trunc_ln213_35_fu_600_p1;
+assign p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2753 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_35 = trunc_ln213_35_fu_600_p1;
+assign p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2754 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_36 = trunc_ln213_35_fu_600_p1;
+assign p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2755 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_37 = trunc_ln213_35_fu_600_p1;
+assign p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2756 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_38 = trunc_ln213_35_fu_600_p1;
+assign p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2757 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_39 = trunc_ln213_35_fu_600_p1;
+assign p_ZZ11network_topP13params_structP8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode3ELi_2758 = trunc_ln244_fu_315_p1;
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_40 = trunc_ln213_35_fu_600_p1;
+assign sext_ln244_fu_300_p1 = $signed(trunc_ln244_s_fu_290_p4);
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_41 = trunc_ln213_35_fu_600_p1;
+assign shl_ln244_s_fu_272_p3 = {{or_ln244_fu_266_p2}, {1'd0}};
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_42 = trunc_ln213_35_fu_600_p1;
+assign tmp_fu_256_p4 = {{{tmp_s_fu_246_p4}, {4'd0}}, {empty_fu_242_p1}};
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_44 = trunc_ln213_35_fu_600_p1;
+assign tmp_s_fu_246_p4 = {{ap_sig_allocacmp_c[4:3]}};
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_45 = trunc_ln213_35_fu_600_p1;
+assign trunc_ln242_fu_238_p1 = ap_sig_allocacmp_c[4:0];
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_46 = trunc_ln213_35_fu_600_p1;
+assign trunc_ln244_fu_315_p1 = m_axi_gmem_RDATA[11:0];
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_47 = trunc_ln213_35_fu_600_p1;
+assign trunc_ln244_s_fu_290_p4 = {{add_ln244_fu_284_p2[63:1]}};
 
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_48 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_49 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_50 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_51 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_52 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_53 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_55 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_56 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_57 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_58 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_59 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_60 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_61 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_62 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_63 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_64 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_66 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_67 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_68 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_69 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_70 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_71 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_72 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_73 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_74 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_75 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_77 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_78 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_79 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_80 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_81 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_82 = trunc_ln213_35_fu_600_p1;
-
-assign network_top_params_struct_ap_fixed_ap_fixed_ap_int_ap_int_32_weights1_83 = trunc_ln213_35_fu_600_p1;
-
-assign next_mul300_fu_460_p2 = (ap_sig_allocacmp_phi_mul299_load + 15'd205);
-
-assign or_ln213_fu_490_p2 = (trunc_ln213_fu_486_p1 | ap_sig_allocacmp_phi_urem301_load_1);
-
-assign or_ln213_s_fu_506_p3 = {{tmp_s_fu_496_p4}, {or_ln213_fu_490_p2}};
-
-assign p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10348 = trunc_ln213_35_fu_600_p1;
-
-assign p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10349 = trunc_ln213_35_fu_600_p1;
-
-assign p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10350 = trunc_ln213_35_fu_600_p1;
-
-assign p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10351 = trunc_ln213_35_fu_600_p1;
-
-assign p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10352 = trunc_ln213_35_fu_600_p1;
-
-assign p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10353 = trunc_ln213_35_fu_600_p1;
-
-assign p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10354 = trunc_ln213_35_fu_600_p1;
-
-assign p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10355 = trunc_ln213_35_fu_600_p1;
-
-assign p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10356 = trunc_ln213_35_fu_600_p1;
-
-assign p_ZZ11network_topP13params_structP8ap_fixedILi22ELi17EL9ap_q_mode0EL9ap_o_mode0EL_10357 = trunc_ln213_35_fu_600_p1;
-
-assign select_ln211_fu_577_p3 = ((icmp_ln211_fu_571_p2[0:0] == 1'b1) ? add_ln211_fu_565_p2 : 7'd0);
-
-assign sext_ln213_fu_552_p1 = $signed(trunc_ln213_s_fu_542_p4);
-
-assign shl_ln213_s_fu_524_p3 = {{add_ln213_25_fu_518_p2}, {2'd0}};
-
-assign tmp_fu_466_p4 = {{ap_sig_allocacmp_phi_mul299_load[14:12]}};
-
-assign tmp_s_fu_496_p4 = {{mul_ln213_fu_480_p2[11:7]}};
-
-assign trunc_ln213_35_fu_600_p1 = m_axi_gmem_RDATA[21:0];
-
-assign trunc_ln213_fu_486_p1 = mul_ln213_fu_480_p2[6:0];
-
-assign trunc_ln213_s_fu_542_p4 = {{add_ln213_26_fu_536_p2[63:2]}};
-
-assign zext_ln213_25_fu_514_p1 = or_ln213_s_fu_506_p3;
-
-assign zext_ln213_26_fu_532_p1 = shl_ln213_s_fu_524_p3;
+assign zext_ln244_fu_280_p1 = shl_ln244_s_fu_272_p3;
 
 endmodule //network_top_network_top_Pipeline_load_weight1_matrix_inner_loop13

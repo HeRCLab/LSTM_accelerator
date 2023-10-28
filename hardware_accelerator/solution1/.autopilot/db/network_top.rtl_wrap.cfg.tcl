@@ -17,7 +17,7 @@ set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "inp"
-set BitWidth "22"
+set BitWidth "12"
 set ArrayOpt ""
 set Const "0"
 set Volatile "1"
@@ -29,7 +29,7 @@ set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
 set PortName "out_r"
-set BitWidth "22"
+set BitWidth "12"
 set ArrayOpt ""
 set Const "0"
 set Volatile "1"

@@ -12,17 +12,18 @@
 //#define m 64 //rows or timesteps
 //#define n 64 //columns
 //#define rows_in_parallel 64
-#define N_INPUTS 	20
-#define N_UNITS_INDX1  	20 //size of cell 1
-#define N_UNITS_INDX2  	40 //size of cell 1+ cell 2
-#define N_UNITS_SUM 60
+#define N_INPUTS 	8
+#define N_UNITS_INDX1  	8 //size of cell 1
+#define N_UNITS_INDX2  	16 //size of cell 1+ cell 2
+#define N_UNITS_SUM 24 //
 #define N_UNITS1 N_UNITS_INDX1
 #define N_UNITS2 (N_UNITS_INDX2-N_UNITS_INDX1)
 #define N_UNITS3 (N_UNITS_SUM-N_UNITS_INDX2)
 #define OUT_N_UNITS (N_UNITS_SUM-N_UNITS2)
-#define N_PE     	2
+#define N_PE     8
 
-typedef ap_fixed <22,17,AP_RND,AP_SAT> data;
+typedef ap_fixed <12,2,AP_RND,AP_WRAP> data;
+typedef ap_fixed <22,10,AP_RND,AP_WRAP> data2;
 
 
 // gn = gate number (0=input gate, 1=output gate, 2=forget gate, 3=modulation gate)

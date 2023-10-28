@@ -1,0 +1,692 @@
+
+
+================================================================
+== Vitis HLS Report for 'LSTM_8ul_8ul_8ul_2_Pipeline_OUTTER_LOOP_147'
+================================================================
+* Date:           Sat Oct 28 11:46:25 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        hardware_accelerator
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  8.250 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        6|        6|  0.120 us|  0.120 us|    6|    6|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                   |                       |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |              Instance             |         Module        |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-----------------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_dot_product_8ul_8ul_1_fu_4346  |dot_product_8ul_8ul_1  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        +-----------------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                 |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- OUTTER_LOOP_1  |        4|        4|         1|          1|          1|     4|       yes|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      26|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|    16|       0|    3097|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      63|    -|
+|Register         |        -|     -|      54|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|    16|      54|    3186|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|    ~0|      ~0|       1|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------+-----------------------+---------+----+---+------+-----+
+    |              Instance             |         Module        | BRAM_18K| DSP| FF|  LUT | URAM|
+    +-----------------------------------+-----------------------+---------+----+---+------+-----+
+    |grp_dot_product_8ul_8ul_1_fu_4346  |dot_product_8ul_8ul_1  |        0|  16|  0|  3097|    0|
+    +-----------------------------------+-----------------------+---------+----+---+------+-----+
+    |Total                              |                       |        0|  16|  0|  3097|    0|
+    +-----------------------------------+-----------------------+---------+----+---+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln96_fu_5466_p2   |         +|   0|  0|  12|           4|           1|
+    |ap_condition_1127     |       and|   0|  0|   2|           1|           1|
+    |icmp_ln96_fu_5435_p2  |      icmp|   0|  0|  12|           4|           4|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  26|           9|           6|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_done_int                  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j           |   9|          2|    4|          8|
+    |j_2_fu_1106                  |   9|          2|    4|          8|
+    |output_vectors_10_0_fu_1114  |   9|          2|   12|         24|
+    |output_vectors_11_0_fu_1110  |   9|          2|   12|         24|
+    |output_vectors_8_0_fu_1122   |   9|          2|   12|         24|
+    |output_vectors_9_0_fu_1118   |   9|          2|   12|         24|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        |  63|         14|   57|        114|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+----+----+-----+-----------+
+    |             Name            | FF | LUT| Bits| Const Bits|
+    +-----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                    |   1|   0|    1|          0|
+    |ap_done_reg                  |   1|   0|    1|          0|
+    |j_2_fu_1106                  |   4|   0|    4|          0|
+    |output_vectors_10_0_fu_1114  |  12|   0|   12|          0|
+    |output_vectors_11_0_fu_1110  |  12|   0|   12|          0|
+    |output_vectors_8_0_fu_1122   |  12|   0|   12|          0|
+    |output_vectors_9_0_fu_1118   |  12|   0|   12|          0|
+    +-----------------------------+----+----+-----+-----------+
+    |Total                        |  54|   0|   54|          0|
+    +-----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+------------------------------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |                  Source Object                 |    C Type    |
++--------------------------------+-----+-----+------------+------------------------------------------------+--------------+
+|ap_clk                          |   in|    1|  ap_ctrl_hs|  LSTM<8ul, 8ul, 8ul>.2_Pipeline_OUTTER_LOOP_147|  return value|
+|ap_rst                          |   in|    1|  ap_ctrl_hs|  LSTM<8ul, 8ul, 8ul>.2_Pipeline_OUTTER_LOOP_147|  return value|
+|ap_start                        |   in|    1|  ap_ctrl_hs|  LSTM<8ul, 8ul, 8ul>.2_Pipeline_OUTTER_LOOP_147|  return value|
+|ap_done                         |  out|    1|  ap_ctrl_hs|  LSTM<8ul, 8ul, 8ul>.2_Pipeline_OUTTER_LOOP_147|  return value|
+|ap_idle                         |  out|    1|  ap_ctrl_hs|  LSTM<8ul, 8ul, 8ul>.2_Pipeline_OUTTER_LOOP_147|  return value|
+|ap_ready                        |  out|    1|  ap_ctrl_hs|  LSTM<8ul, 8ul, 8ul>.2_Pipeline_OUTTER_LOOP_147|  return value|
+|p_read24                        |   in|   12|     ap_none|                                        p_read24|        scalar|
+|p_read25                        |   in|   12|     ap_none|                                        p_read25|        scalar|
+|p_read26                        |   in|   12|     ap_none|                                        p_read26|        scalar|
+|p_read27                        |   in|   12|     ap_none|                                        p_read27|        scalar|
+|weights_0_0_val288              |   in|   12|     ap_none|                              weights_0_0_val288|        scalar|
+|weights_0_1_val320              |   in|   12|     ap_none|                              weights_0_1_val320|        scalar|
+|weights_0_2_val352              |   in|   12|     ap_none|                              weights_0_2_val352|        scalar|
+|weights_0_3_val384              |   in|   12|     ap_none|                              weights_0_3_val384|        scalar|
+|weights_0_4_val416              |   in|   12|     ap_none|                              weights_0_4_val416|        scalar|
+|weights_0_5_val448              |   in|   12|     ap_none|                              weights_0_5_val448|        scalar|
+|weights_0_6_val480              |   in|   12|     ap_none|                              weights_0_6_val480|        scalar|
+|weights_0_7_val512              |   in|   12|     ap_none|                              weights_0_7_val512|        scalar|
+|weights_0_8_val544              |   in|   12|     ap_none|                              weights_0_8_val544|        scalar|
+|weights_0_9_val577              |   in|   12|     ap_none|                              weights_0_9_val577|        scalar|
+|weights_0_10_val609             |   in|   12|     ap_none|                             weights_0_10_val609|        scalar|
+|weights_0_11_val641             |   in|   12|     ap_none|                             weights_0_11_val641|        scalar|
+|weights_0_12_val673             |   in|   12|     ap_none|                             weights_0_12_val673|        scalar|
+|weights_0_13_val705             |   in|   12|     ap_none|                             weights_0_13_val705|        scalar|
+|weights_0_14_val737             |   in|   12|     ap_none|                             weights_0_14_val737|        scalar|
+|weights_0_15_val769             |   in|   12|     ap_none|                             weights_0_15_val769|        scalar|
+|weights_0_16_val801             |   in|   12|     ap_none|                             weights_0_16_val801|        scalar|
+|weights_0_17_val833             |   in|   12|     ap_none|                             weights_0_17_val833|        scalar|
+|weights_0_18_val865             |   in|   12|     ap_none|                             weights_0_18_val865|        scalar|
+|weights_0_19_val897             |   in|   12|     ap_none|                             weights_0_19_val897|        scalar|
+|weights_0_20_val929             |   in|   12|     ap_none|                             weights_0_20_val929|        scalar|
+|weights_0_21_val961             |   in|   12|     ap_none|                             weights_0_21_val961|        scalar|
+|weights_0_22_val993             |   in|   12|     ap_none|                             weights_0_22_val993|        scalar|
+|weights_0_23_val1025            |   in|   12|     ap_none|                            weights_0_23_val1025|        scalar|
+|weights_0_24_val1057            |   in|   12|     ap_none|                            weights_0_24_val1057|        scalar|
+|weights_0_25_val1089            |   in|   12|     ap_none|                            weights_0_25_val1089|        scalar|
+|weights_0_26_val1121            |   in|   12|     ap_none|                            weights_0_26_val1121|        scalar|
+|weights_0_27_val1153            |   in|   12|     ap_none|                            weights_0_27_val1153|        scalar|
+|weights_0_28_val1185            |   in|   12|     ap_none|                            weights_0_28_val1185|        scalar|
+|weights_0_29_val1217            |   in|   12|     ap_none|                            weights_0_29_val1217|        scalar|
+|weights_0_30_val1249            |   in|   12|     ap_none|                            weights_0_30_val1249|        scalar|
+|weights_0_31_val1281            |   in|   12|     ap_none|                            weights_0_31_val1281|        scalar|
+|weights_1_0_val1313             |   in|   12|     ap_none|                             weights_1_0_val1313|        scalar|
+|weights_1_1_val1345             |   in|   12|     ap_none|                             weights_1_1_val1345|        scalar|
+|weights_1_2_val1377             |   in|   12|     ap_none|                             weights_1_2_val1377|        scalar|
+|weights_1_3_val1409             |   in|   12|     ap_none|                             weights_1_3_val1409|        scalar|
+|weights_1_4_val1441             |   in|   12|     ap_none|                             weights_1_4_val1441|        scalar|
+|weights_1_5_val1473             |   in|   12|     ap_none|                             weights_1_5_val1473|        scalar|
+|weights_1_6_val1505             |   in|   12|     ap_none|                             weights_1_6_val1505|        scalar|
+|weights_1_7_val1537             |   in|   12|     ap_none|                             weights_1_7_val1537|        scalar|
+|weights_1_8_val1569             |   in|   12|     ap_none|                             weights_1_8_val1569|        scalar|
+|weights_1_9_val1601             |   in|   12|     ap_none|                             weights_1_9_val1601|        scalar|
+|weights_1_10_val1633            |   in|   12|     ap_none|                            weights_1_10_val1633|        scalar|
+|weights_1_11_val1665            |   in|   12|     ap_none|                            weights_1_11_val1665|        scalar|
+|weights_1_12_val1698            |   in|   12|     ap_none|                            weights_1_12_val1698|        scalar|
+|weights_1_13_val1730            |   in|   12|     ap_none|                            weights_1_13_val1730|        scalar|
+|weights_1_14_val1762            |   in|   12|     ap_none|                            weights_1_14_val1762|        scalar|
+|weights_1_15_val1794            |   in|   12|     ap_none|                            weights_1_15_val1794|        scalar|
+|weights_1_16_val1826            |   in|   12|     ap_none|                            weights_1_16_val1826|        scalar|
+|weights_1_17_val1858            |   in|   12|     ap_none|                            weights_1_17_val1858|        scalar|
+|weights_1_18_val1890            |   in|   12|     ap_none|                            weights_1_18_val1890|        scalar|
+|weights_1_19_val1922            |   in|   12|     ap_none|                            weights_1_19_val1922|        scalar|
+|weights_1_20_val1954            |   in|   12|     ap_none|                            weights_1_20_val1954|        scalar|
+|weights_1_21_val1986            |   in|   12|     ap_none|                            weights_1_21_val1986|        scalar|
+|weights_1_22_val2018            |   in|   12|     ap_none|                            weights_1_22_val2018|        scalar|
+|weights_1_23_val2050            |   in|   12|     ap_none|                            weights_1_23_val2050|        scalar|
+|weights_1_24_val2082            |   in|   12|     ap_none|                            weights_1_24_val2082|        scalar|
+|weights_1_25_val2114            |   in|   12|     ap_none|                            weights_1_25_val2114|        scalar|
+|weights_1_26_val2146            |   in|   12|     ap_none|                            weights_1_26_val2146|        scalar|
+|weights_1_27_val2178            |   in|   12|     ap_none|                            weights_1_27_val2178|        scalar|
+|weights_1_28_val2210            |   in|   12|     ap_none|                            weights_1_28_val2210|        scalar|
+|weights_1_29_val2243            |   in|   12|     ap_none|                            weights_1_29_val2243|        scalar|
+|weights_1_30_val2275            |   in|   12|     ap_none|                            weights_1_30_val2275|        scalar|
+|weights_1_31_val2307            |   in|   12|     ap_none|                            weights_1_31_val2307|        scalar|
+|weights_2_0_val2339             |   in|   12|     ap_none|                             weights_2_0_val2339|        scalar|
+|weights_2_1_val2371             |   in|   12|     ap_none|                             weights_2_1_val2371|        scalar|
+|weights_2_2_val2403             |   in|   12|     ap_none|                             weights_2_2_val2403|        scalar|
+|weights_2_3_val2435             |   in|   12|     ap_none|                             weights_2_3_val2435|        scalar|
+|weights_2_4_val2467             |   in|   12|     ap_none|                             weights_2_4_val2467|        scalar|
+|weights_2_5_val2499             |   in|   12|     ap_none|                             weights_2_5_val2499|        scalar|
+|weights_2_6_val2531             |   in|   12|     ap_none|                             weights_2_6_val2531|        scalar|
+|weights_2_7_val2563             |   in|   12|     ap_none|                             weights_2_7_val2563|        scalar|
+|weights_2_8_val2595             |   in|   12|     ap_none|                             weights_2_8_val2595|        scalar|
+|weights_2_9_val2627             |   in|   12|     ap_none|                             weights_2_9_val2627|        scalar|
+|weights_2_10_val2659            |   in|   12|     ap_none|                            weights_2_10_val2659|        scalar|
+|weights_2_11_val2691            |   in|   12|     ap_none|                            weights_2_11_val2691|        scalar|
+|weights_2_12_val2723            |   in|   12|     ap_none|                            weights_2_12_val2723|        scalar|
+|weights_2_13_val2755            |   in|   12|     ap_none|                            weights_2_13_val2755|        scalar|
+|weights_2_14_val2788            |   in|   12|     ap_none|                            weights_2_14_val2788|        scalar|
+|weights_2_15_val2820            |   in|   12|     ap_none|                            weights_2_15_val2820|        scalar|
+|weights_2_16_val2852            |   in|   12|     ap_none|                            weights_2_16_val2852|        scalar|
+|weights_2_17_val2884            |   in|   12|     ap_none|                            weights_2_17_val2884|        scalar|
+|weights_2_18_val2916            |   in|   12|     ap_none|                            weights_2_18_val2916|        scalar|
+|weights_2_19_val2948            |   in|   12|     ap_none|                            weights_2_19_val2948|        scalar|
+|weights_2_20_val2980            |   in|   12|     ap_none|                            weights_2_20_val2980|        scalar|
+|weights_2_21_val3012            |   in|   12|     ap_none|                            weights_2_21_val3012|        scalar|
+|weights_2_22_val3044            |   in|   12|     ap_none|                            weights_2_22_val3044|        scalar|
+|weights_2_23_val3076            |   in|   12|     ap_none|                            weights_2_23_val3076|        scalar|
+|weights_2_24_val3108            |   in|   12|     ap_none|                            weights_2_24_val3108|        scalar|
+|weights_2_25_val3140            |   in|   12|     ap_none|                            weights_2_25_val3140|        scalar|
+|weights_2_26_val3172            |   in|   12|     ap_none|                            weights_2_26_val3172|        scalar|
+|weights_2_27_val3204            |   in|   12|     ap_none|                            weights_2_27_val3204|        scalar|
+|weights_2_28_val3236            |   in|   12|     ap_none|                            weights_2_28_val3236|        scalar|
+|weights_2_29_val3268            |   in|   12|     ap_none|                            weights_2_29_val3268|        scalar|
+|weights_2_30_val3300            |   in|   12|     ap_none|                            weights_2_30_val3300|        scalar|
+|weights_2_31_val3333            |   in|   12|     ap_none|                            weights_2_31_val3333|        scalar|
+|weights_3_0_val3365             |   in|   12|     ap_none|                             weights_3_0_val3365|        scalar|
+|weights_3_1_val3397             |   in|   12|     ap_none|                             weights_3_1_val3397|        scalar|
+|weights_3_2_val3429             |   in|   12|     ap_none|                             weights_3_2_val3429|        scalar|
+|weights_3_3_val3461             |   in|   12|     ap_none|                             weights_3_3_val3461|        scalar|
+|weights_3_4_val3493             |   in|   12|     ap_none|                             weights_3_4_val3493|        scalar|
+|weights_3_5_val3525             |   in|   12|     ap_none|                             weights_3_5_val3525|        scalar|
+|weights_3_6_val3557             |   in|   12|     ap_none|                             weights_3_6_val3557|        scalar|
+|weights_3_7_val3589             |   in|   12|     ap_none|                             weights_3_7_val3589|        scalar|
+|weights_3_8_val3621             |   in|   12|     ap_none|                             weights_3_8_val3621|        scalar|
+|weights_3_9_val3653             |   in|   12|     ap_none|                             weights_3_9_val3653|        scalar|
+|weights_3_10_val3685            |   in|   12|     ap_none|                            weights_3_10_val3685|        scalar|
+|weights_3_11_val3717            |   in|   12|     ap_none|                            weights_3_11_val3717|        scalar|
+|weights_3_12_val3749            |   in|   12|     ap_none|                            weights_3_12_val3749|        scalar|
+|weights_3_13_val3781            |   in|   12|     ap_none|                            weights_3_13_val3781|        scalar|
+|weights_3_14_val3813            |   in|   12|     ap_none|                            weights_3_14_val3813|        scalar|
+|weights_3_15_val3845            |   in|   12|     ap_none|                            weights_3_15_val3845|        scalar|
+|weights_3_16_val3878            |   in|   12|     ap_none|                            weights_3_16_val3878|        scalar|
+|weights_3_17_val3910            |   in|   12|     ap_none|                            weights_3_17_val3910|        scalar|
+|weights_3_18_val3942            |   in|   12|     ap_none|                            weights_3_18_val3942|        scalar|
+|weights_3_19_val3974            |   in|   12|     ap_none|                            weights_3_19_val3974|        scalar|
+|weights_3_20_val4006            |   in|   12|     ap_none|                            weights_3_20_val4006|        scalar|
+|weights_3_21_val4038            |   in|   12|     ap_none|                            weights_3_21_val4038|        scalar|
+|weights_3_22_val4070            |   in|   12|     ap_none|                            weights_3_22_val4070|        scalar|
+|weights_3_23_val4102            |   in|   12|     ap_none|                            weights_3_23_val4102|        scalar|
+|weights_3_24_val4134            |   in|   12|     ap_none|                            weights_3_24_val4134|        scalar|
+|weights_3_25_val4166            |   in|   12|     ap_none|                            weights_3_25_val4166|        scalar|
+|weights_3_26_val4198            |   in|   12|     ap_none|                            weights_3_26_val4198|        scalar|
+|weights_3_27_val4230            |   in|   12|     ap_none|                            weights_3_27_val4230|        scalar|
+|weights_3_28_val4262            |   in|   12|     ap_none|                            weights_3_28_val4262|        scalar|
+|weights_3_29_val4294            |   in|   12|     ap_none|                            weights_3_29_val4294|        scalar|
+|weights_3_30_val4326            |   in|   12|     ap_none|                            weights_3_30_val4326|        scalar|
+|weights_3_31_val4358            |   in|   12|     ap_none|                            weights_3_31_val4358|        scalar|
+|weights_4_0_val4390             |   in|   12|     ap_none|                             weights_4_0_val4390|        scalar|
+|weights_4_1_val4423             |   in|   12|     ap_none|                             weights_4_1_val4423|        scalar|
+|weights_4_2_val4455             |   in|   12|     ap_none|                             weights_4_2_val4455|        scalar|
+|weights_4_3_val4487             |   in|   12|     ap_none|                             weights_4_3_val4487|        scalar|
+|weights_4_4_val4519             |   in|   12|     ap_none|                             weights_4_4_val4519|        scalar|
+|weights_4_5_val4551             |   in|   12|     ap_none|                             weights_4_5_val4551|        scalar|
+|weights_4_6_val4583             |   in|   12|     ap_none|                             weights_4_6_val4583|        scalar|
+|weights_4_7_val4615             |   in|   12|     ap_none|                             weights_4_7_val4615|        scalar|
+|weights_4_8_val4647             |   in|   12|     ap_none|                             weights_4_8_val4647|        scalar|
+|weights_4_9_val4679             |   in|   12|     ap_none|                             weights_4_9_val4679|        scalar|
+|weights_4_10_val4711            |   in|   12|     ap_none|                            weights_4_10_val4711|        scalar|
+|weights_4_11_val4743            |   in|   12|     ap_none|                            weights_4_11_val4743|        scalar|
+|weights_4_12_val4775            |   in|   12|     ap_none|                            weights_4_12_val4775|        scalar|
+|weights_4_13_val4807            |   in|   12|     ap_none|                            weights_4_13_val4807|        scalar|
+|weights_4_14_val4839            |   in|   12|     ap_none|                            weights_4_14_val4839|        scalar|
+|weights_4_15_val4871            |   in|   12|     ap_none|                            weights_4_15_val4871|        scalar|
+|weights_4_16_val4903            |   in|   12|     ap_none|                            weights_4_16_val4903|        scalar|
+|weights_4_17_val4935            |   in|   12|     ap_none|                            weights_4_17_val4935|        scalar|
+|weights_4_18_val4968            |   in|   12|     ap_none|                            weights_4_18_val4968|        scalar|
+|weights_4_19_val5000            |   in|   12|     ap_none|                            weights_4_19_val5000|        scalar|
+|weights_4_20_val5032            |   in|   12|     ap_none|                            weights_4_20_val5032|        scalar|
+|weights_4_21_val5064            |   in|   12|     ap_none|                            weights_4_21_val5064|        scalar|
+|weights_4_22_val5096            |   in|   12|     ap_none|                            weights_4_22_val5096|        scalar|
+|weights_4_23_val5128            |   in|   12|     ap_none|                            weights_4_23_val5128|        scalar|
+|weights_4_24_val5160            |   in|   12|     ap_none|                            weights_4_24_val5160|        scalar|
+|weights_4_25_val5192            |   in|   12|     ap_none|                            weights_4_25_val5192|        scalar|
+|weights_4_26_val5224            |   in|   12|     ap_none|                            weights_4_26_val5224|        scalar|
+|weights_4_27_val5256            |   in|   12|     ap_none|                            weights_4_27_val5256|        scalar|
+|weights_4_28_val5288            |   in|   12|     ap_none|                            weights_4_28_val5288|        scalar|
+|weights_4_29_val5320            |   in|   12|     ap_none|                            weights_4_29_val5320|        scalar|
+|weights_4_30_val5352            |   in|   12|     ap_none|                            weights_4_30_val5352|        scalar|
+|weights_4_31_val5384            |   in|   12|     ap_none|                            weights_4_31_val5384|        scalar|
+|weights_5_0_val5416             |   in|   12|     ap_none|                             weights_5_0_val5416|        scalar|
+|weights_5_1_val5448             |   in|   12|     ap_none|                             weights_5_1_val5448|        scalar|
+|weights_5_2_val5480             |   in|   12|     ap_none|                             weights_5_2_val5480|        scalar|
+|weights_5_3_val5513             |   in|   12|     ap_none|                             weights_5_3_val5513|        scalar|
+|weights_5_4_val5545             |   in|   12|     ap_none|                             weights_5_4_val5545|        scalar|
+|weights_5_5_val5577             |   in|   12|     ap_none|                             weights_5_5_val5577|        scalar|
+|weights_5_6_val5609             |   in|   12|     ap_none|                             weights_5_6_val5609|        scalar|
+|weights_5_7_val5641             |   in|   12|     ap_none|                             weights_5_7_val5641|        scalar|
+|weights_5_8_val5673             |   in|   12|     ap_none|                             weights_5_8_val5673|        scalar|
+|weights_5_9_val5705             |   in|   12|     ap_none|                             weights_5_9_val5705|        scalar|
+|weights_5_10_val5737            |   in|   12|     ap_none|                            weights_5_10_val5737|        scalar|
+|weights_5_11_val5769            |   in|   12|     ap_none|                            weights_5_11_val5769|        scalar|
+|weights_5_12_val5801            |   in|   12|     ap_none|                            weights_5_12_val5801|        scalar|
+|weights_5_13_val5833            |   in|   12|     ap_none|                            weights_5_13_val5833|        scalar|
+|weights_5_14_val5865            |   in|   12|     ap_none|                            weights_5_14_val5865|        scalar|
+|weights_5_15_val5897            |   in|   12|     ap_none|                            weights_5_15_val5897|        scalar|
+|weights_5_16_val5929            |   in|   12|     ap_none|                            weights_5_16_val5929|        scalar|
+|weights_5_17_val5961            |   in|   12|     ap_none|                            weights_5_17_val5961|        scalar|
+|weights_5_18_val5993            |   in|   12|     ap_none|                            weights_5_18_val5993|        scalar|
+|weights_5_19_val6025            |   in|   12|     ap_none|                            weights_5_19_val6025|        scalar|
+|weights_5_20_val6058            |   in|   12|     ap_none|                            weights_5_20_val6058|        scalar|
+|weights_5_21_val6090            |   in|   12|     ap_none|                            weights_5_21_val6090|        scalar|
+|weights_5_22_val6122            |   in|   12|     ap_none|                            weights_5_22_val6122|        scalar|
+|weights_5_23_val6154            |   in|   12|     ap_none|                            weights_5_23_val6154|        scalar|
+|weights_5_24_val6186            |   in|   12|     ap_none|                            weights_5_24_val6186|        scalar|
+|weights_5_25_val6218            |   in|   12|     ap_none|                            weights_5_25_val6218|        scalar|
+|weights_5_26_val6250            |   in|   12|     ap_none|                            weights_5_26_val6250|        scalar|
+|weights_5_27_val6282            |   in|   12|     ap_none|                            weights_5_27_val6282|        scalar|
+|weights_5_28_val6314            |   in|   12|     ap_none|                            weights_5_28_val6314|        scalar|
+|weights_5_29_val6346            |   in|   12|     ap_none|                            weights_5_29_val6346|        scalar|
+|weights_5_30_val6378            |   in|   12|     ap_none|                            weights_5_30_val6378|        scalar|
+|weights_5_31_val6410            |   in|   12|     ap_none|                            weights_5_31_val6410|        scalar|
+|weights_6_0_val6442             |   in|   12|     ap_none|                             weights_6_0_val6442|        scalar|
+|weights_6_1_val6474             |   in|   12|     ap_none|                             weights_6_1_val6474|        scalar|
+|weights_6_2_val6506             |   in|   12|     ap_none|                             weights_6_2_val6506|        scalar|
+|weights_6_3_val6538             |   in|   12|     ap_none|                             weights_6_3_val6538|        scalar|
+|weights_6_4_val6570             |   in|   12|     ap_none|                             weights_6_4_val6570|        scalar|
+|weights_6_5_val6603             |   in|   12|     ap_none|                             weights_6_5_val6603|        scalar|
+|weights_6_6_val6635             |   in|   12|     ap_none|                             weights_6_6_val6635|        scalar|
+|weights_6_7_val6667             |   in|   12|     ap_none|                             weights_6_7_val6667|        scalar|
+|weights_6_8_val6699             |   in|   12|     ap_none|                             weights_6_8_val6699|        scalar|
+|weights_6_9_val6731             |   in|   12|     ap_none|                             weights_6_9_val6731|        scalar|
+|weights_6_10_val6763            |   in|   12|     ap_none|                            weights_6_10_val6763|        scalar|
+|weights_6_11_val6795            |   in|   12|     ap_none|                            weights_6_11_val6795|        scalar|
+|weights_6_12_val6827            |   in|   12|     ap_none|                            weights_6_12_val6827|        scalar|
+|weights_6_13_val6859            |   in|   12|     ap_none|                            weights_6_13_val6859|        scalar|
+|weights_6_14_val6891            |   in|   12|     ap_none|                            weights_6_14_val6891|        scalar|
+|weights_6_15_val6923            |   in|   12|     ap_none|                            weights_6_15_val6923|        scalar|
+|weights_6_16_val6955            |   in|   12|     ap_none|                            weights_6_16_val6955|        scalar|
+|weights_6_17_val6987            |   in|   12|     ap_none|                            weights_6_17_val6987|        scalar|
+|weights_6_18_val7019            |   in|   12|     ap_none|                            weights_6_18_val7019|        scalar|
+|weights_6_19_val7051            |   in|   12|     ap_none|                            weights_6_19_val7051|        scalar|
+|weights_6_20_val7083            |   in|   12|     ap_none|                            weights_6_20_val7083|        scalar|
+|weights_6_21_val7115            |   in|   12|     ap_none|                            weights_6_21_val7115|        scalar|
+|weights_6_22_val7148            |   in|   12|     ap_none|                            weights_6_22_val7148|        scalar|
+|weights_6_23_val7180            |   in|   12|     ap_none|                            weights_6_23_val7180|        scalar|
+|weights_6_24_val7212            |   in|   12|     ap_none|                            weights_6_24_val7212|        scalar|
+|weights_6_25_val7244            |   in|   12|     ap_none|                            weights_6_25_val7244|        scalar|
+|weights_6_26_val7276            |   in|   12|     ap_none|                            weights_6_26_val7276|        scalar|
+|weights_6_27_val7308            |   in|   12|     ap_none|                            weights_6_27_val7308|        scalar|
+|weights_6_28_val7340            |   in|   12|     ap_none|                            weights_6_28_val7340|        scalar|
+|weights_6_29_val7372            |   in|   12|     ap_none|                            weights_6_29_val7372|        scalar|
+|weights_6_30_val7404            |   in|   12|     ap_none|                            weights_6_30_val7404|        scalar|
+|weights_6_31_val7436            |   in|   12|     ap_none|                            weights_6_31_val7436|        scalar|
+|weights_7_0_val7468             |   in|   12|     ap_none|                             weights_7_0_val7468|        scalar|
+|weights_7_1_val7500             |   in|   12|     ap_none|                             weights_7_1_val7500|        scalar|
+|weights_7_2_val7532             |   in|   12|     ap_none|                             weights_7_2_val7532|        scalar|
+|weights_7_3_val7564             |   in|   12|     ap_none|                             weights_7_3_val7564|        scalar|
+|weights_7_4_val7596             |   in|   12|     ap_none|                             weights_7_4_val7596|        scalar|
+|weights_7_5_val7628             |   in|   12|     ap_none|                             weights_7_5_val7628|        scalar|
+|weights_7_6_val7660             |   in|   12|     ap_none|                             weights_7_6_val7660|        scalar|
+|weights_7_7_val7693             |   in|   12|     ap_none|                             weights_7_7_val7693|        scalar|
+|weights_7_8_val7725             |   in|   12|     ap_none|                             weights_7_8_val7725|        scalar|
+|weights_7_9_val7757             |   in|   12|     ap_none|                             weights_7_9_val7757|        scalar|
+|weights_7_10_val7789            |   in|   12|     ap_none|                            weights_7_10_val7789|        scalar|
+|weights_7_11_val7821            |   in|   12|     ap_none|                            weights_7_11_val7821|        scalar|
+|weights_7_12_val7853            |   in|   12|     ap_none|                            weights_7_12_val7853|        scalar|
+|weights_7_13_val7885            |   in|   12|     ap_none|                            weights_7_13_val7885|        scalar|
+|weights_7_14_val7917            |   in|   12|     ap_none|                            weights_7_14_val7917|        scalar|
+|weights_7_15_val7949            |   in|   12|     ap_none|                            weights_7_15_val7949|        scalar|
+|weights_7_16_val7981            |   in|   12|     ap_none|                            weights_7_16_val7981|        scalar|
+|weights_7_17_val8013            |   in|   12|     ap_none|                            weights_7_17_val8013|        scalar|
+|weights_7_18_val8045            |   in|   12|     ap_none|                            weights_7_18_val8045|        scalar|
+|weights_7_19_val8077            |   in|   12|     ap_none|                            weights_7_19_val8077|        scalar|
+|weights_7_20_val8109            |   in|   12|     ap_none|                            weights_7_20_val8109|        scalar|
+|weights_7_21_val8141            |   in|   12|     ap_none|                            weights_7_21_val8141|        scalar|
+|weights_7_22_val8173            |   in|   12|     ap_none|                            weights_7_22_val8173|        scalar|
+|weights_7_23_val8205            |   in|   12|     ap_none|                            weights_7_23_val8205|        scalar|
+|weights_7_24_val8238            |   in|   12|     ap_none|                            weights_7_24_val8238|        scalar|
+|weights_7_25_val8270            |   in|   12|     ap_none|                            weights_7_25_val8270|        scalar|
+|weights_7_26_val8302            |   in|   12|     ap_none|                            weights_7_26_val8302|        scalar|
+|weights_7_27_val8334            |   in|   12|     ap_none|                            weights_7_27_val8334|        scalar|
+|weights_7_28_val8366            |   in|   12|     ap_none|                            weights_7_28_val8366|        scalar|
+|weights_7_29_val8398            |   in|   12|     ap_none|                            weights_7_29_val8398|        scalar|
+|weights_7_30_val8430            |   in|   12|     ap_none|                            weights_7_30_val8430|        scalar|
+|weights_7_31_val8462            |   in|   12|     ap_none|                            weights_7_31_val8462|        scalar|
+|weights_8_0_val8494             |   in|   12|     ap_none|                             weights_8_0_val8494|        scalar|
+|weights_8_1_val8526             |   in|   12|     ap_none|                             weights_8_1_val8526|        scalar|
+|weights_8_2_val8558             |   in|   12|     ap_none|                             weights_8_2_val8558|        scalar|
+|weights_8_3_val8590             |   in|   12|     ap_none|                             weights_8_3_val8590|        scalar|
+|weights_8_4_val8622             |   in|   12|     ap_none|                             weights_8_4_val8622|        scalar|
+|weights_8_5_val8654             |   in|   12|     ap_none|                             weights_8_5_val8654|        scalar|
+|weights_8_6_val8686             |   in|   12|     ap_none|                             weights_8_6_val8686|        scalar|
+|weights_8_7_val8718             |   in|   12|     ap_none|                             weights_8_7_val8718|        scalar|
+|weights_8_8_val8750             |   in|   12|     ap_none|                             weights_8_8_val8750|        scalar|
+|weights_8_9_val8783             |   in|   12|     ap_none|                             weights_8_9_val8783|        scalar|
+|weights_8_10_val8815            |   in|   12|     ap_none|                            weights_8_10_val8815|        scalar|
+|weights_8_11_val8847            |   in|   12|     ap_none|                            weights_8_11_val8847|        scalar|
+|weights_8_12_val8879            |   in|   12|     ap_none|                            weights_8_12_val8879|        scalar|
+|weights_8_13_val8911            |   in|   12|     ap_none|                            weights_8_13_val8911|        scalar|
+|weights_8_14_val8943            |   in|   12|     ap_none|                            weights_8_14_val8943|        scalar|
+|weights_8_15_val8975            |   in|   12|     ap_none|                            weights_8_15_val8975|        scalar|
+|weights_8_16_val9007            |   in|   12|     ap_none|                            weights_8_16_val9007|        scalar|
+|weights_8_17_val9039            |   in|   12|     ap_none|                            weights_8_17_val9039|        scalar|
+|weights_8_18_val9071            |   in|   12|     ap_none|                            weights_8_18_val9071|        scalar|
+|weights_8_19_val9103            |   in|   12|     ap_none|                            weights_8_19_val9103|        scalar|
+|weights_8_20_val9135            |   in|   12|     ap_none|                            weights_8_20_val9135|        scalar|
+|weights_8_21_val9167            |   in|   12|     ap_none|                            weights_8_21_val9167|        scalar|
+|weights_8_22_val9199            |   in|   12|     ap_none|                            weights_8_22_val9199|        scalar|
+|weights_8_23_val9231            |   in|   12|     ap_none|                            weights_8_23_val9231|        scalar|
+|weights_8_24_val9263            |   in|   12|     ap_none|                            weights_8_24_val9263|        scalar|
+|weights_8_25_val9295            |   in|   12|     ap_none|                            weights_8_25_val9295|        scalar|
+|weights_8_26_val9327            |   in|   12|     ap_none|                            weights_8_26_val9327|        scalar|
+|weights_8_27_val9359            |   in|   12|     ap_none|                            weights_8_27_val9359|        scalar|
+|weights_8_28_val9391            |   in|   12|     ap_none|                            weights_8_28_val9391|        scalar|
+|weights_8_29_val9423            |   in|   12|     ap_none|                            weights_8_29_val9423|        scalar|
+|weights_8_30_val9455            |   in|   12|     ap_none|                            weights_8_30_val9455|        scalar|
+|weights_8_31_val9487            |   in|   12|     ap_none|                            weights_8_31_val9487|        scalar|
+|weights_9_0_val9519             |   in|   12|     ap_none|                             weights_9_0_val9519|        scalar|
+|weights_9_1_val9551             |   in|   12|     ap_none|                             weights_9_1_val9551|        scalar|
+|weights_9_2_val9583             |   in|   12|     ap_none|                             weights_9_2_val9583|        scalar|
+|weights_9_3_val9615             |   in|   12|     ap_none|                             weights_9_3_val9615|        scalar|
+|weights_9_4_val9647             |   in|   12|     ap_none|                             weights_9_4_val9647|        scalar|
+|weights_9_5_val9679             |   in|   12|     ap_none|                             weights_9_5_val9679|        scalar|
+|weights_9_6_val9711             |   in|   12|     ap_none|                             weights_9_6_val9711|        scalar|
+|weights_9_7_val9743             |   in|   12|     ap_none|                             weights_9_7_val9743|        scalar|
+|weights_9_8_val9775             |   in|   12|     ap_none|                             weights_9_8_val9775|        scalar|
+|weights_9_9_val9807             |   in|   12|     ap_none|                             weights_9_9_val9807|        scalar|
+|weights_9_10_val9839            |   in|   12|     ap_none|                            weights_9_10_val9839|        scalar|
+|weights_9_11_val9871            |   in|   12|     ap_none|                            weights_9_11_val9871|        scalar|
+|weights_9_12_val9903            |   in|   12|     ap_none|                            weights_9_12_val9903|        scalar|
+|weights_9_13_val9935            |   in|   12|     ap_none|                            weights_9_13_val9935|        scalar|
+|weights_9_14_val9967            |   in|   12|     ap_none|                            weights_9_14_val9967|        scalar|
+|weights_9_15_val9999            |   in|   12|     ap_none|                            weights_9_15_val9999|        scalar|
+|weights_9_16_val10031           |   in|   12|     ap_none|                           weights_9_16_val10031|        scalar|
+|weights_9_17_val10063           |   in|   12|     ap_none|                           weights_9_17_val10063|        scalar|
+|weights_9_18_val10095           |   in|   12|     ap_none|                           weights_9_18_val10095|        scalar|
+|weights_9_19_val10127           |   in|   12|     ap_none|                           weights_9_19_val10127|        scalar|
+|weights_9_20_val10159           |   in|   12|     ap_none|                           weights_9_20_val10159|        scalar|
+|weights_9_21_val10191           |   in|   12|     ap_none|                           weights_9_21_val10191|        scalar|
+|weights_9_22_val10223           |   in|   12|     ap_none|                           weights_9_22_val10223|        scalar|
+|weights_9_23_val10255           |   in|   12|     ap_none|                           weights_9_23_val10255|        scalar|
+|weights_9_24_val10287           |   in|   12|     ap_none|                           weights_9_24_val10287|        scalar|
+|weights_9_25_val10319           |   in|   12|     ap_none|                           weights_9_25_val10319|        scalar|
+|weights_9_26_val10351           |   in|   12|     ap_none|                           weights_9_26_val10351|        scalar|
+|weights_9_27_val10383           |   in|   12|     ap_none|                           weights_9_27_val10383|        scalar|
+|weights_9_28_val10415           |   in|   12|     ap_none|                           weights_9_28_val10415|        scalar|
+|weights_9_29_val10447           |   in|   12|     ap_none|                           weights_9_29_val10447|        scalar|
+|weights_9_30_val10479           |   in|   12|     ap_none|                           weights_9_30_val10479|        scalar|
+|weights_9_31_val10511           |   in|   12|     ap_none|                           weights_9_31_val10511|        scalar|
+|weights_10_0_val10543           |   in|   12|     ap_none|                           weights_10_0_val10543|        scalar|
+|weights_10_1_val10575           |   in|   12|     ap_none|                           weights_10_1_val10575|        scalar|
+|weights_10_2_val10607           |   in|   12|     ap_none|                           weights_10_2_val10607|        scalar|
+|weights_10_3_val10639           |   in|   12|     ap_none|                           weights_10_3_val10639|        scalar|
+|weights_10_4_val10671           |   in|   12|     ap_none|                           weights_10_4_val10671|        scalar|
+|weights_10_5_val10703           |   in|   12|     ap_none|                           weights_10_5_val10703|        scalar|
+|weights_10_6_val10735           |   in|   12|     ap_none|                           weights_10_6_val10735|        scalar|
+|weights_10_7_val10767           |   in|   12|     ap_none|                           weights_10_7_val10767|        scalar|
+|weights_10_8_val10799           |   in|   12|     ap_none|                           weights_10_8_val10799|        scalar|
+|weights_10_9_val10831           |   in|   12|     ap_none|                           weights_10_9_val10831|        scalar|
+|weights_10_10_val10863          |   in|   12|     ap_none|                          weights_10_10_val10863|        scalar|
+|weights_10_11_val10895          |   in|   12|     ap_none|                          weights_10_11_val10895|        scalar|
+|weights_10_12_val10927          |   in|   12|     ap_none|                          weights_10_12_val10927|        scalar|
+|weights_10_13_val10959          |   in|   12|     ap_none|                          weights_10_13_val10959|        scalar|
+|weights_10_14_val10991          |   in|   12|     ap_none|                          weights_10_14_val10991|        scalar|
+|weights_10_15_val11023          |   in|   12|     ap_none|                          weights_10_15_val11023|        scalar|
+|weights_10_16_val11055          |   in|   12|     ap_none|                          weights_10_16_val11055|        scalar|
+|weights_10_17_val11087          |   in|   12|     ap_none|                          weights_10_17_val11087|        scalar|
+|weights_10_18_val11119          |   in|   12|     ap_none|                          weights_10_18_val11119|        scalar|
+|weights_10_19_val11151          |   in|   12|     ap_none|                          weights_10_19_val11151|        scalar|
+|weights_10_20_val11183          |   in|   12|     ap_none|                          weights_10_20_val11183|        scalar|
+|weights_10_21_val11215          |   in|   12|     ap_none|                          weights_10_21_val11215|        scalar|
+|weights_10_22_val11247          |   in|   12|     ap_none|                          weights_10_22_val11247|        scalar|
+|weights_10_23_val11279          |   in|   12|     ap_none|                          weights_10_23_val11279|        scalar|
+|weights_10_24_val11311          |   in|   12|     ap_none|                          weights_10_24_val11311|        scalar|
+|weights_10_25_val11343          |   in|   12|     ap_none|                          weights_10_25_val11343|        scalar|
+|weights_10_26_val11375          |   in|   12|     ap_none|                          weights_10_26_val11375|        scalar|
+|weights_10_27_val11407          |   in|   12|     ap_none|                          weights_10_27_val11407|        scalar|
+|weights_10_28_val11439          |   in|   12|     ap_none|                          weights_10_28_val11439|        scalar|
+|weights_10_29_val11471          |   in|   12|     ap_none|                          weights_10_29_val11471|        scalar|
+|weights_10_30_val11503          |   in|   12|     ap_none|                          weights_10_30_val11503|        scalar|
+|weights_10_31_val11535          |   in|   12|     ap_none|                          weights_10_31_val11535|        scalar|
+|weights_11_0_val11567           |   in|   12|     ap_none|                           weights_11_0_val11567|        scalar|
+|weights_11_1_val11599           |   in|   12|     ap_none|                           weights_11_1_val11599|        scalar|
+|weights_11_2_val11631           |   in|   12|     ap_none|                           weights_11_2_val11631|        scalar|
+|weights_11_3_val11663           |   in|   12|     ap_none|                           weights_11_3_val11663|        scalar|
+|weights_11_4_val11695           |   in|   12|     ap_none|                           weights_11_4_val11695|        scalar|
+|weights_11_5_val11727           |   in|   12|     ap_none|                           weights_11_5_val11727|        scalar|
+|weights_11_6_val11759           |   in|   12|     ap_none|                           weights_11_6_val11759|        scalar|
+|weights_11_7_val11791           |   in|   12|     ap_none|                           weights_11_7_val11791|        scalar|
+|weights_11_8_val11823           |   in|   12|     ap_none|                           weights_11_8_val11823|        scalar|
+|weights_11_9_val11855           |   in|   12|     ap_none|                           weights_11_9_val11855|        scalar|
+|weights_11_10_val11887          |   in|   12|     ap_none|                          weights_11_10_val11887|        scalar|
+|weights_11_11_val11919          |   in|   12|     ap_none|                          weights_11_11_val11919|        scalar|
+|weights_11_12_val11951          |   in|   12|     ap_none|                          weights_11_12_val11951|        scalar|
+|weights_11_13_val11983          |   in|   12|     ap_none|                          weights_11_13_val11983|        scalar|
+|weights_11_14_val12015          |   in|   12|     ap_none|                          weights_11_14_val12015|        scalar|
+|weights_11_15_val12047          |   in|   12|     ap_none|                          weights_11_15_val12047|        scalar|
+|weights_11_16_val12079          |   in|   12|     ap_none|                          weights_11_16_val12079|        scalar|
+|weights_11_17_val12111          |   in|   12|     ap_none|                          weights_11_17_val12111|        scalar|
+|weights_11_18_val12143          |   in|   12|     ap_none|                          weights_11_18_val12143|        scalar|
+|weights_11_19_val12175          |   in|   12|     ap_none|                          weights_11_19_val12175|        scalar|
+|weights_11_20_val12207          |   in|   12|     ap_none|                          weights_11_20_val12207|        scalar|
+|weights_11_21_val12239          |   in|   12|     ap_none|                          weights_11_21_val12239|        scalar|
+|weights_11_22_val12271          |   in|   12|     ap_none|                          weights_11_22_val12271|        scalar|
+|weights_11_23_val12303          |   in|   12|     ap_none|                          weights_11_23_val12303|        scalar|
+|weights_11_24_val12335          |   in|   12|     ap_none|                          weights_11_24_val12335|        scalar|
+|weights_11_25_val12367          |   in|   12|     ap_none|                          weights_11_25_val12367|        scalar|
+|weights_11_26_val12399          |   in|   12|     ap_none|                          weights_11_26_val12399|        scalar|
+|weights_11_27_val12431          |   in|   12|     ap_none|                          weights_11_27_val12431|        scalar|
+|weights_11_28_val12463          |   in|   12|     ap_none|                          weights_11_28_val12463|        scalar|
+|weights_11_29_val12495          |   in|   12|     ap_none|                          weights_11_29_val12495|        scalar|
+|weights_11_30_val12527          |   in|   12|     ap_none|                          weights_11_30_val12527|        scalar|
+|weights_11_31_val12559          |   in|   12|     ap_none|                          weights_11_31_val12559|        scalar|
+|weights_12_0_val12591           |   in|   12|     ap_none|                           weights_12_0_val12591|        scalar|
+|weights_12_1_val12623           |   in|   12|     ap_none|                           weights_12_1_val12623|        scalar|
+|weights_12_2_val12655           |   in|   12|     ap_none|                           weights_12_2_val12655|        scalar|
+|weights_12_3_val12687           |   in|   12|     ap_none|                           weights_12_3_val12687|        scalar|
+|weights_12_4_val12719           |   in|   12|     ap_none|                           weights_12_4_val12719|        scalar|
+|weights_12_5_val12751           |   in|   12|     ap_none|                           weights_12_5_val12751|        scalar|
+|weights_12_6_val12783           |   in|   12|     ap_none|                           weights_12_6_val12783|        scalar|
+|weights_12_7_val12815           |   in|   12|     ap_none|                           weights_12_7_val12815|        scalar|
+|weights_12_8_val12847           |   in|   12|     ap_none|                           weights_12_8_val12847|        scalar|
+|weights_12_9_val12879           |   in|   12|     ap_none|                           weights_12_9_val12879|        scalar|
+|weights_12_10_val12911          |   in|   12|     ap_none|                          weights_12_10_val12911|        scalar|
+|weights_12_11_val12943          |   in|   12|     ap_none|                          weights_12_11_val12943|        scalar|
+|weights_12_12_val12975          |   in|   12|     ap_none|                          weights_12_12_val12975|        scalar|
+|weights_12_13_val13007          |   in|   12|     ap_none|                          weights_12_13_val13007|        scalar|
+|weights_12_14_val13039          |   in|   12|     ap_none|                          weights_12_14_val13039|        scalar|
+|weights_12_15_val13071          |   in|   12|     ap_none|                          weights_12_15_val13071|        scalar|
+|weights_12_16_val13103          |   in|   12|     ap_none|                          weights_12_16_val13103|        scalar|
+|weights_12_17_val13135          |   in|   12|     ap_none|                          weights_12_17_val13135|        scalar|
+|weights_12_18_val13167          |   in|   12|     ap_none|                          weights_12_18_val13167|        scalar|
+|weights_12_19_val13199          |   in|   12|     ap_none|                          weights_12_19_val13199|        scalar|
+|weights_12_20_val13231          |   in|   12|     ap_none|                          weights_12_20_val13231|        scalar|
+|weights_12_21_val13263          |   in|   12|     ap_none|                          weights_12_21_val13263|        scalar|
+|weights_12_22_val13295          |   in|   12|     ap_none|                          weights_12_22_val13295|        scalar|
+|weights_12_23_val13327          |   in|   12|     ap_none|                          weights_12_23_val13327|        scalar|
+|weights_12_24_val13359          |   in|   12|     ap_none|                          weights_12_24_val13359|        scalar|
+|weights_12_25_val13391          |   in|   12|     ap_none|                          weights_12_25_val13391|        scalar|
+|weights_12_26_val13423          |   in|   12|     ap_none|                          weights_12_26_val13423|        scalar|
+|weights_12_27_val13455          |   in|   12|     ap_none|                          weights_12_27_val13455|        scalar|
+|weights_12_28_val13487          |   in|   12|     ap_none|                          weights_12_28_val13487|        scalar|
+|weights_12_29_val13519          |   in|   12|     ap_none|                          weights_12_29_val13519|        scalar|
+|weights_12_30_val13551          |   in|   12|     ap_none|                          weights_12_30_val13551|        scalar|
+|weights_12_31_val13583          |   in|   12|     ap_none|                          weights_12_31_val13583|        scalar|
+|weights_13_0_val13615           |   in|   12|     ap_none|                           weights_13_0_val13615|        scalar|
+|weights_13_1_val13647           |   in|   12|     ap_none|                           weights_13_1_val13647|        scalar|
+|weights_13_2_val13679           |   in|   12|     ap_none|                           weights_13_2_val13679|        scalar|
+|weights_13_3_val13712           |   in|   12|     ap_none|                           weights_13_3_val13712|        scalar|
+|weights_13_4_val13744           |   in|   12|     ap_none|                           weights_13_4_val13744|        scalar|
+|weights_13_5_val13776           |   in|   12|     ap_none|                           weights_13_5_val13776|        scalar|
+|weights_13_6_val13808           |   in|   12|     ap_none|                           weights_13_6_val13808|        scalar|
+|weights_13_7_val13840           |   in|   12|     ap_none|                           weights_13_7_val13840|        scalar|
+|weights_13_8_val13872           |   in|   12|     ap_none|                           weights_13_8_val13872|        scalar|
+|weights_13_9_val13904           |   in|   12|     ap_none|                           weights_13_9_val13904|        scalar|
+|weights_13_10_val13936          |   in|   12|     ap_none|                          weights_13_10_val13936|        scalar|
+|weights_13_11_val13968          |   in|   12|     ap_none|                          weights_13_11_val13968|        scalar|
+|weights_13_12_val14000          |   in|   12|     ap_none|                          weights_13_12_val14000|        scalar|
+|weights_13_13_val14032          |   in|   12|     ap_none|                          weights_13_13_val14032|        scalar|
+|weights_13_14_val14064          |   in|   12|     ap_none|                          weights_13_14_val14064|        scalar|
+|weights_13_15_val14096          |   in|   12|     ap_none|                          weights_13_15_val14096|        scalar|
+|weights_13_16_val14128          |   in|   12|     ap_none|                          weights_13_16_val14128|        scalar|
+|weights_13_17_val14160          |   in|   12|     ap_none|                          weights_13_17_val14160|        scalar|
+|weights_13_18_val14192          |   in|   12|     ap_none|                          weights_13_18_val14192|        scalar|
+|weights_13_19_val14224          |   in|   12|     ap_none|                          weights_13_19_val14224|        scalar|
+|weights_13_20_val14257          |   in|   12|     ap_none|                          weights_13_20_val14257|        scalar|
+|weights_13_21_val14289          |   in|   12|     ap_none|                          weights_13_21_val14289|        scalar|
+|weights_13_22_val14321          |   in|   12|     ap_none|                          weights_13_22_val14321|        scalar|
+|weights_13_23_val14353          |   in|   12|     ap_none|                          weights_13_23_val14353|        scalar|
+|weights_13_24_val14385          |   in|   12|     ap_none|                          weights_13_24_val14385|        scalar|
+|weights_13_25_val14417          |   in|   12|     ap_none|                          weights_13_25_val14417|        scalar|
+|weights_13_26_val14449          |   in|   12|     ap_none|                          weights_13_26_val14449|        scalar|
+|weights_13_27_val14481          |   in|   12|     ap_none|                          weights_13_27_val14481|        scalar|
+|weights_13_28_val14513          |   in|   12|     ap_none|                          weights_13_28_val14513|        scalar|
+|weights_13_29_val14545          |   in|   12|     ap_none|                          weights_13_29_val14545|        scalar|
+|weights_13_30_val14577          |   in|   12|     ap_none|                          weights_13_30_val14577|        scalar|
+|weights_13_31_val14609          |   in|   12|     ap_none|                          weights_13_31_val14609|        scalar|
+|weights_14_0_val14641           |   in|   12|     ap_none|                           weights_14_0_val14641|        scalar|
+|weights_14_1_val14673           |   in|   12|     ap_none|                           weights_14_1_val14673|        scalar|
+|weights_14_2_val14705           |   in|   12|     ap_none|                           weights_14_2_val14705|        scalar|
+|weights_14_3_val14737           |   in|   12|     ap_none|                           weights_14_3_val14737|        scalar|
+|weights_14_4_val14769           |   in|   12|     ap_none|                           weights_14_4_val14769|        scalar|
+|weights_14_5_val14802           |   in|   12|     ap_none|                           weights_14_5_val14802|        scalar|
+|weights_14_6_val14834           |   in|   12|     ap_none|                           weights_14_6_val14834|        scalar|
+|weights_14_7_val14866           |   in|   12|     ap_none|                           weights_14_7_val14866|        scalar|
+|weights_14_8_val14898           |   in|   12|     ap_none|                           weights_14_8_val14898|        scalar|
+|weights_14_9_val14930           |   in|   12|     ap_none|                           weights_14_9_val14930|        scalar|
+|weights_14_10_val14962          |   in|   12|     ap_none|                          weights_14_10_val14962|        scalar|
+|weights_14_11_val14994          |   in|   12|     ap_none|                          weights_14_11_val14994|        scalar|
+|weights_14_12_val15026          |   in|   12|     ap_none|                          weights_14_12_val15026|        scalar|
+|weights_14_13_val15058          |   in|   12|     ap_none|                          weights_14_13_val15058|        scalar|
+|weights_14_14_val15090          |   in|   12|     ap_none|                          weights_14_14_val15090|        scalar|
+|weights_14_15_val15122          |   in|   12|     ap_none|                          weights_14_15_val15122|        scalar|
+|weights_14_16_val15154          |   in|   12|     ap_none|                          weights_14_16_val15154|        scalar|
+|weights_14_17_val15186          |   in|   12|     ap_none|                          weights_14_17_val15186|        scalar|
+|weights_14_18_val15218          |   in|   12|     ap_none|                          weights_14_18_val15218|        scalar|
+|weights_14_19_val15250          |   in|   12|     ap_none|                          weights_14_19_val15250|        scalar|
+|weights_14_20_val15282          |   in|   12|     ap_none|                          weights_14_20_val15282|        scalar|
+|weights_14_21_val15314          |   in|   12|     ap_none|                          weights_14_21_val15314|        scalar|
+|weights_14_22_val15346          |   in|   12|     ap_none|                          weights_14_22_val15346|        scalar|
+|weights_14_23_val15378          |   in|   12|     ap_none|                          weights_14_23_val15378|        scalar|
+|weights_14_24_val15410          |   in|   12|     ap_none|                          weights_14_24_val15410|        scalar|
+|weights_14_25_val15442          |   in|   12|     ap_none|                          weights_14_25_val15442|        scalar|
+|weights_14_26_val15474          |   in|   12|     ap_none|                          weights_14_26_val15474|        scalar|
+|weights_14_27_val15506          |   in|   12|     ap_none|                          weights_14_27_val15506|        scalar|
+|weights_14_28_val15538          |   in|   12|     ap_none|                          weights_14_28_val15538|        scalar|
+|weights_14_29_val15570          |   in|   12|     ap_none|                          weights_14_29_val15570|        scalar|
+|weights_14_30_val15602          |   in|   12|     ap_none|                          weights_14_30_val15602|        scalar|
+|weights_14_31_val15634          |   in|   12|     ap_none|                          weights_14_31_val15634|        scalar|
+|weights_15_0_val15666           |   in|   12|     ap_none|                           weights_15_0_val15666|        scalar|
+|weights_15_1_val15698           |   in|   12|     ap_none|                           weights_15_1_val15698|        scalar|
+|weights_15_2_val15730           |   in|   12|     ap_none|                           weights_15_2_val15730|        scalar|
+|weights_15_3_val15762           |   in|   12|     ap_none|                           weights_15_3_val15762|        scalar|
+|weights_15_4_val15794           |   in|   12|     ap_none|                           weights_15_4_val15794|        scalar|
+|weights_15_5_val15826           |   in|   12|     ap_none|                           weights_15_5_val15826|        scalar|
+|weights_15_6_val15858           |   in|   12|     ap_none|                           weights_15_6_val15858|        scalar|
+|weights_15_7_val15890           |   in|   12|     ap_none|                           weights_15_7_val15890|        scalar|
+|weights_15_8_val15922           |   in|   12|     ap_none|                           weights_15_8_val15922|        scalar|
+|weights_15_9_val15954           |   in|   12|     ap_none|                           weights_15_9_val15954|        scalar|
+|weights_15_10_val15986          |   in|   12|     ap_none|                          weights_15_10_val15986|        scalar|
+|weights_15_11_val16018          |   in|   12|     ap_none|                          weights_15_11_val16018|        scalar|
+|weights_15_12_val16050          |   in|   12|     ap_none|                          weights_15_12_val16050|        scalar|
+|weights_15_13_val16082          |   in|   12|     ap_none|                          weights_15_13_val16082|        scalar|
+|weights_15_14_val16114          |   in|   12|     ap_none|                          weights_15_14_val16114|        scalar|
+|weights_15_15_val16146          |   in|   12|     ap_none|                          weights_15_15_val16146|        scalar|
+|weights_15_16_val16178          |   in|   12|     ap_none|                          weights_15_16_val16178|        scalar|
+|weights_15_17_val16210          |   in|   12|     ap_none|                          weights_15_17_val16210|        scalar|
+|weights_15_18_val16242          |   in|   12|     ap_none|                          weights_15_18_val16242|        scalar|
+|weights_15_19_val16274          |   in|   12|     ap_none|                          weights_15_19_val16274|        scalar|
+|weights_15_20_val16306          |   in|   12|     ap_none|                          weights_15_20_val16306|        scalar|
+|weights_15_21_val16338          |   in|   12|     ap_none|                          weights_15_21_val16338|        scalar|
+|weights_15_22_val16370          |   in|   12|     ap_none|                          weights_15_22_val16370|        scalar|
+|weights_15_23_val16402          |   in|   12|     ap_none|                          weights_15_23_val16402|        scalar|
+|weights_15_24_val16434          |   in|   12|     ap_none|                          weights_15_24_val16434|        scalar|
+|weights_15_25_val16466          |   in|   12|     ap_none|                          weights_15_25_val16466|        scalar|
+|weights_15_26_val16498          |   in|   12|     ap_none|                          weights_15_26_val16498|        scalar|
+|weights_15_27_val16530          |   in|   12|     ap_none|                          weights_15_27_val16530|        scalar|
+|weights_15_28_val16562          |   in|   12|     ap_none|                          weights_15_28_val16562|        scalar|
+|weights_15_29_val16594          |   in|   12|     ap_none|                          weights_15_29_val16594|        scalar|
+|weights_15_30_val16626          |   in|   12|     ap_none|                          weights_15_30_val16626|        scalar|
+|weights_15_31_val16658          |   in|   12|     ap_none|                          weights_15_31_val16658|        scalar|
+|input_0_val32                   |   in|   12|     ap_none|                                   input_0_val32|        scalar|
+|input_1_val64                   |   in|   12|     ap_none|                                   input_1_val64|        scalar|
+|input_2_val96                   |   in|   12|     ap_none|                                   input_2_val96|        scalar|
+|input_3_val128                  |   in|   12|     ap_none|                                  input_3_val128|        scalar|
+|input_4_val160                  |   in|   12|     ap_none|                                  input_4_val160|        scalar|
+|input_5_val192                  |   in|   12|     ap_none|                                  input_5_val192|        scalar|
+|input_6_val224                  |   in|   12|     ap_none|                                  input_6_val224|        scalar|
+|input_7_val256                  |   in|   12|     ap_none|                                  input_7_val256|        scalar|
+|hidden_state_0_read             |   in|   12|     ap_none|                             hidden_state_0_read|        scalar|
+|hidden_state_1_read             |   in|   12|     ap_none|                             hidden_state_1_read|        scalar|
+|hidden_state_2_read             |   in|   12|     ap_none|                             hidden_state_2_read|        scalar|
+|hidden_state_3_read             |   in|   12|     ap_none|                             hidden_state_3_read|        scalar|
+|hidden_state_4_read             |   in|   12|     ap_none|                             hidden_state_4_read|        scalar|
+|hidden_state_5_read             |   in|   12|     ap_none|                             hidden_state_5_read|        scalar|
+|hidden_state_6_read             |   in|   12|     ap_none|                             hidden_state_6_read|        scalar|
+|hidden_state_7_read             |   in|   12|     ap_none|                             hidden_state_7_read|        scalar|
+|output_vectors_8_0_out          |  out|   12|      ap_vld|                          output_vectors_8_0_out|       pointer|
+|output_vectors_8_0_out_ap_vld   |  out|    1|      ap_vld|                          output_vectors_8_0_out|       pointer|
+|output_vectors_9_0_out          |  out|   12|      ap_vld|                          output_vectors_9_0_out|       pointer|
+|output_vectors_9_0_out_ap_vld   |  out|    1|      ap_vld|                          output_vectors_9_0_out|       pointer|
+|output_vectors_10_0_out         |  out|   12|      ap_vld|                         output_vectors_10_0_out|       pointer|
+|output_vectors_10_0_out_ap_vld  |  out|    1|      ap_vld|                         output_vectors_10_0_out|       pointer|
+|output_vectors_11_0_out         |  out|   12|      ap_vld|                         output_vectors_11_0_out|       pointer|
+|output_vectors_11_0_out_ap_vld  |  out|    1|      ap_vld|                         output_vectors_11_0_out|       pointer|
++--------------------------------+-----+-----+------------+------------------------------------------------+--------------+
+

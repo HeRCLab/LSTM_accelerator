@@ -5,12 +5,10 @@
 # Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 # ==============================================================
-set ::env(LD_LIBRARY_PATH) /share/reconfig/xilinx_2023/Vitis_HLS/2023.1/lnx64/tools/fpo_v7_1:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /share/reconfig/xilinx_2023/Vitis_HLS/2023.1/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /share/reconfig/xilinx_2023/Vitis_HLS/2023.1/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /share/reconfig/xilinx_2023/Vitis_HLS/2023.1/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/usr/lib/x86_64-linux-gnu
-set ::env(LD_LIBRARY_PATH) /share/reconfig/xilinx_2023/Vitis_HLS/2023.1/lib/lnx64.o/Ubuntu:$::env(LD_LIBRARY_PATH)
+set ::env(PATH) "$::env(PATH);C:/Xilinx/Vitis_HLS/2023.1/win64/tools/fpo_v7_1"
+set ::env(PATH) "$::env(PATH);C:/Xilinx/Vitis_HLS/2023.1/win64/tools/fft_v9_1"
+set ::env(PATH) "$::env(PATH);C:/Xilinx/Vitis_HLS/2023.1/win64/tools/fir_v7_0"
+set ::env(PATH) "$::env(PATH);C:/Xilinx/Vitis_HLS/2023.1/win64/tools/dds_v6_0"
 
 proc cpvcdfromsctortl {} {
 	#copy *.vcd from sc to verilog/vhdl dir

@@ -13,7 +13,7 @@ set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
-set HasDSPModule 0
+set HasDSPModule 1
 set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
@@ -42,10 +42,10 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xczu7ev:-ffvc1156:-2-e
-set SourceFiles {sc {} c ../matrix_test.cc}
+set SourceFiles {sc {} c ../src/LSTM_accelerator.cc}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
-set TBFiles {verilog {../testbench.cc ../testbench_routines.cc ../testbench_routines.h} bc {../testbench.cc ../testbench_routines.cc ../testbench_routines.h} vhdl {../testbench.cc ../testbench_routines.cc ../testbench_routines.h} sc {../testbench.cc ../testbench_routines.cc ../testbench_routines.h} cas {../testbench.cc ../testbench_routines.cc ../testbench_routines.h} c {}}
+set TBFiles {verilog {../src/testbench.cc ../src/testbench_routines.cc ../src/testbench_routines.h} bc {../src/testbench.cc ../src/testbench_routines.cc ../src/testbench_routines.h} vhdl {../src/testbench.cc ../src/testbench_routines.cc ../src/testbench_routines.h} sc {../src/testbench.cc ../src/testbench_routines.cc ../src/testbench_routines.h} cas {../src/testbench.cc ../src/testbench_routines.cc ../src/testbench_routines.h} c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

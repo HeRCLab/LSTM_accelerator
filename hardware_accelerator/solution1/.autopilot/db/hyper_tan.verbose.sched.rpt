@@ -1,0 +1,116 @@
+
+
+================================================================
+== Vitis HLS Report for 'hyper_tan'
+================================================================
+* Date:           Sat Oct 28 11:45:06 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        hardware_accelerator
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  1.993 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.99>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%z_val_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %z_val" [hardware_accelerator/src/LSTM_accelerator.cc:25]   --->   Operation 2 'read' 'z_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.80ns)   --->   "%icmp_ln25 = icmp_slt  i12 %z_val_read, i12 3073" [hardware_accelerator/src/LSTM_accelerator.cc:25]   --->   Operation 3 'icmp' 'icmp_ln25' <Predicate = (!icmp_ln35)> <Delay = 0.80> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 4 [1/1] (0.00ns) (grouped into LUT with out node select_ln35)   --->   "%select_ln25 = select i1 %icmp_ln25, i12 %z_val_read, i12 0" [hardware_accelerator/src/LSTM_accelerator.cc:25]   --->   Operation 4 'select' 'select_ln25' <Predicate = (!icmp_ln35)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 5 [1/1] (0.80ns)   --->   "%icmp_ln31 = icmp_sgt  i12 %z_val_read, i12 1024" [hardware_accelerator/src/LSTM_accelerator.cc:31]   --->   Operation 5 'icmp' 'icmp_ln31' <Predicate = (icmp_ln35)> <Delay = 0.80> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 6 [1/1] (0.00ns) (grouped into LUT with out node select_ln35)   --->   "%select_ln31 = select i1 %icmp_ln31, i12 1024, i12 3072" [hardware_accelerator/src/LSTM_accelerator.cc:31]   --->   Operation 6 'select' 'select_ln31' <Predicate = (icmp_ln35)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 7 [1/1] (0.80ns)   --->   "%add_ln35 = add i12 %z_val_read, i12 1024" [hardware_accelerator/src/LSTM_accelerator.cc:35]   --->   Operation 7 'add' 'add_ln35' <Predicate = true> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.80ns)   --->   "%icmp_ln35 = icmp_ugt  i12 %add_ln35, i12 2048" [hardware_accelerator/src/LSTM_accelerator.cc:35]   --->   Operation 8 'icmp' 'icmp_ln35' <Predicate = true> <Delay = 0.80> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.37ns) (out node of the LUT)   --->   "%select_ln35 = select i1 %icmp_ln35, i12 %select_ln31, i12 %select_ln25" [hardware_accelerator/src/LSTM_accelerator.cc:35]   --->   Operation 9 'select' 'select_ln35' <Predicate = true> <Delay = 0.37> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%ret_ln35 = ret i12 %select_ln35" [hardware_accelerator/src/LSTM_accelerator.cc:35]   --->   Operation 10 'ret' 'ret_ln35' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 20.000ns, clock uncertainty: 5.400ns.
+
+ <State 1>: 1.993ns
+The critical path consists of the following:
+	wire read operation ('z_val_read', hardware_accelerator/src/LSTM_accelerator.cc:25) on port 'z_val' (hardware_accelerator/src/LSTM_accelerator.cc:25) [2]  (0.000 ns)
+	'add' operation ('add_ln35', hardware_accelerator/src/LSTM_accelerator.cc:35) [7]  (0.809 ns)
+	'icmp' operation ('icmp_ln35', hardware_accelerator/src/LSTM_accelerator.cc:35) [8]  (0.809 ns)
+	'select' operation ('select_ln35', hardware_accelerator/src/LSTM_accelerator.cc:35) [9]  (0.375 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

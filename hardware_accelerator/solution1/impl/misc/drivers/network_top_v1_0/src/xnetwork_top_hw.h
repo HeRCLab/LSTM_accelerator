@@ -30,12 +30,22 @@
 // 0x14 : Data signal of myparams
 //        bit 31~0 - myparams[63:32] (Read/Write)
 // 0x18 : reserved
+// 0x1c : Data signal of init_params
+//        bit 31~0 - init_params[31:0] (Read/Write)
+// 0x20 : reserved
+// 0x24 : Data signal of store_result
+//        bit 31~0 - store_result[31:0] (Read/Write)
+// 0x28 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define XNETWORK_TOP_CONTROL_ADDR_AP_CTRL       0x00
-#define XNETWORK_TOP_CONTROL_ADDR_GIE           0x04
-#define XNETWORK_TOP_CONTROL_ADDR_IER           0x08
-#define XNETWORK_TOP_CONTROL_ADDR_ISR           0x0c
-#define XNETWORK_TOP_CONTROL_ADDR_MYPARAMS_DATA 0x10
-#define XNETWORK_TOP_CONTROL_BITS_MYPARAMS_DATA 64
+#define XNETWORK_TOP_CONTROL_ADDR_AP_CTRL           0x00
+#define XNETWORK_TOP_CONTROL_ADDR_GIE               0x04
+#define XNETWORK_TOP_CONTROL_ADDR_IER               0x08
+#define XNETWORK_TOP_CONTROL_ADDR_ISR               0x0c
+#define XNETWORK_TOP_CONTROL_ADDR_MYPARAMS_DATA     0x10
+#define XNETWORK_TOP_CONTROL_BITS_MYPARAMS_DATA     64
+#define XNETWORK_TOP_CONTROL_ADDR_INIT_PARAMS_DATA  0x1c
+#define XNETWORK_TOP_CONTROL_BITS_INIT_PARAMS_DATA  32
+#define XNETWORK_TOP_CONTROL_ADDR_STORE_RESULT_DATA 0x24
+#define XNETWORK_TOP_CONTROL_BITS_STORE_RESULT_DATA 32
 

@@ -92,6 +92,10 @@ void XNetwork_top_DisableAutoRestart(XNetwork_top *InstancePtr);
 
 void XNetwork_top_Set_myparams(XNetwork_top *InstancePtr, u64 Data);
 u64 XNetwork_top_Get_myparams(XNetwork_top *InstancePtr);
+void XNetwork_top_Set_init_params(XNetwork_top *InstancePtr, u32 Data);
+u32 XNetwork_top_Get_init_params(XNetwork_top *InstancePtr);
+void XNetwork_top_Set_store_result(XNetwork_top *InstancePtr, u32 Data);
+u32 XNetwork_top_Get_store_result(XNetwork_top *InstancePtr);
 
 void XNetwork_top_InterruptGlobalEnable(XNetwork_top *InstancePtr);
 void XNetwork_top_InterruptGlobalDisable(XNetwork_top *InstancePtr);

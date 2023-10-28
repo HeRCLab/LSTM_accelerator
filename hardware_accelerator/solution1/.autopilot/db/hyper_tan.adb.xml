@@ -1,0 +1,208 @@
+<stg><name>hyper_tan</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="2" bw="12" op_0_bw="12" op_1_bw="12">
+<![CDATA[
+entry:0 %z_val_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %z_val
+
+]]></Node>
+<StgValue><ssdm name="z_val_read"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln35" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="1" op_0_bw="12" op_1_bw="12">
+<![CDATA[
+entry:1 %icmp_ln25 = icmp_slt  i12 %z_val_read, i12 3073
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln25"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln35" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="12" op_0_bw="1" op_1_bw="12" op_2_bw="12">
+<![CDATA[
+entry:2 %select_ln25 = select i1 %icmp_ln25, i12 %z_val_read, i12 0
+
+]]></Node>
+<StgValue><ssdm name="select_ln25"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln35" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="1" op_0_bw="12" op_1_bw="12">
+<![CDATA[
+entry:3 %icmp_ln31 = icmp_sgt  i12 %z_val_read, i12 1024
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln31"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln35" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="12" op_0_bw="1" op_1_bw="12" op_2_bw="12">
+<![CDATA[
+entry:4 %select_ln31 = select i1 %icmp_ln31, i12 1024, i12 3072
+
+]]></Node>
+<StgValue><ssdm name="select_ln31"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>Adder</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="12" op_0_bw="12" op_1_bw="12">
+<![CDATA[
+entry:5 %add_ln35 = add i12 %z_val_read, i12 1024
+
+]]></Node>
+<StgValue><ssdm name="add_ln35"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="1" op_0_bw="12" op_1_bw="12">
+<![CDATA[
+entry:6 %icmp_ln35 = icmp_ugt  i12 %add_ln35, i12 2048
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln35"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="12" op_0_bw="1" op_1_bw="12" op_2_bw="12">
+<![CDATA[
+entry:7 %select_ln35 = select i1 %icmp_ln35, i12 %select_ln31, i12 %select_ln25
+
+]]></Node>
+<StgValue><ssdm name="select_ln35"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="0" op_0_bw="12">
+<![CDATA[
+entry:8 %ret_ln35 = ret i12 %select_ln35
+
+]]></Node>
+<StgValue><ssdm name="ret_ln35"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="11" name="z_val" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="z_val"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="13" from="_ssdm_op_Read.ap_auto.i12" to="z_val_read" fromId="12" toId="2">
+</dataflow>
+<dataflow id="14" from="z_val" to="z_val_read" fromId="11" toId="2">
+</dataflow>
+<dataflow id="15" from="z_val_read" to="icmp_ln25" fromId="2" toId="3">
+</dataflow>
+<dataflow id="17" from="StgValue_16" to="icmp_ln25" fromId="16" toId="3">
+</dataflow>
+<dataflow id="18" from="icmp_ln25" to="select_ln25" fromId="3" toId="4">
+</dataflow>
+<dataflow id="19" from="z_val_read" to="select_ln25" fromId="2" toId="4">
+</dataflow>
+<dataflow id="21" from="StgValue_20" to="select_ln25" fromId="20" toId="4">
+</dataflow>
+<dataflow id="22" from="z_val_read" to="icmp_ln31" fromId="2" toId="5">
+</dataflow>
+<dataflow id="24" from="StgValue_23" to="icmp_ln31" fromId="23" toId="5">
+</dataflow>
+<dataflow id="25" from="icmp_ln31" to="select_ln31" fromId="5" toId="6">
+</dataflow>
+<dataflow id="26" from="StgValue_23" to="select_ln31" fromId="23" toId="6">
+</dataflow>
+<dataflow id="28" from="StgValue_27" to="select_ln31" fromId="27" toId="6">
+</dataflow>
+<dataflow id="29" from="z_val_read" to="add_ln35" fromId="2" toId="7">
+</dataflow>
+<dataflow id="30" from="StgValue_23" to="add_ln35" fromId="23" toId="7">
+</dataflow>
+<dataflow id="31" from="add_ln35" to="icmp_ln35" fromId="7" toId="8">
+</dataflow>
+<dataflow id="33" from="StgValue_32" to="icmp_ln35" fromId="32" toId="8">
+</dataflow>
+<dataflow id="34" from="icmp_ln35" to="select_ln35" fromId="8" toId="9">
+</dataflow>
+<dataflow id="35" from="select_ln31" to="select_ln35" fromId="6" toId="9">
+</dataflow>
+<dataflow id="36" from="select_ln25" to="select_ln35" fromId="4" toId="9">
+</dataflow>
+<dataflow id="37" from="select_ln35" to="ret_ln35" fromId="9" toId="10">
+</dataflow>
+<dataflow id="38" from="icmp_ln35" to="StgValue_1" fromId="8" toId="1">
+</dataflow>
+</dataflows>
+
+
+</stg>

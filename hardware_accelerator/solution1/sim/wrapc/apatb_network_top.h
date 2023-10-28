@@ -7,7 +7,7 @@
 // ==============================================================
 
 extern "C" void AESL_WRAP_network_top (
-volatile void* params,
+volatile void* myparams,
 volatile void* inp,
 volatile void* out_r,
 int init_params,

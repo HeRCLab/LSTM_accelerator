@@ -9,17 +9,16 @@
 <ProductFamily>zynquplus</ProductFamily>
 <Part>xczu7ev-ffvc1156-2-e</Part>
 <TopModelName>sigm</TopModelName>
-<TargetClockPeriod>350.00</TargetClockPeriod>
-<ClockUncertainty>94.50</ClockUncertainty>
-<TargetInitiationInterval>4294967295</TargetInitiationInterval>
+<TargetClockPeriod>20.00</TargetClockPeriod>
+<ClockUncertainty>5.40</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
 <PerformanceEstimates>
-<PipelineType>yes</PipelineType>
+<PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>18.801</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.007</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -29,17 +28,15 @@
 <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>1</PipelineDepth>
-<Interval-min>1</Interval-min>
-<Interval-max>1</Interval-max>
+<Interval-min>0</Interval-min>
+<Interval-max>0</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <FF>0</FF>
-<LUT>1171</LUT>
+<LUT>108</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -73,7 +70,7 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>22</Bits>
+<Bits>12</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -84,7 +81,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>22</Bits>
+<Bits>12</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

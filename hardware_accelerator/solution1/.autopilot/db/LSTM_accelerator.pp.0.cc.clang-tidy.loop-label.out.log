@@ -1,0 +1,888 @@
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:27019:7: warning: Added loop label VITIS_LOOP_1213_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1213_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:27019:7: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:27993:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:27993:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:28007:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:28007:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:28021:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:28021:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:29620:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:29620:7: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36825:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36826:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36827:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36828:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36829:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36859:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36860:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36861:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36862:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36863:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36864:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36865:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36866:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36867:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36868:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36918:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36919:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36920:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36947:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36948:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36949:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36950:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36951:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36952:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36988:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:36989:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37263:5: warning: Added loop label VITIS_LOOP_87_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_87_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37263:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37309:5: warning: Added loop label VITIS_LOOP_143_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_143_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37309:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37472:9: warning: Added loop label VITIS_LOOP_315_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_315_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37472:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37624:9: warning: Added loop label VITIS_LOOP_475_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_475_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37624:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37804:5: warning: Added loop label VITIS_LOOP_655_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_655_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37804:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37808:5: warning: Added loop label VITIS_LOOP_659_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_659_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37808:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37918:5: warning: Added loop label VITIS_LOOP_769_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_769_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:37918:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38008:7: warning: Added loop label VITIS_LOOP_866_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_866_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38008:7: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38027:7: warning: Added loop label VITIS_LOOP_885_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_885_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38027:7: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38317:5: warning: Added loop label VITIS_LOOP_1199_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1199_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38317:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38400:5: warning: Added loop label VITIS_LOOP_1282_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1282_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38400:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38806:13: warning: Added loop label VITIS_LOOP_94_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_94_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38806:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38812:17: warning: Added loop label VITIS_LOOP_100_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_100_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38812:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38816:17: warning: Added loop label VITIS_LOOP_104_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_104_3: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38816:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38864:13: warning: Added loop label VITIS_LOOP_171_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_171_4: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38864:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38870:17: warning: Added loop label VITIS_LOOP_177_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_177_5: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38870:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38874:17: warning: Added loop label VITIS_LOOP_181_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_181_6: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38874:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38889:9: warning: Added loop label VITIS_LOOP_196_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_196_7: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38889:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38897:17: warning: Added loop label VITIS_LOOP_204_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_204_8: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38897:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38962:13: warning: Added loop label VITIS_LOOP_269_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_269_9: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38962:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38968:17: warning: Added loop label VITIS_LOOP_275_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_275_10: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38968:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38972:17: warning: Added loop label VITIS_LOOP_279_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_279_11: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38972:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38987:9: warning: Added loop label VITIS_LOOP_294_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_294_12: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38987:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38995:17: warning: Added loop label VITIS_LOOP_302_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_302_13: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:38995:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39224:13: warning: Added loop label VITIS_LOOP_531_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_531_14: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39224:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39230:17: warning: Added loop label VITIS_LOOP_537_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_537_15: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39230:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39234:17: warning: Added loop label VITIS_LOOP_541_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_541_16: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39234:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39244:9: warning: Added loop label VITIS_LOOP_551_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_551_17: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39244:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39248:9: warning: Added loop label VITIS_LOOP_555_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_555_18: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39248:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39258:9: warning: Added loop label VITIS_LOOP_565_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_565_19: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39258:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39266:17: warning: Added loop label VITIS_LOOP_573_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_573_20: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39266:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39627:13: warning: Added loop label VITIS_LOOP_934_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_934_21: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39627:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39633:17: warning: Added loop label VITIS_LOOP_940_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_940_22: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39633:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39637:17: warning: Added loop label VITIS_LOOP_944_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_944_23: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39637:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39753:13: warning: Added loop label VITIS_LOOP_1060_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1060_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39753:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39759:17: warning: Added loop label VITIS_LOOP_1066_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1066_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39759:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39763:17: warning: Added loop label VITIS_LOOP_1070_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1070_3: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39763:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39850:13: warning: Added loop label VITIS_LOOP_1157_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1157_4: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39850:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39856:17: warning: Added loop label VITIS_LOOP_1163_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1163_5: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39856:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39860:17: warning: Added loop label VITIS_LOOP_1167_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1167_6: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39860:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39879:9: warning: Added loop label VITIS_LOOP_1186_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1186_7: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39879:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39886:17: warning: Added loop label VITIS_LOOP_1193_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1193_8: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:39886:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40002:13: warning: Added loop label VITIS_LOOP_1309_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1309_9: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40002:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40008:17: warning: Added loop label VITIS_LOOP_1315_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1315_10: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40008:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40012:17: warning: Added loop label VITIS_LOOP_1319_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1319_11: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40012:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40032:9: warning: Added loop label VITIS_LOOP_1339_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1339_12: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40032:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40039:17: warning: Added loop label VITIS_LOOP_1346_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1346_13: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40039:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40301:13: warning: Added loop label VITIS_LOOP_1608_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1608_14: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40301:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40307:17: warning: Added loop label VITIS_LOOP_1614_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1614_15: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40307:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40311:17: warning: Added loop label VITIS_LOOP_1618_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1618_16: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40311:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40335:9: warning: Added loop label VITIS_LOOP_1642_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1642_17: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40335:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40342:17: warning: Added loop label VITIS_LOOP_1649_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1649_18: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40342:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40772:13: warning: Added loop label VITIS_LOOP_2079_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2079_19: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40772:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40778:17: warning: Added loop label VITIS_LOOP_2085_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2085_20: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40778:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40782:17: warning: Added loop label VITIS_LOOP_2089_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2089_21: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40782:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40912:13: warning: Added loop label VITIS_LOOP_2219_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2219_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40912:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40919:17: warning: Added loop label VITIS_LOOP_2226_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2226_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40919:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40923:17: warning: Added loop label VITIS_LOOP_2230_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2230_3: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40923:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40970:13: warning: Added loop label VITIS_LOOP_2277_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2277_4: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40970:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40977:17: warning: Added loop label VITIS_LOOP_2284_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2284_5: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40977:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40981:17: warning: Added loop label VITIS_LOOP_2288_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2288_6: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40981:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40999:9: warning: Added loop label VITIS_LOOP_2306_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2306_7: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:40999:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41054:13: warning: Added loop label VITIS_LOOP_2361_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2361_8: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41054:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41061:17: warning: Added loop label VITIS_LOOP_2368_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2368_9: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41061:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41065:17: warning: Added loop label VITIS_LOOP_2372_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2372_10: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41065:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41083:9: warning: Added loop label VITIS_LOOP_2390_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2390_11: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41083:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41172:13: warning: Added loop label VITIS_LOOP_2479_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2479_12: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41172:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41179:17: warning: Added loop label VITIS_LOOP_2486_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2486_13: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41179:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41183:17: warning: Added loop label VITIS_LOOP_2490_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2490_14: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41183:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41193:9: warning: Added loop label VITIS_LOOP_2500_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2500_15: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41193:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41197:9: warning: Added loop label VITIS_LOOP_2504_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2504_16: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41197:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41208:9: warning: Added loop label VITIS_LOOP_2515_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2515_17: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41208:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41216:17: warning: Added loop label VITIS_LOOP_2523_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2523_18: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41216:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41541:13: warning: Added loop label VITIS_LOOP_2848_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2848_19: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41541:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41548:17: warning: Added loop label VITIS_LOOP_2855_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2855_20: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41548:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41552:17: warning: Added loop label VITIS_LOOP_2859_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2859_21: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41552:17: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41640:4: warning: Added loop label VITIS_LOOP_2947_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2947_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41640:4: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41647:5: warning: Added loop label VITIS_LOOP_2954_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2954_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41647:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41651:5: warning: Added loop label VITIS_LOOP_2958_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2958_3: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41651:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41666:3: warning: Added loop label VITIS_LOOP_2973_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2973_4: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41666:3: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41698:4: warning: Added loop label VITIS_LOOP_3005_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_3005_5: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41698:4: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41705:5: warning: Added loop label VITIS_LOOP_3012_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_3012_6: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41705:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41709:5: warning: Added loop label VITIS_LOOP_3016_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3016_7: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41709:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41724:3: warning: Added loop label VITIS_LOOP_3031_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3031_8: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41724:3: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41774:4: warning: Added loop label VITIS_LOOP_3081_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3081_9: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41774:4: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41781:5: warning: Added loop label VITIS_LOOP_3088_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3088_10: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41781:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41785:5: warning: Added loop label VITIS_LOOP_3092_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3092_11: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41785:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41800:3: warning: Added loop label VITIS_LOOP_3107_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3107_12: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41800:3: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41937:4: warning: Added loop label VITIS_LOOP_3244_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3244_13: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41937:4: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41944:5: warning: Added loop label VITIS_LOOP_3251_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3251_14: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41944:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41948:5: warning: Added loop label VITIS_LOOP_3255_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3255_15: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41948:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41963:3: warning: Added loop label VITIS_LOOP_3270_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3270_16: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:41963:3: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:42123:4: warning: Added loop label VITIS_LOOP_3430_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3430_17: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:42123:4: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:42130:5: warning: Added loop label VITIS_LOOP_3437_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3437_18: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:42130:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:42134:5: warning: Added loop label VITIS_LOOP_3441_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3441_19: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:42134:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:42849:13: warning: Added loop label VITIS_LOOP_729_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_729_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:42849:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:43067:13: warning: Added loop label VITIS_LOOP_947_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_947_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:43067:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:43484:13: warning: Added loop label VITIS_LOOP_1371_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1371_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:43484:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:43798:9: warning: Added loop label VITIS_LOOP_266_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_266_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:43798:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:43826:9: warning: Added loop label VITIS_LOOP_294_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_294_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:43826:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44521:13: warning: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_74_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44521:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44574:5: warning: Added loop label VITIS_LOOP_135_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_135_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44574:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44588:13: warning: Added loop label VITIS_LOOP_149_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_149_3: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44588:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44618:13: warning: Added loop label VITIS_LOOP_179_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_179_4: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44618:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44703:12: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_307_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44703:12: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44723:16: warning: Added loop label VITIS_LOOP_327_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_327_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44723:16: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44737:20: warning: Added loop label VITIS_LOOP_341_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_341_3: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44737:20: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44830:12: warning: Added loop label VITIS_LOOP_459_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_459_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44830:12: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44844:15: warning: Added loop label VITIS_LOOP_473_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_473_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44844:15: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44957:13: warning: Added loop label VITIS_LOOP_59_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_59_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:44957:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45081:13: warning: Added loop label VITIS_LOOP_209_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_209_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45081:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45136:13: warning: Added loop label VITIS_LOOP_274_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_274_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45136:13: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45641:2: warning: Added loop label VITIS_LOOP_42_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_42_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45641:2: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45652:2: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_53_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45652:2: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45663:2: warning: Added loop label VITIS_LOOP_64_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_64_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45663:2: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45674:2: warning: Added loop label VITIS_LOOP_75_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_75_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45674:2: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45685:2: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_86_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45685:2: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45696:2: warning: Added loop label VITIS_LOOP_97_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_97_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45696:2: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45707:2: warning: Added loop label VITIS_LOOP_108_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_108_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45707:2: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45718:2: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_119_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:45718:2: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:48019:12: warning: Added loop label VITIS_LOOP_23_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_23_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:48019:12: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:48083:7: warning: Added loop label VITIS_LOOP_66_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_66_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:48083:7: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:48200:9: warning: Added loop label VITIS_LOOP_75_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_75_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:48200:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:48225:5: warning: Added loop label VITIS_LOOP_107_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_107_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:48225:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:48295:8: warning: Added loop label VITIS_LOOP_195_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_195_3: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:48295:8: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51344:5: warning: Added loop label VITIS_LOOP_124_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_124_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51344:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51360:5: warning: Added loop label VITIS_LOOP_140_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_140_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51360:5: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51376:75: warning: Added loop label VITIS_LOOP_166_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator ++() { pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                          ^~~
+                                                                          VITIS_LOOP_166_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51376:75: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51381:75: warning: Added loop label VITIS_LOOP_167_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator --() { pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                          ^~~
+                                                                          VITIS_LOOP_167_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51381:75: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51390:106: warning: Added loop label VITIS_LOOP_195_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator +=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_195_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51390:106: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51395:106: warning: Added loop label VITIS_LOOP_196_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator -=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_196_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51395:106: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51400:106: warning: Added loop label VITIS_LOOP_197_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator *=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_197_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51400:106: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51405:106: warning: Added loop label VITIS_LOOP_198_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator /=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_198_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51405:106: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51410:106: warning: Added loop label VITIS_LOOP_199_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator %=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_199_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51410:106: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51415:106: warning: Added loop label VITIS_LOOP_200_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator &=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_200_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51415:106: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51420:106: warning: Added loop label VITIS_LOOP_201_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator |=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_201_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51420:106: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51425:106: warning: Added loop label VITIS_LOOP_202_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator ^=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_202_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51425:106: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51430:107: warning: Added loop label VITIS_LOOP_203_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator <<=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                          ^~~
+                                                                                                          VITIS_LOOP_203_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51430:107: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51435:107: warning: Added loop label VITIS_LOOP_204_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator >>=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                          ^~~
+                                                                                                          VITIS_LOOP_204_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51435:107: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51441:91: warning: Added loop label VITIS_LOOP_219_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) T reduce_add() const { pragma(); T res = data[0]; for (size_t i = 1; i < N; ++i) {
+                                                                                          ^~~
+                                                                                          VITIS_LOOP_219_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51441:91: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51446:92: warning: Added loop label VITIS_LOOP_220_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) T reduce_mult() const { pragma(); T res = data[0]; for (size_t i = 1; i < N; ++i) {
+                                                                                           ^~~
+                                                                                           VITIS_LOOP_220_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51446:92: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51451:91: warning: Added loop label VITIS_LOOP_221_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) T reduce_and() const { pragma(); T res = data[0]; for (size_t i = 1; i < N; ++i) {
+                                                                                          ^~~
+                                                                                          VITIS_LOOP_221_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51451:91: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51456:90: warning: Added loop label VITIS_LOOP_222_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) T reduce_or() const { pragma(); T res = data[0]; for (size_t i = 1; i < N; ++i) {
+                                                                                         ^~~
+                                                                                         VITIS_LOOP_222_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51456:90: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51461:91: warning: Added loop label VITIS_LOOP_223_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) T reduce_xor() const { pragma(); T res = data[0]; for (size_t i = 1; i < N; ++i) {
+                                                                                          ^~~
+                                                                                          VITIS_LOOP_223_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51461:91: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51467:132: warning: Added loop label VITIS_LOOP_253_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator <(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                   ^~~
+                                                                                                                                   VITIS_LOOP_253_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51467:132: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51472:133: warning: Added loop label VITIS_LOOP_254_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator <=(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                    ^~~
+                                                                                                                                    VITIS_LOOP_254_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51472:133: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51477:133: warning: Added loop label VITIS_LOOP_255_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator ==(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                    ^~~
+                                                                                                                                    VITIS_LOOP_255_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51477:133: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51482:133: warning: Added loop label VITIS_LOOP_256_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator !=(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                    ^~~
+                                                                                                                                    VITIS_LOOP_256_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51482:133: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51487:133: warning: Added loop label VITIS_LOOP_257_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator >=(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                    ^~~
+                                                                                                                                    VITIS_LOOP_257_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51487:133: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51492:132: warning: Added loop label VITIS_LOOP_258_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator >(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                   ^~~
+                                                                                                                                   VITIS_LOOP_258_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51492:132: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51607:1: warning: Added loop label VITIS_LOOP_67_1:   [xilinx-label-all-loops]
+for(int j=1;j<n_inputs;j++)
+^~~
+VITIS_LOOP_67_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51607:1: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51611:1: warning: Added loop label VITIS_LOOP_71_2:   [xilinx-label-all-loops]
+for(int j=0;j<n_units;j++)
+^~~
+VITIS_LOOP_71_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51611:1: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51669:2: warning: Added loop label VITIS_LOOP_129_1:   [xilinx-label-all-loops]
+ for(int i=0;i<4*n_units;i++)
+ ^~~
+ VITIS_LOOP_129_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51669:2: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51673:2: warning: Added loop label VITIS_LOOP_143_2:   [xilinx-label-all-loops]
+ for(int k=0; k<n_units;k++)
+ ^~~
+ VITIS_LOOP_143_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51673:2: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51784:9: warning: Added loop label VITIS_LOOP_246_1:   [xilinx-label-all-loops]
+        for (int r=0;r<(units[1]+units[2]);r++)
+        ^~~
+        VITIS_LOOP_246_1: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51784:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51791:9: warning: Added loop label VITIS_LOOP_253_2:   [xilinx-label-all-loops]
+        for (int r=0;r<(units[2]+units[3]);r++)
+        ^~~
+        VITIS_LOOP_253_2: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51791:9: note: FIX-IT applied suggested code changes
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51831:5: warning: Added loop label VITIS_LOOP_293_3:   [xilinx-label-all-loops]
+    for (int k=0;k<4*(24 -16);k++)
+    ^~~
+    VITIS_LOOP_293_3: 
+C:\LSTM_accelerator\hardware_accelerator\solution1\.autopilot\db\LSTM_accelerator.pp.0.cc:51831:5: note: FIX-IT applied suggested code changes

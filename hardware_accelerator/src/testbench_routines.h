@@ -1,4 +1,4 @@
-#include "matrix_include.hpp"
+#include "LSTM_include.hpp"
 
 
 void mvm (data **A,data *b,data *c,uint32_t m,uint32_t n);

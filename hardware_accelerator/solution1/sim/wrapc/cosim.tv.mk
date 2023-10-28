@@ -22,8 +22,8 @@ IRWRAPPER  := $(basename $(wildcard *.ll))
 CPPWRAPPER := $(IRWRAPPER:_ir=)
 APATB_UTIL := $(basename $(wildcard $(IRWRAPPER:_ir=_util).cpp))
 
-AUTOPILOT_ROOT := /share/reconfig/xilinx_2023/Vitis_HLS/2023.1
-AUTOPILOT_MACH := lnx64
+AUTOPILOT_ROOT := C:/Xilinx/Vitis_HLS/2023.1
+AUTOPILOT_MACH := win64
 
 ifdef COSIM_M32
   AUTOPILOT_MACH := lnx32
@@ -33,9 +33,8 @@ ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
   IFLAG += -m32
 endif
-IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := /share/reconfig/xilinx_2023/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/bin
+  AP_GCC_PATH := C:/Xilinx/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/bin
 endif
 AUTOPILOT_TOOL = ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AUTOPILOT_TECH = ${AUTOPILOT_ROOT}/common/technology
@@ -50,7 +49,6 @@ IFLAG += -I "${AUTOPILOT_ROOT}/common/technology/generic/SystemC"
 IFLAG += -I "${AUTOPILOT_ROOT}/common/technology/generic/SystemC/AESL_FP_comp"
 IFLAG += -I "${AUTOPILOT_ROOT}/common/technology/generic/SystemC/AESL_comp"
 IFLAG += -I "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/auto_cc/include"
-IFLAG += -I "/usr/include/x86_64-linux-gnu"
 IFLAG += -D__VITIS_HLS__
 IFLAG += -D__HLS_COSIM__
 IFLAG += -D__SIM_FPO__
@@ -59,11 +57,13 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 IFLAG += -D__DSP48E2__
 WFLAG += -DUSE_BINARY_TV_FILE
+IFLAG += -DNT
 LFLAG += -lpthread
-LFLAG += -L "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/clang-3.9-csynth/lib/clang/7.0.0/lib/linux" -lclang_rt.builtins-x86_64
+LFLAG += -L "${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools/clang-3.9-csynth/lib/clang/7.0.0/lib/windows" -lhls_half2float
 IFLAG += -D__RTL_SIMULATION__
 IFLAG += -D__xilinx_ip_top=
 DFLAG += -DAESL_PIPELINE
+LFLAG += -Wl,--enable-auto-import
 
 include ./Makefile.rules
 
@@ -80,6 +80,10 @@ $(ObjDir)/testbench.cc_pre.cc.tb.o : testbench.cc_pre.cc.tb.cc $(ObjDir)/.dir
 	$(Echo) "   Compiling testbench.cc_pre.cc.tb.cc" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c -Wno-unknown-pragmas -Wno-unknown-pragmas $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/matrix_test.cc_pre.cc.tb.o : matrix_test.cc_pre.cc.tb.cc $(ObjDir)/.dir
-	$(Echo) "   Compiling matrix_test.cc_pre.cc.tb.cc" $(AVE_DIR_DLOG)
+$(ObjDir)/testbench_routines.cc_pre.cc.tb.o : testbench_routines.cc_pre.cc.tb.cc $(ObjDir)/.dir
+	$(Echo) "   Compiling testbench_routines.cc_pre.cc.tb.cc" $(AVE_DIR_DLOG)
+	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c -Wno-unknown-pragmas -Wno-unknown-pragmas $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/LSTM_accelerator.cc_pre.cc.tb.o : LSTM_accelerator.cc_pre.cc.tb.cc $(ObjDir)/.dir
+	$(Echo) "   Compiling LSTM_accelerator.cc_pre.cc.tb.cc" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c  $(IFLAG) $(DFLAG) $< -o $@; \
