@@ -56,10 +56,10 @@ void dot_product( data A[n_inputs+n_units][4*n_units],ap_int<32>col,data B_1[n_i
 #pragma HLS INLINE
 
 LOOP_DOT_PRODUCT:for(int j=0;j<(n_inputs+n_units);j++){
-    #pragma HLS UNROLL
+    #pragma HLS PIPELINE II=1
     if (j<n_inputs){
 
-       *sum+=A[j]*B_1[j];
+       *sum+=A[j][col]*B_1[j];
 
     }
     else{
